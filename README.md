@@ -21,23 +21,20 @@
 
 ```
 ipd-hardware-implementation/
-├── 🎯 [微波室管理体系建设核心方案.md](./微波室管理体系建设核心方案.md)  # 必读：职责分工+工作流程+绩效考核（90天计划）
-├── 📋 [微波室管理工作方案计划.md](./微波室管理工作方案计划.md)    # 18个月总体实施方案
-├── 📅 [微波室关键工作90天执行计划.md](./微波室关键工作90天执行计划.md)  # 前3个月关键工作计划
 │
-├── 📘 员工手册 ✅ 已完成95%
-│   ├── [微波室员工手册（完整版）.md](./微波室员工手册（完整版）.md)  # 9章完整内容 ⬅️ **最新完成**
-│   ├── [员工手册编写任务计划.md](./员工手册编写任务计划.md)    # 任务跟踪
-│   └── [员工手册编写指南.md](./员工手册编写指南.md)              # 编写参考
+├── 📋 核心方案（微波室定制）⬅️ 从这里开始
+│   ├── 🎯 [微波室管理体系建设核心方案.md](./微波室管理体系建设核心方案.md)  # 必读：三要素+90天计划
+│   ├── 📊 [微波室管理工作方案计划.md](./微波室管理工作方案计划.md)    # 18个月总体规划
+│   ├── 📅 [微波室关键工作90天执行计划.md](./微波室关键工作90天执行计划.md)  # 前3个月行动清单
+│   │
+│   ├── 📘 [微波室员工手册（完整版）.md](./微波室员工手册（完整版）.md)  # 9章完整员工手册 ✅
+│   └── 📋 [微波室岗位说明书（完整版）.md](./微波室岗位说明书（完整版）.md)  # 25人岗位职责 ✅
 │
-├── 📋 岗位说明书 ✅ 已完成
-│   └── [微波室岗位说明书（完整版）.md](./微波室岗位说明书（完整版）.md)  # 全岗位详细职责 ⬅️ **最新完成**
-├── 📚 docs/                          # IPD核心文档
+├── 📚 docs/                          # IPD核心理论文档
 │   ├── [01-ipd-overview.md](./docs/01-ipd-overview.md)              # IPD核心理念和框架
-│   ├── [02-hardware-ipd-flow.md](./docs/02-hardware-ipd-flow.md)    # 硬件研发IPD流程
-│   └── [03-team-structure.md](./docs/03-team-structure.md)        # 团队组织和角色定义
+│   └── [02-hardware-ipd-flow.md](./docs/02-hardware-ipd-flow.md)    # 硬件研发IPD流程
 │
-├── 📄 templates/                     # 实用模板
+├── 📄 templates/                     # 通用模板（可直接使用）
 │   ├── 📋 IPD流程模板
 │   │   ├── [03-hardware-srs-template.md](./templates/03-hardware-srs-template.md)           # 硬件需求规格说明书
 │   │   ├── [04-design-review-checklist.md](./templates/04-design-review-checklist.md)       # 设计评审检查表
@@ -48,9 +45,9 @@ ipd-hardware-implementation/
 │   │   ├── [09-test-plan-template.md](./templates/09-test-plan-template.md)                 # 测试计划模板
 │   │   └── [10-meeting-minutes-template.md](./templates/10-meeting-minutes-template.md)     # 会议纪要模板
 │   │
-│   └── 👥 hr/                        # 人力资源管理（微波室定制版）
-│       ├── [01-employee-handbook.md](./templates/hr/01-employee-handbook.md)                 # 员工手册
-│       ├── [02-job-description-microwave.md](./templates/hr/02-job-description-microwave.md) # 岗位说明书
+│   └── 👥 hr/                        # HR管理模板（通用版）
+│       ├── [01-employee-handbook.md](./templates/hr/01-employee-handbook.md)                 # 员工手册（通用模板）
+│       ├── [02-job-description-microwave.md](./templates/hr/02-job-description-microwave.md) # 岗位说明书（通用模板）
 │       ├── [03-performance-management.md](./templates/hr/03-performance-management.md)       # 绩效管理办法
 │       ├── [04-learning-organization.md](./templates/hr/04-learning-organization.md)         # 学习型组织建设方案
 │       └── [05-manager-action-guide.md](./templates/hr/05-manager-action-guide.md)           # 管理者行动指南
@@ -69,48 +66,43 @@ ipd-hardware-implementation/
 │   └── metrics-calculator/           # 研发指标计算工具（待完善）
 │
 ├── 📖 resources/                     # 参考资料
-│   ├── books-papers/                 # 相关书籍和论文（待完善）
-│   ├── huawei-ipd-cases/             # 华为IPD实施案例（待完善）
 │   └── [useful-links.md](./resources/useful-links.md)              # 有用链接和参考资料
 │
 └── 📄 [README.md](./README.md)       # 本文件
 ```
 
+**说明**：
+- **核心方案（中文文件名）**：为微波室定制的完整方案，直接使用
+- **templates（英文文件名）**：通用模板，可供其他团队参考
+
 ---
 
 ## 🚀 快速开始
 
-### 🎯 第一步：阅读核心方案（必读）
-阅读 [`微波室管理体系建设核心方案.md`](./微波室管理体系建设核心方案.md) 了解**职责分工+工作流程+绩效考核**三要素和**90天实施计划**
-
-### 📋 第二步：了解总体规划
-阅读 [`微波室管理工作方案计划.md`](./微波室管理工作方案计划.md) 了解18个月系统实施蓝图
-
-### 📅 第三步：查看执行计划
-阅读 [`微波室关键工作90天执行计划.md`](./微波室关键工作90天执行计划.md) 了解前3个月关键工作清单
-
-### 📖 第四步：了解IPD基础
+### 📖 第一步：了解IPD基础（30分钟）
 阅读 [`docs/01-ipd-overview.md`](./docs/01-ipd-overview.md) 了解IPD核心理念
 
-### 🔧 第五步：熟悉硬件研发流程
+### 🔧 第二步：熟悉硬件研发流程（30分钟）
 查看 [`docs/02-hardware-ipd-flow.md`](./docs/02-hardware-ipd-flow.md) 了解硬件特有流程
 
-### 👥 第六步：建立管理体系
-根据微波室组织架构（25人），选择对应文档：
+### 🎯 第三步：阅读核心方案（1小时）⬅️ **重点**
+按顺序阅读以下三个文档：
+1. [`微波室管理体系建设核心方案.md`](./微波室管理体系建设核心方案.md) — **必读**：职责分工+工作流程+绩效考核
+2. [`微波室管理工作方案计划.md`](./微波室管理工作方案计划.md) — 18个月总体规划
+3. [`微波室关键工作90天执行计划.md`](./微波室关键工作90天执行计划.md) — 前3个月行动清单
 
-| 角色 | 推荐阅读 |
-|------|----------|
-| **主任/副主任** | [`05-manager-action-guide.md`](./templates/hr/05-manager-action-guide.md) 管理者行动指南 |
-| **各组组长** | [`03-performance-management.md`](./templates/hr/03-performance-management.md) 绩效管理办法 |
-| **全体成员** | [`01-employee-handbook.md`](./templates/hr/01-employee-handbook.md) 员工手册 |
-| **天线/射频/数字/电源工程师** | [`02-job-description-microwave.md`](./templates/hr/02-job-description-microwave.md) 岗位说明书 |
-| **学习型组织推进** | [`04-learning-organization.md`](./templates/hr/04-learning-organization.md) 学习型组织建设方案 |
+### 👥 第四步：根据角色选择文档
 
-### 📝 第六步：使用模板
+| 角色 | 推荐阅读 | 文档位置 |
+|:-----|:---------|:---------|
+| **主任/副主任** | 管理者行动指南 | [`templates/hr/05-manager-action-guide.md`](./templates/hr/05-manager-action-guide.md) |
+| **各组组长** | 绩效管理办法 | [`templates/hr/03-performance-management.md`](./templates/hr/03-performance-management.md) |
+| **全体成员** | 员工手册（完整版） | [`微波室员工手册（完整版）.md`](./微波室员工手册（完整版）.md) ⬅️ **最新完成** |
+| **各岗位工程师** | 岗位说明书（完整版） | [`微波室岗位说明书（完整版）.md`](./微波室岗位说明书（完整版）.md) ⬅️ **最新完成** |
+| **学习型组织推进** | 学习型组织建设方案 | [`templates/hr/04-learning-organization.md`](./templates/hr/04-learning-organization.md) |
+
+### 📝 第五步：使用模板
 从 [`templates/`](./templates/) 目录选择合适的模板开始项目
-
-### 📘 第七步：查看员工手册编写进度（如正在编写）
-查看 [`员工手册编写任务计划.md`](./员工手册编写任务计划.md) 了解当前编写进度和任务分配
 
 ---
 
@@ -141,6 +133,16 @@ ipd-hardware-implementation/
 
 ## 📂 文档详解
 
+### 📋 核心方案（微波室定制）
+
+| 文档 | 内容 | 适用对象 | 完成度 |
+|:-----|:-----|:---------|:------:|
+| [微波室管理体系建设核心方案.md](./微波室管理体系建设核心方案.md) | 职责分工+工作流程+绩效考核三要素，90天实施计划 | 主任/副主任/组长 | ✅ 完整 |
+| [微波室管理工作方案计划.md](./微波室管理工作方案计划.md) | 18个月总体实施方案，分6阶段 | 主任/副主任 | ✅ 完整 |
+| [微波室关键工作90天执行计划.md](./微波室关键工作90天执行计划.md) | 前3个月关键工作清单，每周检查表 | 主任/副主任/组长 | ✅ 完整 |
+| [微波室员工手册（完整版）.md](./微波室员工手册（完整版）.md) | 9章完整员工手册，仅人员姓名为占位符 | 全员 | ✅ 95% |
+| [微波室岗位说明书（完整版）.md](./微波室岗位说明书（完整版）.md) | 25人岗位职责，含职责/要求/KPI | 全员 | ✅ 完整 |
+
 ### 📋 IPD流程模板
 
 | 模板 | 用途 | 适用阶段 |
@@ -154,23 +156,17 @@ ipd-hardware-implementation/
 | [测试计划模板](./templates/09-test-plan-template.md) | 硬件测试规划 | 验证阶段 |
 | [会议纪要模板](./templates/10-meeting-minutes-template.md) | 项目会议记录 | 全程 |
 
-### 👥 HR管理文档（微波室定制）
+### 👥 HR管理文档
 
-| 文档 | 内容 | 适用对象 |
-|------|------|----------|
-| [员工手册](./templates/hr/01-employee-handbook.md) | 组织架构、行为准则、IPD流程规范、培训发展 | 全员 |
-| [岗位说明书](./templates/hr/02-job-description-microwave.md) | 天线/射频/数字/电源/产品/DFX工程师、组长详细职责 | 全员 |
-| [绩效管理办法](./templates/hr/03-performance-management.md) | 三组差异化考核、KPI指标库、绩效面谈 | 管理者 |
-| [学习型组织建设方案](./templates/hr/04-learning-organization.md) | 第五项修炼落地、与IPD融合、实施路线图 | 全员 |
-| [管理者行动指南](./templates/hr/05-manager-action-guide.md) | 战略/组织/执行层工作清单、检查表 | 主任/副主任/组长 |
+| 文档 | 内容 | 适用对象 | 说明 |
+|------|------|----------|------|
+| [员工手册（通用模板）](./templates/hr/01-employee-handbook.md) | 组织架构、行为准则、IPD流程规范 | 全员 | 通用模板，可参考 |
+| [岗位说明书（通用模板）](./templates/hr/02-job-description-microwave.md) | 各岗位详细职责 | 全员 | 通用模板，可参考 |
+| [绩效管理办法](./templates/hr/03-performance-management.md) | 三组差异化考核、KPI指标库 | 管理者 | 可直接使用 |
+| [学习型组织建设方案](./templates/hr/04-learning-organization.md) | 第五项修炼落地、与IPD融合 | 全员 | 可直接使用 |
+| [管理者行动指南](./templates/hr/05-manager-action-guide.md) | 战略/组织/执行层工作清单 | 主任/副主任/组长 | 可直接使用 |
 
-### 📘 员工手册编写文档
-
-| 文档 | 内容 | 用途 |
-|------|------|------|
-| [员工手册编写任务计划.md](./员工手册编写任务计划.md) | 9章任务分解、进度跟踪、阻塞项管理 | 跟踪编写进度 |
-| [微波室员工手册（框架版）.md](./微波室员工手册（框架版）.md) | 9章完整框架，带待填写标记 | 基于此框架填写 |
-| [员工手册编写指南.md](./员工手册编写指南.md) | 编写说明、各章内容要求、示例 | 编写参考 |
+**说明**：templates/hr/ 下的是通用模板，根目录的中文文档（微波室员工手册/岗位说明书）是微波室定制完整版，优先使用完整版。
 
 ---
 
@@ -217,7 +213,7 @@ ipd-hardware-implementation/
 - [ ] 组织愿景共创工作坊
 - [ ] 制定技术Roadmap
 - [ ] 宣布"游戏规则"（学习时间、分享要求等）
-- [ ] 建立模块产品经理制度
+- [ ] 建立模块对接机制
 
 ### 第2-3个月：机制运行
 - [ ] 启动周技术分享
@@ -271,5 +267,5 @@ ipd-hardware-implementation/
 ---
 
 **最后更新**：2026-03-17  
-**版本**：2.0  
-**状态**：已根据微波室组织架构定制完成，持续更新中...
+**版本**：3.0  
+**状态**：员工手册和岗位说明书已完成，可直接使用
