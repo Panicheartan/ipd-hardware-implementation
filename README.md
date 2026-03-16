@@ -22,6 +22,7 @@
 ```
 ipd-hardware-implementation/
 ├── 📋 [微波室管理工作方案计划.md](./微波室管理工作方案计划.md)    # 18个月总体实施方案（必读）
+├── 🎯 [微波室关键工作90天执行计划.md](./微波室关键工作90天执行计划.md)  # 前3个月关键工作计划（立即执行）
 │
 ├── 📚 docs/                          # IPD核心文档
 │   ├── [01-ipd-overview.md](./docs/01-ipd-overview.md)              # IPD核心理念和框架
@@ -71,16 +72,19 @@ ipd-hardware-implementation/
 
 ## 🚀 快速开始
 
-### 📋 第一步：阅读总体方案（必读）
-阅读 [`微波室管理工作方案计划.md`](./微波室管理工作方案计划.md) 了解18个月系统实施计划
+### 🎯 第一步：立即执行（前3个月）
+阅读 [`微波室关键工作90天执行计划.md`](./微波室关键工作90天执行计划.md) 了解**必须立即开展的5项关键工作**
 
-### 📖 第二步：了解IPD基础
+### 📋 第二步：了解总体规划
+阅读 [`微波室管理工作方案计划.md`](./微波室管理工作方案计划.md) 了解18个月系统实施蓝图
+
+### 📖 第三步：了解IPD基础
 阅读 [`docs/01-ipd-overview.md`](./docs/01-ipd-overview.md) 了解IPD核心理念
 
-### 🔧 第三步：熟悉硬件研发流程
+### 🔧 第四步：熟悉硬件研发流程
 查看 [`docs/02-hardware-ipd-flow.md`](./docs/02-hardware-ipd-flow.md) 了解硬件特有流程
 
-### 👥 第四步：建立管理体系
+### 👥 第五步：建立管理体系
 根据微波室组织架构（25人），选择对应文档：
 
 | 角色 | 推荐阅读 |
@@ -91,7 +95,7 @@ ipd-hardware-implementation/
 | **天线/射频/数字/电源工程师** | [`02-job-description-microwave.md`](./templates/hr/02-job-description-microwave.md) 岗位说明书 |
 | **学习型组织推进** | [`04-learning-organization.md`](./templates/hr/04-learning-organization.md) 学习型组织建设方案 |
 
-### 📝 第五步：使用模板
+### 📝 第六步：使用模板
 从 [`templates/`](./templates/) 目录选择合适的模板开始项目
 
 ---
