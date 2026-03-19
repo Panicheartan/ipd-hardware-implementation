@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR 管理文档 | 微波室文档中心</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室文档中心</span>
+            </a>
+        </div>
+        
+        <nav class="navbar-nav">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="hr-docs.html" class="nav-link active">HR管理</a>
+            <a href="ipd-templates.html" class="nav-link">IPD模板</a>
+            <a href="handbook/" class="nav-link">员工手册</a>
+        </nav>
+
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation/tree/main/templates/hr" class="nav-link icon" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <h1>HR 管理文档</h1>
+        <p>人力资源管理相关文档，包含员工手册、绩效管理办法、岗位说明书等</p>
+    </section>
+
+    <!-- 核心文档 -->
+    <section class="doc-section">
+        <div class="container">
+            <h2 class="doc-section-title">
+                <span class="doc-section-icon" style="background: rgba(255, 90, 54, 0.1)">📋</span>
+                核心管理文档
+            </h2>
+            
+            <div class="doc-list">
+                <!-- 员工手册 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">📖</div>
+                    <div class="doc-item-content">
+                        <h3>员工手册</h3>
+                        <p>微波室员工手册完整版，包含团队介绍、组织架构、行为准则、IPD流程规范、培训发展、奖惩制度等内容。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 完整版</span>
+                            <span>🕐 2024-03-17</span>
+                            <span>🏷️ 必备</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="handbook/" class="btn btn-primary">查看网页版</a>
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/hr/01-employee-handbook.md" class="btn btn-secondary" target="_blank">Markdown</a>
+                    </div>
+                </div>
+
+                <!-- 绩效管理办法 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">📊</div>
+                    <div class="doc-item-content">
+                        <h3>绩效管理办法</h3>
+                        <p>完整的绩效考核管理体系，针对技术开发组、产品开发组、产品管理组设计差异化考核维度，包含考核指标、等级评定、面谈规范、结果应用等。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 完整版</span>
+                            <span>🕐 2024-03-17</span>
+                            <span>🏷️ 核心</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/hr/03-performance-management.md" class="btn btn-primary" target="_blank">查看文档</a>
+                    </div>
+                </div>
+
+                <!-- 岗位说明书 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">👤</div>
+                    <div class="doc-item-content">
+                        <h3>微波室岗位说明书</h3>
+                        <p>详细的岗位说明书，涵盖技术开发组（天线/射频/数字/电源）、产品开发组、产品管理组各岗位，包含职责、任职要求、绩效考核要点。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 完整版</span>
+                            <span>🕐 2024-03-17</span>
+                            <span>🏷️ 核心</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/hr/02-job-description-microwave.md" class="btn btn-primary" target="_blank">查看文档</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学习型组织 -->
+    <section class="doc-section">
+        <div class="container">
+            <h2 class="doc-section-title">
+                <span class="doc-section-icon" style="background: rgba(16, 185, 129, 0.1)">🌱</span>
+                组织发展
+            </h2>
+            
+            <div class="doc-list">
+                <!-- 学习型组织建设 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">📚</div>
+                    <div class="doc-item-content">
+                        <h3>学习型组织建设方案</h3>
+                        <p>基于《第五项修炼》与IPD融合的学习型组织建设方案，包含五项修炼落地实践、IPD各阶段融合机制、实施路线图、评估指标。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 完整版</span>
+                            <span>🕐 2024-03-17</span>
+                            <span>🏷️ 发展</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/hr/04-learning-organization.md" class="btn btn-primary" target="_blank">查看文档</a>
+                    </div>
+                </div>
+
+                <!-- 管理者行动指南 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">🎯</div>
+                    <div class="doc-item-content">
+                        <h3>管理者行动指南</h3>
+                        <p>管理者行动指南，包含战略层（主任/副主任）、组织层（各组长）、执行层（全员）工作指引，以及管理者自我修炼、检查清单。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 完整版</span>
+                            <span>🕐 2024-03-17</span>
+                            <span>🏷️ 管理</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/hr/05-manager-action-guide.md" class="btn btn-primary" target="_blank">查看文档</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 参考文档 -->
+    <section class="doc-section">
+        <div class="container">
+            <h2 class="doc-section-title">
+                <span class="doc-section-icon" style="background: rgba(139, 92, 246, 0.1)">📎</span>
+                参考文档
+            </h2>
+            
+            <div class="doc-list">
+                <!-- 通用岗位说明书 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">📄</div>
+                    <div class="doc-item-content">
+                        <h3>通用岗位说明书模板</h3>
+                        <p>通用版硬件研发岗位说明书，可作为制定具体岗位说明书的参考模板。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-16</span>
+                            <span>🏷️ 参考</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/hr/02-job-description.md" class="btn btn-secondary" target="_blank">查看</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 微波室 · IPD 管理体系</p>
+            <p>硬件研发团队管理文档中心</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPD 研发模板 | 微波室文档中心</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室文档中心</span>
+            </a>
+        </div>
+        
+        <nav class="navbar-nav">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="hr-docs.html" class="nav-link">HR管理</a>
+            <a href="ipd-templates.html" class="nav-link active">IPD模板</a>
+            <a href="handbook/" class="nav-link">员工手册</a>
+        </nav>
+
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation/tree/main/templates" class="nav-link icon" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <h1>IPD 研发模板</h1>
+        <p>硬件研发全流程管理模板，覆盖需求、设计、评审、风险、变更、测试等各环节</p>
+    </section>
+
+    <!-- 需求与设计 -->
+    <section class="doc-section">
+        <div class="container">
+            <h2 class="doc-section-title">
+                <span class="doc-section-icon" style="background: rgba(59, 130, 246, 0.1)">📝</span>
+                需求与设计
+            </h2>
+            
+            <div class="doc-list">
+                <!-- 需求规格说明书 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">📋</div>
+                    <div class="doc-item-content">
+                        <h3>需求规格说明书模板 (SRS)</h3>
+                        <p>硬件需求规格说明书模板，包含市场与业务需求、功能需求、硬件性能需求、电气性能、环境适应性、可靠性指标、接口需求等。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-16</span>
+                            <span>🏷️ 核心</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/03-hardware-srs-template.md" class="btn btn-primary" target="_blank">查看模板</a>
+                    </div>
+                </div>
+
+                <!-- 设计评审检查表 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">✅</div>
+                    <div class="doc-item-content">
+                        <h3>设计评审检查表</h3>
+                        <p>支持多种评审阶段：概念、计划、初步设计、详细设计、样机、量产。包含电路设计、元器件选型、PCB设计、机械设计、测试验证等检查项。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-16</span>
+                            <span>🏷️ 核心</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/04-design-review-checklist.md" class="btn btn-primary" target="_blank">查看模板</a>
+                    </div>
+                </div>
+
+                <!-- 项目章程 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">📜</div>
+                    <div class="doc-item-content">
+                        <h3>硬件项目章程模板</h3>
+                        <p>项目启动文档模板，包含项目概述、目标与范围、里程碑计划、团队组织、资源预算、风险初步识别、审批签字等。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-15</span>
+                            <span>🏷️ 启动</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/project-charter/硬件项目章程模板.md" class="btn btn-primary" target="_blank">查看模板</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 评审与阶段管理 -->
+    <section class="doc-section">
+        <div class="container">
+            <h2 class="doc-section-title">
+                <span class="doc-section-icon" style="background: rgba(16, 185, 129, 0.1)">🎯</span>
+                评审与阶段管理
+            </h2>
+            
+            <div class="doc-list">
+                <!-- 阶段评审报告 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">📊</div>
+                    <div class="doc-item-content">
+                        <h3>阶段评审报告模板</h3>
+                        <p>适用于IPD各阶段评审（CDCP、PDCP、ADCP等），包含项目状态、评审内容、问题汇总、评审结论、下阶段计划等。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-16</span>
+                            <span>🏷️ 评审</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/05-phase-review-report.md" class="btn btn-primary" target="_blank">查看模板</a>
+                    </div>
+                </div>
+
+                <!-- 会议纪要 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">📝</div>
+                    <div class="doc-item-content">
+                        <h3>项目会议纪要模板</h3>
+                        <p>标准会议纪要模板，包含会议基本信息、参会人员、议程、会议内容、决议、行动项跟踪、签字确认等。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-16</span>
+                            <span>🏷️ 日常</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/10-meeting-minutes-template.md" class="btn btn-primary" target="_blank">查看模板</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 风险与问题管理 -->
+    <section class="doc-section">
+        <div class="container">
+            <h2 class="doc-section-title">
+                <span class="doc-section-icon" style="background: rgba(245, 158, 11, 0.1)">⚠️</span>
+                风险与问题管理
+            </h2>
+            
+            <div class="doc-list">
+                <!-- 风险跟踪表 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">🔴</div>
+                    <div class="doc-item-content">
+                        <h3>项目风险跟踪表</h3>
+                        <p>风险统计看板、开放风险清单、风险详细信息、风险等级评估（概率×影响）、缓解策略、风险矩阵和趋势图。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-16</span>
+                            <span>🏷️ 核心</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/06-risk-tracking-table.md" class="btn btn-primary" target="_blank">查看模板</a>
+                    </div>
+                </div>
+
+                <!-- 问题跟踪表 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">❗</div>
+                    <div class="doc-item-content">
+                        <h3>问题跟踪表</h3>
+                        <p>问题统计（按状态、优先级、类别）、开放问题清单（P1-P4分级）、问题详细信息、处理记录、状态流转说明。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-16</span>
+                            <span>🏷️ 核心</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/07-issue-tracking-table.md" class="btn btn-primary" target="_blank">查看模板</a>
+                    </div>
+                </div>
+
+                <!-- 变更请求表 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">🔄</div>
+                    <div class="doc-item-content">
+                        <h3>变更请求表 (CR)</h3>
+                        <p>变更描述、变更影响分析（需求、设计、进度、成本、质量）、变更方案、CCB审批、变更实施跟踪。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-16</span>
+                            <span>🏷️ 核心</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/08-change-request-form.md" class="btn btn-primary" target="_blank">查看模板</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 测试验证 -->
+    <section class="doc-section">
+        <div class="container">
+            <h2 class="doc-section-title">
+                <span class="doc-section-icon" style="background: rgba(139, 92, 246, 0.1)">🧪</span>
+                测试验证
+            </h2>
+            
+            <div class="doc-list">
+                <!-- 测试计划 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">🧪</div>
+                    <div class="doc-item-content">
+                        <h3>测试计划模板</h3>
+                        <p>测试策略（级别、类型、准入准出标准）、测试资源、测试用例（功能、性能、可靠性、EMC、安规）、进度里程碑、缺陷管理。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 模板</span>
+                            <span>🕐 2024-03-16</span>
+                            <span>🏷️ 验证</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/templates/09-test-plan-template.md" class="btn btn-primary" target="_blank">查看模板</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 参考文档 -->
+    <section class="doc-section">
+        <div class="container">
+            <h2 class="doc-section-title">
+                <span class="doc-section-icon" style="background: rgba(107, 114, 128, 0.1)">📚</span>
+                IPD 知识库
+            </h2>
+            
+            <div class="doc-list">
+                <!-- IPD概述 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">📖</div>
+                    <div class="doc-item-content">
+                        <h3>IPD 概述</h3>
+                        <p>IPD（集成产品开发）基本概念、核心思想、华为IPD实践、实施收益等知识介绍。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 知识</span>
+                            <span>🕐 2024-03-15</span>
+                            <span>🏷️ 基础</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/docs/01-ipd-overview.md" class="btn btn-secondary" target="_blank">查看</a>
+                    </div>
+                </div>
+
+                <!-- 硬件IPD流程 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">🔧</div>
+                    <div class="doc-item-content">
+                        <h3>硬件 IPD 流程</h3>
+                        <p>针对硬件研发的IPD流程详解，包含六阶段定义、各阶段输入输出、关键评审点、硬件特殊性考虑。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 知识</span>
+                            <span>🕐 2024-03-15</span>
+                            <span>🏷️ 流程</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/docs/02-hardware-ipd-flow.md" class="btn btn-secondary" target="_blank">查看</a>
+                    </div>
+                </div>
+
+                <!-- 有用链接 -->
+                <div class="doc-item">
+                    <div class="doc-item-icon">🔗</div>
+                    <div class="doc-item-content">
+                        <h3>有用链接</h3>
+                        <p>IPD相关书籍、论文、华为案例、在线资源等参考资料汇总。</p>
+                        <div class="doc-item-meta">
+                            <span>📄 资源</span>
+                            <span>🕐 2024-03-15</span>
+                            <span>🏷️ 参考</span>
+                        </div>
+                    </div>
+                    <div class="doc-item-actions">
+                        <a href="https://github.com/Panicheartan/ipd-hardware-implementation/blob/main/resources/useful-links.md" class="btn btn-secondary" target="_blank">查看</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 微波室 · IPD 管理体系</p>
+            <p>硬件研发团队管理文档中心</p>
+        </div>
+    </footer>
+
+</body>
+</html>
