@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微波室 IPD 管理体系</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f1117 0%, #161921 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: #FF5A36;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+            font-size: 40px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            background: linear-gradient(90deg, #FF5A36, #FF8A6B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            color: #9ca3af;
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+        .links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .link-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 24px 32px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            min-width: 200px;
+        }
+        .link-card:hover {
+            background: rgba(255,90,54,0.1);
+            border-color: #FF5A36;
+            transform: translateY(-2px);
+        }
+        .link-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .link-card span {
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        .redirect {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+    </style>
+    <meta http-equiv="refresh" content="0; url=./handbook/">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">📋</div>
+        <h1>微波室 IPD 管理体系</h1>
+        <p>硬件研发管理文档中心</p>
+        
+        <div class="links">
+            <a href="./handbook/" class="link-card">
+                <h3>📖 员工手册</h3>
+                <span>查看完整版</span>
+            </a>
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="link-card" target="_blank">
+                <h3>🐙 GitHub</h3>
+                <span>查看源码</span>
+            </a>
+        </div>
+        
+        <p class="redirect">正在跳转到员工手册... <a href="./handbook/">点击这里</a></p>
+    </div>
+</body>
+</html>
