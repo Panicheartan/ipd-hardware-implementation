@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>员工手册编写指南 | 微波室IPD文档中心</title>
+    <link rel="stylesheet" href="../../../../../../../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="../../../../../../../index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室文档中心</span>
+            </a>
+        </div>
+        
+        <div class="navbar-center">
+            <div class="nav-links">
+                <a href="../../../../../../../index.html" class="nav-link">首页</a>
+                <a href="../../../../../../../guides/index.html" class="nav-link">实施指南</a>
+                <a href="../../../../../../../ipd/index.html" class="nav-link">IPD流程</a>
+                <a href="../../../../../../../templates/index.html" class="nav-link">模板</a>
+                <a href="../../../../../../../hr/index.html" class="nav-link">HR管理</a>
+                <a href="../../../../../../../handbook/index.html" class="nav-link">员工手册</a>
+            </div>
+        </div>
+        
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="nav-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="layout" style="margin-top: 64px;">
+        <!-- 侧边目录 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="切换侧边栏">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <span class="sidebar-title">文档目录</span>
+            </div>
+            <nav class="sidebar-nav" id="toc"></nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content" id="mainContent">
+            <div class="content-section">
+                <h1>员工手册编写指南</h1>
+                <h1>微波室员工手册编写指南</h1>
+<h2>为什么首先要编写员工手册？</h2>
+<h3>员工手册的5个核心价值</h3>
+<table>
+<thead>
+<tr>
+<th align="left">价值</th>
+<th align="left">说明</th>
+<th align="left">对微波室的意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>统一认知</strong></td>
+<td align="left">让25人对&quot;我们是谁、我们要什么&quot;有共同理解</td>
+<td align="left">避免各自为政，形成合力</td>
+</tr>
+<tr>
+<td align="left"><strong>明确规则</strong></td>
+<td align="left">清楚什么是鼓励的、什么是禁止的</td>
+<td align="left">减少模糊地带，降低管理成本</td>
+</tr>
+<tr>
+<td align="left"><strong>快速融入</strong></td>
+<td align="left">新人来了知道怎么适应</td>
+<td align="left">缩短新人适应期，降低流失率</td>
+</tr>
+<tr>
+<td align="left"><strong>有据可依</strong></td>
+<td align="left">处理问题时&quot;对事不对人&quot;</td>
+<td align="left">避免主观随意，公平公正</td>
+</tr>
+<tr>
+<td align="left"><strong>文化传承</strong></td>
+<td align="left">把价值观、做事方式固化为文字</td>
+<td align="left">不因人员变动而改变</td>
+</tr>
+</tbody></table>
+<h3>为什么现在就要编写？</h3>
+<ul>
+<li><strong>25人团队</strong>已经到了需要&quot;书同文、车同轨&quot;的阶段</li>
+<li><strong>IPD和学习型组织建设</strong>需要统一的行为准则</li>
+<li>**三个组（产品管理/产品开发/技术开发）**需要明确的协作规则</li>
+<li><strong>没有手册</strong>会导致标准不一、理解偏差、执行走样</li>
+</ul>
+<hr>
+<h2>员工手册应该包含哪些内容？</h2>
+<h3>标准结构（9章）</h3>
+<pre><code>┌─────────────────────────────────────────┐
+│  封面                                   │
+│  - 手册名称、版本、生效日期              │
+├─────────────────────────────────────────┤
+│  第一章：欢迎致辞                        │
+│  - 欢迎词、部门介绍、团队愿景            │
+├─────────────────────────────────────────┤
+│  第二章：组织架构                        │
+│  - 组织架构图、各组职责、汇报关系        │
+├─────────────────────────────────────────┤
+│  第三章：行为准则（核心价值观）          │
+│  - 价值观定义、行为要求、正负案例        │
+├─────────────────────────────────────────┤
+│  第四章：工作制度                        │
+│  - 考勤、请假、加班、会议、保密          │
+├─────────────────────────────────────────┤
+│  第五章：IPD研发流程规范                 │
+│  - 研发阶段、角色职责、文档规范、变更    │
+├─────────────────────────────────────────┤
+│  第六章：培训与发展                      │
+│  - 培训体系、职业发展通道、技能认证      │
+├─────────────────────────────────────────┤
+│  第七章：奖惩制度                        │
+│  - 奖励类型、惩戒分类、申诉机制          │
+├─────────────────────────────────────────┤
+│  第八章：沟通与反馈                      │
+│  - 沟通渠道、反馈机制、申诉途径          │
+├─────────────────────────────────────────┤
+│  第九章：附则                            │
+│  - 常用联系方式、系统地址、变更记录      │
+└─────────────────────────────────────────┘
+</code></pre>
+<hr>
+<h2>各章详细内容</h2>
+<h3>第一章：欢迎致辞（建立归属感）</h3>
+<p><strong>为什么要写：</strong></p>
+<ul>
+<li>让新人感受到被重视和欢迎</li>
+<li>建立身份认同（&quot;我是微波室的一员&quot;）</li>
+<li>明确团队愿景（&quot;我们要成为什么样的团队&quot;）</li>
+</ul>
+<p><strong>应该包含：</strong></p>
+<ol>
+<li><p><strong>欢迎词</strong></p>
+<ul>
+<li>真诚的欢迎，介绍微波室的价值</li>
+<li>对新人的期望</li>
+</ul>
+</li>
+<li><p><strong>部门介绍</strong></p>
+<ul>
+<li>微波室定位：微波探测与通信产品研发</li>
+<li>组织架构：产品管理/产品开发/技术开发三个组</li>
+<li>人员规模：25人</li>
+</ul>
+</li>
+<li><p><strong>团队愿景</strong></p>
+<ul>
+<li>成为微波探测与通信领域的技术引领者</li>
+<li>打造模块化、平台化的技术体系</li>
+<li>实现产品快速开发与持续创新</li>
+</ul>
+</li>
+<li><p><strong>团队使命</strong></p>
+<ul>
+<li>技术领先：四大模块（天线/射频/数字/电源）持续创新</li>
+<li>产品卓越：探测类、通信类产品性能稳定、质量可靠</li>
+<li>协同高效：产品开发与技术开发高效协同</li>
+<li>知识传承：构建学习型组织</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3>第二章：组织架构（明确&quot;我在哪里&quot;）</h3>
+<p><strong>为什么要写：</strong></p>
+<ul>
+<li>让每个人清楚组织的整体结构</li>
+<li>明确&quot;我向谁汇报、谁向我汇报&quot;</li>
+<li>知道遇到问题应该找谁</li>
+</ul>
+<p><strong>应该包含：</strong></p>
+<ol>
+<li><p><strong>组织架构图</strong></p>
+<ul>
+<li>主任/副主任</li>
+<li>产品管理组（8人）：组长+研发管理3人+可靠性4人</li>
+<li>产品开发组（4人）：组长+3个产品工程师</li>
+<li>技术开发组（11人）：组长+天线3人+射频3人+数字2人+电源2人</li>
+</ul>
+</li>
+<li><p><strong>各组核心职责</strong></p>
+<ul>
+<li>产品管理组：需求转化、项目管理、DFX监督评估</li>
+<li>产品开发组：单机架构设计、模块集成、产品开发</li>
+<li>技术开发组：四大类模块开发、技术迭代、技术支持</li>
+</ul>
+</li>
+<li><p><strong>汇报关系</strong></p>
+<ul>
+<li>普通员工 → 组长 → 副主任 → 主任</li>
+<li>明确跨组协作的接口人</li>
+</ul>
+</li>
+<li><p><strong>组间协作关系</strong></p>
+<ul>
+<li>产品开发组 ↔ 技术开发组：模块需求对接</li>
+<li>产品管理组 ↔ 产品开发组：需求输入、DFX评估</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3>第三章：行为准则（核心价值观）</h3>
+<p><strong>为什么要写：</strong></p>
+<ul>
+<li>价值观是团队的&quot;灵魂&quot;，决定团队怎么做事</li>
+<li>没有价值观，团队就是一盘散沙</li>
+<li>价值观是评价行为对错的标准</li>
+</ul>
+<p><strong>应该包含（5-6个核心价值观）：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">价值观</th>
+<th align="left">定义</th>
+<th align="left">行为要求（Do）</th>
+<th align="left">禁止行为（Don&#39;t）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>客户导向</strong></td>
+<td align="left">以客户需求为中心</td>
+<td align="left">深入理解需求、快速响应反馈、主动沟通</td>
+<td align="left">忽视客户需求、推诿责任、闭门造车</td>
+</tr>
+<tr>
+<td align="left"><strong>质量第一</strong></td>
+<td align="left">质量是产品的生命线</td>
+<td align="left">严守质量标准、不妥协不侥幸、一次性做对</td>
+<td align="left">隐瞒缺陷、数据造假、侥幸心理</td>
+</tr>
+<tr>
+<td align="left"><strong>协同合作</strong></td>
+<td align="left">团队成功大于个人成功</td>
+<td align="left">主动沟通、乐于分享、互相支持、跨组配合</td>
+<td align="left">信息孤岛、恶意不配合、破坏氛围</td>
+</tr>
+<tr>
+<td align="left"><strong>持续改进</strong></td>
+<td align="left">追求卓越的永动力</td>
+<td align="left">主动学习、勇于创新、复盘总结、分享知识</td>
+<td align="left">固步自封、重复犯错、拒绝学习</td>
+</tr>
+<tr>
+<td align="left"><strong>诚信正直</strong></td>
+<td align="left">做人做事的底线</td>
+<td align="left">实事求是、勇于担责、信守承诺、廉洁自律</td>
+<td align="left">虚报瞒报、推卸责任、违规违纪</td>
+</tr>
+</tbody></table>
+<p><strong>每个价值观配一个简短案例（正面+反面）：</strong></p>
+<ul>
+<li>正面案例：体现价值观的行为</li>
+<li>反面案例：违反价值观的行为及后果</li>
+</ul>
+<hr>
+<h3>第四章：工作制度（日常行为规范）</h3>
+<p><strong>为什么要写：</strong></p>
+<ul>
+<li>明确日常工作的基本规则</li>
+<li>减少因&quot;不知道&quot;导致的冲突</li>
+<li>让管理有章可循</li>
+</ul>
+<p><strong>应该包含：</strong></p>
+<h4>4.1 考勤管理</h4>
+<ul>
+<li>工作时间：周一至周五 9:00-18:00（弹性±1小时）</li>
+<li>午休时间：12:00-13:00</li>
+<li>迟到/早退规定：每月累计不超过3次，每次不超过30分钟</li>
+<li>请假流程：提前申请、紧急情况处理</li>
+<li>加班管理：需提前申请、优先调休</li>
+</ul>
+<h4>4.2 会议规范</h4>
+<ul>
+<li>周协调会：每周三下午，产品开发组↔技术开发组</li>
+<li>技术分享会：每周五下午，全员参与</li>
+<li>会议纪律：准时参加、提前准备、有结论有行动项</li>
+<li>会议纪要：24小时内发出</li>
+</ul>
+<h4>4.3 工作纪律</h4>
+<ul>
+<li><strong>信息保密</strong>：严守商业秘密、技术机密</li>
+<li><strong>知识产权</strong>：职务发明归公司、及时申请专利</li>
+<li><strong>信息安全</strong>：账号密码管理、禁止非授权软件</li>
+<li><strong>工作场所</strong>：工位整洁、实验室安全</li>
+</ul>
+<h4>4.4 文档规范</h4>
+<ul>
+<li>文档命名规范</li>
+<li>版本管理规范</li>
+<li>存储位置规范</li>
+<li>保密级别规范</li>
+</ul>
+<h4>4.5 沟通规范</h4>
+<ul>
+<li>邮件规范：标题、收件人、正文结构、附件命名</li>
+<li>即时通讯：在线状态、紧急事项处理</li>
+<li>跨组沟通：先找组长、重大事项抄送主任</li>
+</ul>
+<hr>
+<h3>第五章：IPD研发流程规范（工作流程）</h3>
+<p><strong>为什么要写：</strong></p>
+<ul>
+<li>IPD是微波室的核心工作流程</li>
+<li>让全员了解项目怎么推进</li>
+<li>明确各阶段交付物和评审点</li>
+</ul>
+<p><strong>应该包含：</strong></p>
+<h4>5.1 研发阶段定义</h4>
+<table>
+<thead>
+<tr>
+<th align="left">阶段</th>
+<th align="left">目标</th>
+<th align="left">关键交付物</th>
+<th align="left">评审点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">概念阶段</td>
+<td align="left">验证产品机会</td>
+<td align="left">市场需求文档、概念方案</td>
+<td align="left">CDCP</td>
+</tr>
+<tr>
+<td align="left">计划阶段</td>
+<td align="left">制定详细计划</td>
+<td align="left">需求规格书、项目计划</td>
+<td align="left">PDCP</td>
+</tr>
+<tr>
+<td align="left">开发阶段</td>
+<td align="left">完成产品设计</td>
+<td align="left">设计文档、原理图、PCB</td>
+<td align="left">设计评审</td>
+</tr>
+<tr>
+<td align="left">验证阶段</td>
+<td align="left">验证产品功能</td>
+<td align="left">测试报告、试产报告</td>
+<td align="left">TR评审</td>
+</tr>
+<tr>
+<td align="left">发布阶段</td>
+<td align="left">产品上市</td>
+<td align="left">量产准备、发布材料</td>
+<td align="left">ADCP</td>
+</tr>
+</tbody></table>
+<h4>5.2 关键角色职责</h4>
+<ul>
+<li>项目经理（产品管理组）：项目整体管理、跨组协调</li>
+<li>系统工程师（产品开发组）：架构设计、指标分解</li>
+<li>各专业工程师（技术开发组）：模块设计、技术支持</li>
+<li>DFX工程师（产品管理组）：可靠性/EMC/环境评估</li>
+</ul>
+<h4>5.3 文档管理规范</h4>
+<ul>
+<li>文档命名规范：[项目编号]<em>[类型]</em>[名称]<em>[版本]</em>[日期]</li>
+<li>版本管理：草稿V0.x、评审中V1.0_RCx、已发布V1.0</li>
+<li>存储位置：PLM系统、知识库</li>
+</ul>
+<h4>5.4 变更管理规范</h4>
+<ul>
+<li>变更分级：一级（影响目标）、二级（影响功能）、三级（文档优化）</li>
+<li>变更流程：申请→分析→审批→实施→验证→关闭</li>
+</ul>
+<h4>5.5 组间协作规范</h4>
+<ul>
+<li>需求提出→评估反馈→方案制定→开发交付→验收确认</li>
+<li>协作接口：产品开发组 → 技术开发组组长 → 各专业工程师</li>
+</ul>
+<hr>
+<h3>第六章：培训与发展（成长路径）</h3>
+<p><strong>为什么要写：</strong></p>
+<ul>
+<li>让员工看到成长空间和发展方向</li>
+<li>建立学习文化</li>
+<li>保留核心人才</li>
+</ul>
+<p><strong>应该包含：</strong></p>
+<h4>6.1 培训体系</h4>
+<ul>
+<li>新员工培训：入职1周内，了解部门、流程、工具</li>
+<li>IPD流程培训：季度培训，角色职责、阶段评审</li>
+<li>专业技术培训：月度培训，天线/射频/数字/电源</li>
+<li>管理培训：项目管理、团队协作</li>
+</ul>
+<h4>6.2 职业发展通道</h4>
+<ul>
+<li>技术开发序列：助理→工程师→高级→专家</li>
+<li>产品开发序列：助理→工程师→高级→主任→专家</li>
+<li>产品管理序列：助理→工程师→高级→专家/项目经理</li>
+<li>管理序列：组长→副主任→主任</li>
+</ul>
+<h4>6.3 技能认证</h4>
+<ul>
+<li>各方向专业认证（初级/中级/高级/专家）</li>
+<li>IPD流程认证</li>
+<li>认证与晋升、薪酬挂钩</li>
+</ul>
+<h4>6.4 学习机制</h4>
+<ul>
+<li>周技术分享：每周五下午，全员参与</li>
+<li>导师制：新员工配导师，帮助成长</li>
+<li>轮岗机制：跨组轮岗，培养复合型人才</li>
+</ul>
+<hr>
+<h3>第七章：奖惩制度（激励导向）</h3>
+<p><strong>为什么要写：</strong></p>
+<ul>
+<li>明确什么是鼓励的、什么是禁止的</li>
+<li>让优秀者得到认可，让违规者受到约束</li>
+<li>建立公平的评价体系</li>
+</ul>
+<p><strong>应该包含：</strong></p>
+<h4>7.1 奖励机制</h4>
+<table>
+<thead>
+<tr>
+<th align="left">奖项</th>
+<th align="left">评选标准</th>
+<th align="left">奖励形式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">技术创新奖</td>
+<td align="left">重大技术突破、专利授权</td>
+<td align="left">奖金+证书</td>
+</tr>
+<tr>
+<td align="left">质量之星</td>
+<td align="left">零缺陷交付、质量改进</td>
+<td align="left">奖金+证书</td>
+</tr>
+<tr>
+<td align="left">优秀员工</td>
+<td align="left">季度综合表现突出</td>
+<td align="left">奖金+证书</td>
+</tr>
+<tr>
+<td align="left">最佳分享</td>
+<td align="left">技术分享最受欢迎</td>
+<td align="left">奖金+证书</td>
+</tr>
+<tr>
+<td align="left">最佳导师</td>
+<td align="left">辅导效果突出</td>
+<td align="left">奖金+证书</td>
+</tr>
+<tr>
+<td align="left">项目成功奖</td>
+<td align="left">项目按时按质完成</td>
+<td align="left">团队奖金</td>
+</tr>
+</tbody></table>
+<h4>7.2 惩戒机制</h4>
+<table>
+<thead>
+<tr>
+<th align="left">级别</th>
+<th align="left">行为</th>
+<th align="left">惩戒措施</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">提醒</td>
+<td align="left">轻微违规、初次犯错</td>
+<td align="left">口头提醒</td>
+</tr>
+<tr>
+<td align="left">警告</td>
+<td align="left">一般违规、重复犯错</td>
+<td align="left">书面警告，影响绩效</td>
+</tr>
+<tr>
+<td align="left">严重警告</td>
+<td align="left">较重违规</td>
+<td align="left">降薪/降职</td>
+</tr>
+<tr>
+<td align="left">解除合同</td>
+<td align="left">严重违规、触犯法律</td>
+<td align="left">解除合同</td>
+</tr>
+</tbody></table>
+<h4>7.3 常见违规行为</h4>
+<ul>
+<li>考勤类：无故迟到早退、旷工</li>
+<li>保密类：泄露公司机密</li>
+<li>质量类：故意隐瞒缺陷、数据造假</li>
+<li>协作类：恶意不配合、破坏团队氛围</li>
+<li>诚信类：虚报工时、冒领物资</li>
+</ul>
+<hr>
+<h3>第八章：沟通与反馈（诉求渠道）</h3>
+<p><strong>为什么要写：</strong></p>
+<ul>
+<li>让员工知道有问题找谁</li>
+<li>建立畅通的反馈渠道</li>
+<li>及时发现问题、解决问题</li>
+</ul>
+<p><strong>应该包含：</strong></p>
+<h4>8.1 沟通渠道</h4>
+<table>
+<thead>
+<tr>
+<th align="left">渠道</th>
+<th align="left">用途</th>
+<th align="left">联系方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">直属上级</td>
+<td align="left">日常工作、绩效、发展</td>
+<td align="left">面对面/OA/邮件</td>
+</tr>
+<tr>
+<td align="left">组长</td>
+<td align="left">组内事务、资源协调</td>
+<td align="left">面对面/OA/邮件</td>
+</tr>
+<tr>
+<td align="left">主任/副主任</td>
+<td align="left">重大事项、建议反馈</td>
+<td align="left">邮件/面谈</td>
+</tr>
+<tr>
+<td align="left">综合管理</td>
+<td align="left">制度、后勤、活动</td>
+<td align="left">OA/邮件</td>
+</tr>
+</tbody></table>
+<h4>8.2 反馈机制</h4>
+<ul>
+<li>试用期面谈：入职1个月、3个月</li>
+<li>绩效面谈：每季度一次</li>
+<li>发展面谈：每年一次</li>
+<li>满意度调查：季度团队、年度全员</li>
+<li>意见箱/热线：匿名反馈渠道</li>
+</ul>
+<h4>8.3 申诉机制</h4>
+<ul>
+<li>对处理结果有异议可向上级或综合管理申诉</li>
+<li>5个工作日内给予答复</li>
+</ul>
+<hr>
+<h3>第九章：附则（实用信息）</h3>
+<p><strong>为什么要写：</strong></p>
+<ul>
+<li>提供常用的联系信息和系统地址</li>
+<li>方便员工快速找到需要的信息</li>
+</ul>
+<p><strong>应该包含：</strong></p>
+<h4>9.1 常用联系方式</h4>
+<table>
+<thead>
+<tr>
+<th align="left">部门/人员</th>
+<th align="left">职责</th>
+<th align="left">联系方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">行政前台</td>
+<td align="left">接待、快递、办公用品</td>
+<td align="left">内线XXX</td>
+</tr>
+<tr>
+<td align="left">IT支持</td>
+<td align="left">电脑、网络、系统问题</td>
+<td align="left">内线XXX</td>
+</tr>
+<tr>
+<td align="left">综合管理</td>
+<td align="left">制度、后勤、员工关系</td>
+<td align="left">内线XXX</td>
+</tr>
+</tbody></table>
+<h4>9.2 常用系统地址</h4>
+<table>
+<thead>
+<tr>
+<th align="left">系统</th>
+<th align="left">用途</th>
+<th align="left">地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">OA系统</td>
+<td align="left">审批、考勤、公告</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">PLM系统</td>
+<td align="left">产品数据管理</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">知识库</td>
+<td align="left">技术文档存储</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">项目管理</td>
+<td align="left">项目计划、任务跟踪</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h4>9.3 文档变更记录</h4>
+<ul>
+<li>版本号、日期、变更内容、变更人</li>
+</ul>
+<h4>9.4 确认签字页</h4>
+<ul>
+<li>员工签字确认已阅读并理解手册</li>
+</ul>
+<hr>
+<h2>编写建议</h2>
+<h3>编写顺序</h3>
+<p>建议按以下顺序编写：</p>
+<pre><code>第1周：第一章（欢迎致辞）+ 第二章（组织架构）
+       → 建立归属感和清晰结构
+
+第2周：第三章（行为准则）+ 第四章（工作制度）
+       → 明确价值观和日常规则
+
+第3周：第五章（IPD流程）+ 第六章（培训发展）
+       → 核心工作流程和成长路径
+
+第4周：第七章（奖惩）+ 第八章（沟通）+ 第九章（附则）
+       → 激励约束和实用信息
+</code></pre>
+<h3>编写要点</h3>
+<table>
+<thead>
+<tr>
+<th align="left">要点</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>简洁明了</strong></td>
+<td align="left">每句话都要有用，避免空话套话</td>
+</tr>
+<tr>
+<td align="left"><strong>具体可操作</strong></td>
+<td align="left">写清楚&quot;怎么做&quot;，不只是&quot;要做什么&quot;</td>
+</tr>
+<tr>
+<td align="left"><strong>正面表述为主</strong></td>
+<td align="left">多写&quot;要怎么做&quot;，少写&quot;不要怎么做&quot;</td>
+</tr>
+<tr>
+<td align="left"><strong>案例辅助</strong></td>
+<td align="left">价值观部分配简短案例，帮助理解</td>
+</tr>
+<tr>
+<td align="left"><strong>定期更新</strong></td>
+<td align="left">每年至少回顾一次，及时修订</td>
+</tr>
+</tbody></table>
+<h3>发布流程</h3>
+<ol>
+<li><strong>初稿编写</strong>（你主导，综合管理协助）</li>
+<li><strong>组长讨论</strong>（征求组长意见，完善细节）</li>
+<li><strong>全员征求意见</strong>（给员工反馈机会，增强认同感）</li>
+<li><strong>修改定稿</strong>（根据意见调整）</li>
+<li><strong>主任审批发布</strong>（正式发布，全员学习）</li>
+<li><strong>签字确认</strong>（每个人签字确认已阅读）</li>
+<li><strong>定期回顾更新</strong>（每年修订）</li>
+</ol>
+<hr>
+<h2>参考文档</h2>
+<p>我们已有的相关文档：</p>
+<ul>
+<li><a href="./templates/hr/01-employee-handbook.md"><code>templates/hr/01-employee-handbook.md</code></a> - 已有一份基础版本</li>
+<li><a href="./templates/hr/02-job-description-microwave.md"><code>templates/hr/02-job-description-microwave.md</code></a> - 岗位职责详细定义</li>
+<li><a href="./%E5%BE%AE%E6%B3%A2%E5%AE%A4%E7%AE%A1%E7%90%86%E4%BD%93%E7%B3%BB%E5%BB%BA%E8%AE%BE%E6%A0%B8%E5%BF%83%E6%96%B9%E6%A1%88.md"><code>微波室管理体系建设核心方案.md</code></a> - 职责分工和工作流程</li>
+</ul>
+<p>可以在这些文档基础上，整合形成正式的《微波室员工手册》。</p>
+<hr>
+<p><strong>需要我开始帮你编写具体的员工手册内容吗？</strong> 比如先从第一章&quot;欢迎致辞&quot;开始？</p>
+
+            </div>
+            
+            <footer style="text-align: center; padding: 40px; color: var(--text-tertiary); border-top: 1px solid var(--border-color); margin-top: 60px;">
+                <p>© 2025 微波室 | IPD硬件研发实施项目</p>
+                <p style="font-size: 0.9em; margin-top: 8px;">最后更新：2025年3月20日</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+        // 代码高亮
+        hljs.highlightAll();
+        
+        // 生成目录
+        const content = document.querySelector('.content-section');
+        const toc = document.getElementById('toc');
+        const headings = content.querySelectorAll('h2, h3');
+        
+        if (headings.length > 0) {
+            headings.forEach(heading => {
+                const link = document.createElement('a');
+                link.href = '#' + heading.id;
+                link.textContent = heading.textContent;
+                link.className = heading.tagName === 'H2' ? 'nav-link' : 'nav-link sub';
+                toc.appendChild(link);
+            });
+        }
+        
+        // 侧边栏切换
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        sidebarToggle?.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+</html>
