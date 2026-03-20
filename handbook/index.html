@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微波室员工手册 | 硬件研发团队</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" id="hljs-light">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" id="hljs-dark" disabled>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="切换侧边栏">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <a href="/" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室员工手册</span>
+            </a>
+        </div>
+        
+        <div class="navbar-center">
+            <div class="search-box">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="搜索文档..." id="searchInput">
+                <kbd class="search-shortcut">Ctrl K</kbd>
+            </div>
+        </div>
+        
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="nav-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <!-- 侧边栏 -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-group">
+                        <a href="#welcome" class="nav-link active" data-section="welcome">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            欢迎加入
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">团队介绍</div>
+                    <div class="nav-group">
+                        <a href="#org" class="nav-link" data-section="org">组织架构</a>
+                        <a href="#teams" class="nav-link" data-section="teams">各组职责</a>
+                        <a href="#vision" class="nav-link" data-section="vision">愿景使命</a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">规章制度</div>
+                    <div class="nav-group">
+                        <a href="#values" class="nav-link" data-section="values">核心价值观</a>
+                        <a href="#rules" class="nav-link" data-section="rules">行为规范</a>
+                        <a href="#attendance" class="nav-link" data-section="attendance">考勤管理</a>
+                        <a href="#communication" class="nav-link" data-section="communication">沟通协作</a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">IPD研发流程</div>
+                    <div class="nav-group">
+                        <a href="#ipd-phases" class="nav-link" data-section="ipd-phases">研发阶段</a>
+                        <a href="#ipd-roles" class="nav-link" data-section="ipd-roles">关键角色</a>
+                        <a href="#document" class="nav-link" data-section="document">文档规范</a>
+                        <a href="#change" class="nav-link" data-section="change">变更管理</a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">培训发展</div>
+                    <div class="nav-group">
+                        <a href="#training" class="nav-link" data-section="training">培训体系</a>
+                        <a href="#learning" class="nav-link" data-section="learning">学习机制</a>
+                        <a href="#career" class="nav-link" data-section="career">职业发展</a>
+                        <a href="#certification" class="nav-link" data-section="certification">技能认证</a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">奖惩福利</div>
+                    <div class="nav-group">
+                        <a href="#rewards" class="nav-link" data-section="rewards">奖励机制</a>
+                        <a href="#punishment" class="nav-link" data-section="punishment">惩戒机制</a>
+                        <a href="#benefits" class="nav-link" data-section="benefits">员工福利</a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">附录</div>
+                    <div class="nav-group">
+                        <a href="#contact" class="nav-link" data-section="contact">联系方式</a>
+                        <a href="#systems" class="nav-link" data-section="systems">常用系统</a>
+                        <a href="../hr-docs.html" class="nav-link" style="color: #FF5A36; font-weight: 600;">📚 HR文档中心 →</a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content" id="mainContent">
+            <!-- 欢迎章节 -->
+            <section id="welcome" class="content-section">
+                <h1>欢迎加入微波室</h1>
+                <p class="lead">欢迎你加入微波室！我们是公司专注于微波探测与通信产品研发的核心部门，现有成员25人。</p>
+                
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <span>关于微波室</span>
+                    </div>
+                    <p>我们致力于通过<strong>IPD（集成产品开发）体系</strong>和<strong>学习型组织建设</strong>，打造高性能、高可靠性的微波产品。</p>
+                </div>
+
+                <h2>团队结构</h2>
+                <p>微波室分为三个实体组和一个虚拟综合管理团队：</p>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon product">📋</div>
+                        <h3>产品管理组</h3>
+                        <p class="card-meta">8人</p>
+                        <p>负责需求转化、项目管理、DFX监督与评估</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon dev">🔧</div>
+                        <h3>产品开发组</h3>
+                        <p class="card-meta">4人</p>
+                        <p>负责探测类（2条线）和通信类产品开发</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon tech">⚡</div>
+                        <h3>技术开发组</h3>
+                        <p class="card-meta">11人</p>
+                        <p>负责天线、射频、数字、电源四大类模块开发</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon admin">📊</div>
+                        <h3>虚拟综合管理</h3>
+                        <p class="card-meta">兼职</p>
+                        <p>负责档案、安全、6S、宣传、制度建设</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 愿景使命 -->
+            <section id="vision" class="content-section">
+                <h2>团队愿景</h2>
+                <blockquote class="vision-quote">
+                    成为微波探测与通信领域的技术引领者，打造模块化、平台化的技术体系，实现产品快速开发与持续创新。
+                </blockquote>
+
+                <h3>团队使命</h3>
+                <div class="mission-list">
+                    <div class="mission-item">
+                        <span class="mission-icon">🎯</span>
+                        <div>
+                            <strong>技术领先</strong>
+                            <p>在天线、射频、数字、电源四大领域持续创新</p>
+                        </div>
+                    </div>
+                    <div class="mission-item">
+                        <span class="mission-icon">⭐</span>
+                        <div>
+                            <strong>产品卓越</strong>
+                            <p>打造性能稳定、质量可靠的探测与通信产品</p>
+                        </div>
+                    </div>
+                    <div class="mission-item">
+                        <span class="mission-icon">🤝</span>
+                        <div>
+                            <strong>协同高效</strong>
+                            <p>建立产品开发与技术开发的高效协同机制</p>
+                        </div>
+                    </div>
+                    <div class="mission-item">
+                        <span class="mission-icon">📚</span>
+                        <div>
+                            <strong>知识传承</strong>
+                            <p>构建学习型组织，实现知识积累与人才成长</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 组织架构 -->
+            <section id="org" class="content-section">
+                <h2>组织架构图</h2>
+                
+                <div class="org-chart">
+                    <div class="org-level">
+                        <div class="org-box director">
+                            <div class="org-title">主任</div>
+                        </div>
+                    </div>
+                    <div class="org-connector"></div>
+                    <div class="org-level">
+                        <div class="org-box deputy">
+                            <div class="org-title">副主任</div>
+                        </div>
+                    </div>
+                    <div class="org-connector"></div>
+                    <div class="org-level three-cols">
+                        <div class="org-box group product-group">
+                            <div class="org-title">产品管理组</div>
+                            <div class="org-count">8人</div>
+                            <div class="org-roles">组长 | 研发管理3 | 可靠性4</div>
+                        </div>
+                        <div class="org-box group dev-group">
+                            <div class="org-title">产品开发组</div>
+                            <div class="org-count">4人</div>
+                            <div class="org-roles">组长 | 探测① | 探测② | 通信</div>
+                        </div>
+                        <div class="org-box group tech-group">
+                            <div class="org-title">技术开发组</div>
+                            <div class="org-count">11人</div>
+                            <div class="org-roles">组长 | 天线3 | 射频3 | 数字2 | 电源2</div>
+                        </div>
+                    </div>
+                    <div class="org-note">电源为天线/射频/数字供电</div>
+                </div>
+            </section>
+
+            <!-- 各组职责 -->
+            <section id="teams" class="content-section">
+                <h2>各组详细职责</h2>
+
+                <div class="team-detail">
+                    <h3>产品管理组（8人）</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>岗位</th>
+                                <th>人数</th>
+                                <th>职责</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>组长</td>
+                                <td>1人</td>
+                                <td>组织协调组内工作</td>
+                            </tr>
+                            <tr>
+                                <td>研发管理</td>
+                                <td>3人</td>
+                                <td>需求分析、项目进度把控、客户沟通、项目交付</td>
+                            </tr>
+                            <tr>
+                                <td>可靠性管理</td>
+                                <td>1人</td>
+                                <td>可靠性设计、可靠性评估、寿命分析</td>
+                            </tr>
+                            <tr>
+                                <td>EMC管理</td>
+                                <td>1人</td>
+                                <td>EMC设计、EMC测试、电磁兼容评估</td>
+                            </tr>
+                            <tr>
+                                <td>元器件管理</td>
+                                <td>1人</td>
+                                <td>元器件选型、优选库管理、元器件质量</td>
+                            </tr>
+                            <tr>
+                                <td>环境适应性管理</td>
+                                <td>1人</td>
+                                <td>环境试验、环境适应性设计、防护设计</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="team-detail">
+                    <h3>产品开发组（4人）</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>岗位</th>
+                                <th>人数</th>
+                                <th>负责产品</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>组长</td>
+                                <td>1人</td>
+                                <td>组织协调</td>
+                            </tr>
+                            <tr>
+                                <td>产品工程师</td>
+                                <td>3人</td>
+                                <td>探测类产品①、探测类产品②、通信类产品</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="team-detail">
+                    <h3>技术开发组（11人）</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>专业</th>
+                                <th>人数</th>
+                                <th>细分方向</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>天线</td>
+                                <td>3人</td>
+                                <td>通信类天线、探测类无源天线、探测类有源天线</td>
+                            </tr>
+                            <tr>
+                                <td>射频</td>
+                                <td>3人</td>
+                                <td>接收机、发射机、频率源</td>
+                            </tr>
+                            <tr>
+                                <td>数字</td>
+                                <td>2人</td>
+                                <td>FPGA电路、RFSOC电路</td>
+                            </tr>
+                            <tr>
+                                <td>电源</td>
+                                <td>2人</td>
+                                <td>低压二次电源（为天线、射频、数字供电）</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 核心价值观 -->
+            <section id="values" class="content-section">
+                <h2>核心价值观</h2>
+                
+                <div class="values-grid">
+                    <div class="value-card customer">
+                        <div class="value-icon">🎯</div>
+                        <h3>客户导向</h3>
+                        <p class="value-desc">以客户需求为中心</p>
+                        <p class="value-behavior">深入理解客户需求，快速响应客户反馈</p>
+                    </div>
+                    <div class="value-card quality">
+                        <div class="value-icon">⭐</div>
+                        <h3>质量第一</h3>
+                        <p class="value-desc">质量是产品的生命线</p>
+                        <p class="value-behavior">严守质量标准，不妥协、不侥幸</p>
+                    </div>
+                    <div class="value-card collaboration">
+                        <div class="value-icon">🤝</div>
+                        <h3>协同合作</h3>
+                        <p class="value-desc">团队成功大于个人成功</p>
+                        <p class="value-behavior">主动沟通，乐于分享，互相支持</p>
+                    </div>
+                    <div class="value-card improvement">
+                        <div class="value-icon">📈</div>
+                        <h3>持续改进</h3>
+                        <p class="value-desc">追求卓越的永动力</p>
+                        <p class="value-behavior">不断学习，勇于创新，持续优化</p>
+                    </div>
+                    <div class="value-card integrity">
+                        <div class="value-icon">⚖️</div>
+                        <h3>诚信正直</h3>
+                        <p class="value-desc">做人做事的底线</p>
+                        <p class="value-behavior">实事求是，勇于担责，信守承诺</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 行为规范 -->
+            <section id="rules" class="content-section">
+                <h2>日常工作规范</h2>
+
+                <h3>信息保密</h3>
+                <ul>
+                    <li>严守公司商业秘密和技术机密</li>
+                    <li>未经批准不得对外泄露项目信息</li>
+                    <li>离职后仍需遵守保密义务</li>
+                </ul>
+
+                <h3>知识产权</h3>
+                <ul>
+                    <li>职务发明归公司所有</li>
+                    <li>及时提交技术专利申请</li>
+                    <li>尊重他人知识产权</li>
+                </ul>
+
+                <h3>信息安全</h3>
+                <ul>
+                    <li>妥善保管账号密码</li>
+                    <li>不得擅自安装非授权软件</li>
+                    <li>敏感数据不得存储在个人设备</li>
+                </ul>
+            </section>
+
+            <!-- 考勤管理 -->
+            <section id="attendance" class="content-section">
+                <h2>考勤管理</h2>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>项目</th>
+                            <th>规定</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>工作时间</td>
+                            <td>周一至周五 9:00-18:00（弹性时间 ±1小时）</td>
+                        </tr>
+                        <tr>
+                            <td>午休时间</td>
+                            <td>12:00-13:00</td>
+                        </tr>
+                        <tr>
+                            <td>迟到/早退</td>
+                            <td>每月累计不超过3次，每次不超过30分钟</td>
+                        </tr>
+                        <tr>
+                            <td>请假流程</td>
+                            <td>提前1天在OA系统提交申请，紧急情况下电话告知直属上级</td>
+                        </tr>
+                        <tr>
+                            <td>加班管理</td>
+                            <td>需提前申请，优先安排调休</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 沟通协作 -->
+            <section id="communication" class="content-section">
+                <h2>沟通协作规范</h2>
+
+                <h3>会议规范</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>会议类型</th>
+                            <th>频率</th>
+                            <th>时长</th>
+                            <th>要求</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>团队例会</td>
+                            <td>每周</td>
+                            <td>≤1小时</td>
+                            <td>提前准备，准时参加，有结论有行动项</td>
+                        </tr>
+                        <tr>
+                            <td>项目周会</td>
+                            <td>每周</td>
+                            <td>≤1.5小时</td>
+                            <td>进展汇报、问题讨论、风险识别</td>
+                        </tr>
+                        <tr>
+                            <td>技术评审会</td>
+                            <td>按需</td>
+                            <td>视情况</td>
+                            <td>提前发送材料，有检查表、有问题记录</td>
+                        </tr>
+                        <tr>
+                            <td>临时协调会</td>
+                            <td>按需</td>
+                            <td>≤30分钟</td>
+                            <td>明确议题，快速决策</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- IPD研发阶段 -->
+            <section id="ipd-phases" class="content-section">
+                <h2>IPD研发阶段</h2>
+                
+                <div class="phases-timeline">
+                    <div class="phase-item">
+                        <div class="phase-marker">1</div>
+                        <div class="phase-content">
+                            <h4>概念阶段</h4>
+                            <p>验证产品机会</p>
+                            <span class="phase-tag">CDCP</span>
+                        </div>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-marker">2</div>
+                        <div class="phase-content">
+                            <h4>计划阶段</h4>
+                            <p>制定详细计划</p>
+                            <span class="phase-tag">PDCP</span>
+                        </div>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-marker">3</div>
+                        <div class="phase-content">
+                            <h4>开发阶段</h4>
+                            <p>完成产品设计</p>
+                            <span class="phase-tag">设计评审</span>
+                        </div>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-marker">4</div>
+                        <div class="phase-content">
+                            <h4>验证阶段</h4>
+                            <p>验证产品功能</p>
+                            <span class="phase-tag">TR评审</span>
+                        </div>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-marker">5</div>
+                        <div class="phase-content">
+                            <h4>发布阶段</h4>
+                            <p>产品上市</p>
+                            <span class="phase-tag">ADCP</span>
+                        </div>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-marker">6</div>
+                        <div class="phase-content">
+                            <h4>生命周期</h4>
+                            <p>持续运营</p>
+                            <span class="phase-tag">季度评审</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>阶段详情</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>阶段</th>
+                            <th>目标</th>
+                            <th>关键交付件</th>
+                            <th>评审点</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>概念阶段</strong></td>
+                            <td>验证产品机会</td>
+                            <td>市场需求文档、概念方案</td>
+                            <td>CDCP</td>
+                        </tr>
+                        <tr>
+                            <td><strong>计划阶段</strong></td>
+                            <td>制定详细计划</td>
+                            <td>需求规格书、项目计划</td>
+                            <td>PDCP</td>
+                        </tr>
+                        <tr>
+                            <td><strong>开发阶段</strong></td>
+                            <td>完成产品设计</td>
+                            <td>详细设计文档、原理图、PCB</td>
+                            <td>设计评审</td>
+                        </tr>
+                        <tr>
+                            <td><strong>验证阶段</strong></td>
+                            <td>验证产品功能</td>
+                            <td>测试报告、试产报告</td>
+                            <td>TR评审</td>
+                        </tr>
+                        <tr>
+                            <td><strong>发布阶段</strong></td>
+                            <td>产品上市</td>
+                            <td>量产准备、发布材料</td>
+                            <td>ADCP</td>
+                        </tr>
+                        <tr>
+                            <td><strong>生命周期</strong></td>
+                            <td>持续运营</td>
+                            <td>维护记录、改进方案</td>
+                            <td>季度评审</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 关键角色 -->
+            <section id="ipd-roles" class="content-section">
+                <h2>IPD关键角色</h2>
+
+                <h3>项目角色</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>角色</th>
+                            <th>来源</th>
+                            <th>主要职责</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>项目经理(LPDT)</strong></td>
+                            <td>产品管理组</td>
+                            <td>项目整体管理、跨组协调、风险控制、客户对接</td>
+                        </tr>
+                        <tr>
+                            <td><strong>系统工程师(SE)</strong></td>
+                            <td>产品开发组</td>
+                            <td>单机架构设计、指标分解、技术方案制定</td>
+                        </tr>
+                        <tr>
+                            <td><strong>天线工程师</strong></td>
+                            <td>技术开发组</td>
+                            <td>天线模块设计与优化、技术支持</td>
+                        </tr>
+                        <tr>
+                            <td><strong>射频工程师</strong></td>
+                            <td>技术开发组</td>
+                            <td>射频模块（接收/发射/频源）设计与优化</td>
+                        </tr>
+                        <tr>
+                            <td><strong>数字工程师</strong></td>
+                            <td>技术开发组</td>
+                            <td>数字电路（FPGA/RFSOC）开发</td>
+                        </tr>
+                        <tr>
+                            <td><strong>电源工程师</strong></td>
+                            <td>技术开发组</td>
+                            <td>二次电源设计与供电方案</td>
+                        </tr>
+                        <tr>
+                            <td><strong>可靠性工程师</strong></td>
+                            <td>产品管理组</td>
+                            <td>可靠性设计审查、可靠性评估</td>
+                        </tr>
+                        <tr>
+                            <td><strong>EMC工程师</strong></td>
+                            <td>产品管理组</td>
+                            <td>EMC设计审查、EMC测试与评估</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 培训体系 -->
+            <section id="training" class="content-section">
+                <h2>培训体系</h2>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>培训类型</th>
+                            <th>内容</th>
+                            <th>频率</th>
+                            <th>对象</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>新员工培训</strong></td>
+                            <td>微波室概况、IPD流程、各组职责、工具使用</td>
+                            <td>入职1周内</td>
+                            <td>新员工</td>
+                        </tr>
+                        <tr>
+                            <td><strong>IPD流程培训</strong></td>
+                            <td>IPD体系、阶段评审、角色职责、协作机制</td>
+                            <td>季度</td>
+                            <td>全员</td>
+                        </tr>
+                        <tr>
+                            <td><strong>专业技术培训</strong></td>
+                            <td>天线设计、射频电路、数字信号处理、电源设计</td>
+                            <td>月度</td>
+                            <td>技术开发组</td>
+                        </tr>
+                        <tr>
+                            <td><strong>产品技术培训</strong></td>
+                            <td>单机架构设计、模块集成、DFX（可靠性/EMC/环境）</td>
+                            <td>月度</td>
+                            <td>产品开发组</td>
+                        </tr>
+                        <tr>
+                            <td><strong>项目管理培训</strong></td>
+                            <td>需求管理、进度管控、风险管理、客户沟通</td>
+                            <td>季度</td>
+                            <td>产品管理组</td>
+                        </tr>
+                        <tr>
+                            <td><strong>外部培训</strong></td>
+                            <td>微波技术会议、专业认证、行业交流</td>
+                            <td>按需</td>
+                            <td>骨干员工</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 职业发展 -->
+            <section id="career" class="content-section">
+                <h2>职业发展通道</h2>
+
+                <h3>技术开发组技术通道</h3>
+                <div class="career-path">
+                    <div class="career-levels">
+                        <div class="career-level expert">
+                            <span class="level-badge">专家</span>
+                            <p>技术专家</p>
+                        </div>
+                        <div class="career-arrow">→</div>
+                        <div class="career-level senior">
+                            <span class="level-badge">高级</span>
+                            <p>高级工程师</p>
+                        </div>
+                        <div class="career-arrow">→</div>
+                        <div class="career-level mid">
+                            <span class="level-badge">中级</span>
+                            <p>工程师</p>
+                        </div>
+                        <div class="career-arrow">→</div>
+                        <div class="career-level junior">
+                            <span class="level-badge">初级</span>
+                            <p>助理工程师</p>
+                        </div>
+                    </div>
+                    <div class="career-tracks">
+                        <div class="career-track">天线方向</div>
+                        <div class="career-track">射频方向</div>
+                        <div class="career-track">数字方向</div>
+                        <div class="career-track">电源方向</div>
+                    </div>
+                </div>
+
+                <h3>管理通道</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>层级</th>
+                            <th>管理岗位</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>部门级</td>
+                            <td>主任、副主任</td>
+                        </tr>
+                        <tr>
+                            <td>组级</td>
+                            <td>各组组长</td>
+                        </tr>
+                        <tr>
+                            <td>项目级</td>
+                            <td>项目经理（产品管理组兼任）</td>
+                        </tr>
+                        <tr>
+                            <td>模块级</td>
+                            <td>模块产品经理（技术开发组兼任）</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 技能认证 -->
+            <section id="certification" class="content-section">
+                <h2>技能认证</h2>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>认证方向</th>
+                            <th>认证等级</th>
+                            <th>适用组</th>
+                            <th>要求</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>天线设计</td>
+                            <td>初级/中级/高级/专家</td>
+                            <td>技术开发组</td>
+                            <td>理论考试+设计评审+项目经验</td>
+                        </tr>
+                        <tr>
+                            <td>射频设计</td>
+                            <td>初级/中级/高级/专家</td>
+                            <td>技术开发组</td>
+                            <td>理论考试+设计评审+项目经验</td>
+                        </tr>
+                        <tr>
+                            <td>数字设计</td>
+                            <td>初级/中级/高级/专家</td>
+                            <td>技术开发组</td>
+                            <td>理论考试+设计评审+项目经验</td>
+                        </tr>
+                        <tr>
+                            <td>电源设计</td>
+                            <td>初级/中级/高级/专家</td>
+                            <td>技术开发组</td>
+                            <td>理论考试+设计评审+项目经验</td>
+                        </tr>
+                        <tr>
+                            <td>系统设计</td>
+                            <td>初级/中级/高级/专家</td>
+                            <td>产品开发组</td>
+                            <td>架构评审+项目经验+技术创新</td>
+                        </tr>
+                        <tr>
+                            <td>DFX管理</td>
+                            <td>初级/中级/高级</td>
+                            <td>产品管理组</td>
+                            <td>培训+评估实践+案例分析</td>
+                        </tr>
+                        <tr>
+                            <td>IPD流程</td>
+                            <td>基础/进阶/专家</td>
+                            <td>全员</td>
+                            <td>培训+评审实践+流程改进</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 奖励机制 -->
+            <section id="rewards" class="content-section">
+                <h2>奖励机制</h2>
+
+                <h3>个人奖励</h3>
+                <div class="rewards-grid">
+                    <div class="reward-card">
+                        <div class="reward-icon">💡</div>
+                        <h4>技术创新奖</h4>
+                        <p>重大技术突破、专利授权</p>
+                        <span class="reward-type">奖金+证书</span>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-icon">⭐</div>
+                        <h4>质量之星</h4>
+                        <p>零缺陷交付、质量改进</p>
+                        <span class="reward-type">奖金+证书</span>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-icon">🏆</div>
+                        <h4>优秀员工</h4>
+                        <p>季度综合表现突出</p>
+                        <span class="reward-type">奖金+证书</span>
+                    </div>
+                    <div class="reward-card">
+                        <div class="reward-icon">🌟</div>
+                        <h4>最佳新人</h4>
+                        <p>入职半年内表现优秀</p>
+                        <span class="reward-type">奖金+证书</span>
+                    </div>
+                    <div class="reward-card highlight">
+                        <div class="reward-icon">🎖️</div>
+                        <h4>特别贡献奖</h4>
+                        <p>重大贡献、重大项目成功</p>
+                        <span class="reward-type">奖金+晋升</span>
+                    </div>
+                </div>
+
+                <h3>团队奖励</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>奖项</th>
+                            <th>评选标准</th>
+                            <th>奖励形式</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>项目成功奖</td>
+                            <td>项目按时按质完成</td>
+                            <td>团队奖金+活动经费</td>
+                        </tr>
+                        <tr>
+                            <td>最佳协作奖</td>
+                            <td>跨团队协作表现优秀</td>
+                            <td>团队奖金+表彰</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 员工福利 -->
+            <section id="benefits" class="content-section">
+                <h2>员工福利</h2>
+
+                <h3>基本福利</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🏥</span>
+                        <span class="benefit-name">五险一金</span>
+                        <span class="benefit-desc">按国家标准缴纳</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🏖️</span>
+                        <span class="benefit-name">带薪年假</span>
+                        <span class="benefit-desc">5-15天</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🎁</span>
+                        <span class="benefit-name">节日福利</span>
+                        <span class="benefit-desc">节日礼品/购物卡</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🎂</span>
+                        <span class="benefit-name">生日福利</span>
+                        <span class="benefit-desc">生日礼金/蛋糕卡</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🏥</span>
+                        <span class="benefit-name">健康体检</span>
+                        <span class="benefit-desc">每年一次</span>
+                    </div>
+                </div>
+
+                <h3>专项福利</h3>
+                <ul>
+                    <li><strong>技术书籍</strong> - 年度技术书籍采购额度</li>
+                    <li><strong>培训补贴</strong> - 外部培训/认证费用报销</li>
+                    <li><strong>专利奖励</strong> - 专利申请/授权奖励</li>
+                    <li><strong>论文发表</strong> - 技术论文发表奖励</li>
+                    <li><strong>团建经费</strong> - 季度团队活动经费</li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section id="contact" class="content-section">
+                <h2>常用联系方式</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>部门/人员</th>
+                            <th>职责</th>
+                            <th>联系方式</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>行政前台</td>
+                            <td>接待、快递、办公用品</td>
+                            <td>内线：XXXX</td>
+                        </tr>
+                        <tr>
+                            <td>IT支持</td>
+                            <td>电脑、网络、系统问题</td>
+                            <td>内线：XXXX</td>
+                        </tr>
+                        <tr>
+                            <td>人力资源</td>
+                            <td>薪酬、考勤、员工关系</td>
+                            <td>内线：XXXX</td>
+                        </tr>
+                        <tr>
+                            <td>财务部门</td>
+                            <td>报销、借款、工资查询</td>
+                            <td>内线：XXXX</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 常用系统 -->
+            <section id="systems" class="content-section">
+                <h2>常用系统</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>系统名称</th>
+                            <th>用途</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>OA系统</td>
+                            <td>审批、考勤、公告</td>
+                        </tr>
+                        <tr>
+                            <td>PLM系统</td>
+                            <td>产品数据管理</td>
+                        </tr>
+                        <tr>
+                            <td>项目管理</td>
+                            <td>项目计划、任务跟踪</td>
+                        </tr>
+                        <tr>
+                            <td>文档管理</td>
+                            <td>技术文档存储</td>
+                        </tr>
+                        <tr>
+                            <td>代码仓库</td>
+                            <td>源代码管理</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="footer-note">
+                    <p>本手册最终解释权归公司人力资源部所有。公司将根据实际情况适时修订，修订后及时通知全体员工。</p>
+                </div>
+            </section>
+
+            <!-- 页面底部导航 -->
+            <nav class="page-nav">
+                <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="edit-link" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                    在 GitHub 上编辑此页
+                </a>
+            </nav>
+        </main>
+    </div>
+
+    <!-- 搜索模态框 -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="搜索文档..." id="modalSearchInput">
+                <kbd class="search-close">ESC</kbd>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop" aria-label="回到顶部">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
