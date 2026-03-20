@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微波室部门信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 40px;
+        }
+        .content h1 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .content h2 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin: 25px 0 12px 0;
+        }
+        .content h3 {
+            color: #555;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+        .content p {
+            margin: 12px 0;
+            text-align: justify;
+        }
+        .content ul, .content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .content li {
+            margin: 8px 0;
+        }
+        .content code {
+            background: #f4f4f4;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: "Consolas", "Monaco", monospace;
+            color: #e83e8c;
+        }
+        .content pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        .content pre code {
+            background: transparent;
+            color: inherit;
+            padding: 0;
+        }
+        .content blockquote {
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .content th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .content td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .content tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .content tr:hover {
+            background: #e8f4f8;
+        }
+        .content a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px dotted #667eea;
+        }
+        .content a:hover {
+            color: #764ba2;
+            border-bottom: 1px solid #764ba2;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #888;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .header {
+                padding: 25px;
+            }
+            .header h1 {
+                font-size: 1.6em;
+            }
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>微波室部门信息</h1>
+        </div>
+        <div class="content">
+            <h1>微波室部门信息档案</h1>
+<h2>基本信息</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>部门名称</td>
+<td>微波室</td>
+</tr>
+<tr>
+<td>部门人数</td>
+<td>25人</td>
+</tr>
+<tr>
+<td>部门领导</td>
+<td>主任、副主任（共2人）</td>
+</tr>
+</tbody></table>
+<h2>人员分布</h2>
+<table>
+<thead>
+<tr>
+<th>组织层级</th>
+<th align="center">人数</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>部门领导</strong></td>
+<td align="center">2人</td>
+<td>主任、副主任</td>
+</tr>
+<tr>
+<td><strong>产品管理组</strong></td>
+<td align="center">8人</td>
+<td>组长1人 + 研发管理3人 + 可靠性管理4人</td>
+</tr>
+<tr>
+<td><strong>产品开发组</strong></td>
+<td align="center">4人</td>
+<td>组长1人 + 3名产品工程师（探测×2 + 通信×1）</td>
+</tr>
+<tr>
+<td><strong>技术开发组</strong></td>
+<td align="center">11人</td>
+<td>天线、射频、数字、电源4类模块开发</td>
+</tr>
+<tr>
+<td><strong>虚拟综合管理</strong></td>
+<td align="center">兼职</td>
+<td>设计师兼任，无专职</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td align="center"><strong>25人</strong></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2>组织架构</h2>
+<pre><code>                    ┌───────────┐
+                    │  主  任   │ (1人)
+                    └─────┬─────┘
+                          │
+                    ┌───────────┐
+                    │  副主任   │ (1人)
+                    └─────┬─────┘
+                          │
+        ┌─────────────────┼─────────────────┐
+        │                 │                 │
+   ┌────┴────┐      ┌────┴────┐      ┌────┴────┐
+   │产品管理组│      │产品开发组│      │技术开发组│
+   │  (8人)  │      │  (4人)  │      │ (11人)  │
+   │  ·组长  │      │  ·组长  │      │  ·组长  │
+   │  ·研发  │      │  ·探测① │      │  ·天线3 │
+   │   管理3 │      │  ·探测② │      │   通信  │
+   │  ·可靠  │      │  ·通信  │      │   无源  │
+   │   性4人 │      └─────────┘      │   有源  │
+   └─────────┘                        │  ·射频3 │
+        │                             │   接收  │
+        │                             │   发射  │
+        │                             │   频源  │
+        │                             │  ·数字2 │
+        │                             │   FPGA  │
+        │                             │  ·电源2 │
+        │                             │   二次  │
+        │                             └─────────┘
+        │                                   ↑
+        └───────────┬───────────────────────┘
+                    │  供电关系：电源为天线/射频/数字供电
+        ┌───────────┴───────────┐
+        │   虚拟综合管理团队     │
+        │ （兼职设计师+领导组成）│
+        └───────────────────────┘
+</code></pre>
+<h2>各团队职责详解</h2>
+<h3>一、产品管理组（偏向项目经理角色）</h3>
+<p><strong>人员配置：</strong></p>
+<ul>
+<li>总人数：<strong>8人</strong></li>
+<li>组长：1人</li>
+<li>研发管理：3人</li>
+<li>可靠性管理：4人</li>
+</ul>
+<p><strong>可靠性管理4人分工：</strong></p>
+<table>
+<thead>
+<tr>
+<th>岗位</th>
+<th align="center">人数</th>
+<th>负责领域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>可靠性管理</td>
+<td align="center">1人</td>
+<td>产品可靠性设计、可靠性评估、寿命分析</td>
+</tr>
+<tr>
+<td>电磁兼容性管理</td>
+<td align="center">1人</td>
+<td>EMC设计、EMC测试、电磁兼容评估</td>
+</tr>
+<tr>
+<td>元器件管理</td>
+<td align="center">1人</td>
+<td>元器件选型、优选库管理、元器件质量</td>
+</tr>
+<tr>
+<td>环境适应性管理</td>
+<td align="center">1人</td>
+<td>环境试验、环境适应性设计、防护设计</td>
+</tr>
+</tbody></table>
+<p><strong>核心职责：</strong></p>
+<ol>
+<li><p><strong>对外沟通与需求管理：</strong></p>
+<ul>
+<li>对外沟通需求</li>
+<li>需求分析</li>
+<li>客户需求管理</li>
+</ul>
+</li>
+<li><p><strong>项目管理：</strong></p>
+<ul>
+<li>项目进度把控</li>
+<li>项目DFX监督（Design for X：面向制造、测试、可靠性等的设计）</li>
+<li>项目交付</li>
+</ul>
+</li>
+<li><p><strong>需求转化：</strong></p>
+<ul>
+<li>将需求转化为标准化的硬件需求规格说明</li>
+</ul>
+</li>
+<li><p><strong>组织评估（产品完成后）：</strong></p>
+<ul>
+<li>可靠性评估</li>
+<li>可制造性评估</li>
+<li>环境适应性评估</li>
+<li>成本评估</li>
+<li>电磁兼容性评估</li>
+</ul>
+</li>
+<li><p><strong>生产移交与批产支持：</strong></p>
+<ul>
+<li>评估通过后，受控全套设计资料</li>
+<li>将资料移交生产部门组织批产</li>
+<li>协调解决批产过程中的问题</li>
+</ul>
+</li>
+</ol>
+<p><strong>关键输出：</strong></p>
+<ul>
+<li>标准化硬件需求规格说明</li>
+<li>评估报告（可靠性、可制造性、环境适应性、成本、EMC）</li>
+<li>受控设计资料包</li>
+<li>项目交付物</li>
+</ul>
+<hr>
+<h3>二、产品开发组</h3>
+<p><strong>人员配置：</strong></p>
+<ul>
+<li>总人数：<strong>4人</strong></li>
+<li>组长：1人</li>
+<li>产品工程师：3人（分别负责3类产品）</li>
+</ul>
+<p><strong>产品工程师分工：</strong></p>
+<table>
+<thead>
+<tr>
+<th>工程师</th>
+<th>负责产品</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>工程师1</td>
+<td>微波探测类产品①</td>
+<td>探测类产品线1</td>
+</tr>
+<tr>
+<td>工程师2</td>
+<td>微波探测类产品②</td>
+<td>探测类产品线2</td>
+</tr>
+<tr>
+<td>工程师3</td>
+<td>通信类产品</td>
+<td>通信类产品线</td>
+</tr>
+</tbody></table>
+<p><strong>计划补充人员（未来）：</strong></p>
+<ul>
+<li>结构工程师：支撑产品的结构设计</li>
+<li>嵌入式开发工程师：支撑产品的嵌入式软件开发</li>
+</ul>
+<p><strong>核心职责：</strong></p>
+<ol>
+<li><p><strong>单机架构研究：</strong></p>
+<ul>
+<li>将单机指标分解为合适的模块指标</li>
+<li>选择合适的集成方式</li>
+<li>确定模块或组合的性能指标</li>
+<li>确定机械接口和电气接口</li>
+</ul>
+</li>
+<li><p><strong>集成开发：</strong></p>
+<ul>
+<li>根据产品管理组的标准化硬件需求规格说明开展硬件产品开发</li>
+<li>选取技术开发组开发的通用模块进行集成</li>
+<li>快速形成性能稳定、质量可靠的产品</li>
+</ul>
+</li>
+<li><p><strong>技术牵引：</strong></p>
+<ul>
+<li>从系统架构上牵引技术开发组的技术发展方向</li>
+</ul>
+</li>
+<li><p><strong>方案设计和工程设计：</strong></p>
+<ul>
+<li>在结构工程师和嵌入式开发工程师到位后，共同开展方案设计和工程设计</li>
+</ul>
+</li>
+</ol>
+<p><strong>负责的产品类别（3类）：</strong></p>
+<ul>
+<li>微波探测类产品（2人负责，2条产品线）</li>
+<li>通信类产品（1人负责，1条产品线）</li>
+</ul>
+<p><strong>关键输出：</strong></p>
+<ul>
+<li>单机架构设计方案</li>
+<li>模块指标分解文档</li>
+<li>接口定义文档（机械接口、电气接口）</li>
+<li>集成后的硬件产品</li>
+<li>产品设计资料</li>
+</ul>
+<hr>
+<h3>三、技术开发组</h3>
+<p><strong>人员配置：</strong></p>
+<ul>
+<li>总人数：<strong>11人</strong></li>
+<li>组长：1人</li>
+<li>各专业工程师：10人</li>
+</ul>
+<p><strong>专业分工（四大技术方向）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>专业类别</th>
+<th align="center">人数</th>
+<th>细分方向</th>
+<th>具体工作内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>天线</strong></td>
+<td align="center">3人</td>
+<td>通信类天线</td>
+<td>通信系统天线设计、仿真、测试</td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td>探测类无源天线</td>
+<td>探测系统无源天线设计</td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td>探测类有源天线</td>
+<td>探测系统有源天线设计</td>
+</tr>
+<tr>
+<td><strong>射频</strong></td>
+<td align="center">3人</td>
+<td>接收机</td>
+<td>接收通道射频电路设计</td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td>发射机</td>
+<td>发射通道射频电路设计</td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td>频率源</td>
+<td>频率合成、时钟电路设计</td>
+</tr>
+<tr>
+<td><strong>数字</strong></td>
+<td align="center">2人</td>
+<td>数字信号处理</td>
+<td>FPGA、RFSOC等数字电路开发</td>
+</tr>
+<tr>
+<td><strong>电源</strong></td>
+<td align="center">2人</td>
+<td>低压二次电源</td>
+<td>为探测、通信单机中的射频、天线、数字电路供电</td>
+</tr>
+</tbody></table>
+<p><strong>供电关系说明：</strong></p>
+<ul>
+<li>电源组开发的二次电源为其他三组（天线、射频、数字）供电</li>
+<li>覆盖探测类和通信类单机</li>
+</ul>
+<p><strong>核心职责：</strong></p>
+<ol>
+<li><p><strong>开发通用模块</strong></p>
+<ul>
+<li>开发标准化的通用模块，供产品开发组选用</li>
+<li>建立模块库，形成技术积累</li>
+</ul>
+</li>
+<li><p><strong>定制开发</strong></p>
+<ul>
+<li>根据产品开发组的具体要求，开发定制化的模块或组件</li>
+</ul>
+</li>
+<li><p><strong>技术发展推动：</strong></p>
+<ul>
+<li>从专业技术发展角度推动技术进步</li>
+<li>从元器件技术发展角度推动技术进步</li>
+<li>迭代模块组件，使性能不断提高</li>
+</ul>
+</li>
+<li><p><strong>支持产品开发：</strong></p>
+<ul>
+<li>提供通用模块供产品开发组选取集成</li>
+<li>提供技术支持和问题解决方案</li>
+</ul>
+</li>
+<li><p><strong>技术预研：</strong></p>
+<ul>
+<li>跟踪行业技术发展趋势</li>
+<li>开展新技术、新工艺预研</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>通用模块（天线、射频、数字、电源）</li>
+<li>模块性能规格</li>
+<li>技术演进路线图</li>
+</ul>
+<hr>
+<h3>四、虚拟综合管理团队（兼职性质）</h3>
+<p><strong>组成：</strong> </p>
+<ul>
+<li>兼职设计师（由其他组成员兼任）</li>
+<li>部门领导</li>
+</ul>
+<p><strong>性质：</strong> </p>
+<ul>
+<li>虚拟团队（非固定编制）</li>
+<li><strong>成员均为兼职</strong>，无专职人员</li>
+</ul>
+<p><strong>兼职角色设置：</strong></p>
+<table>
+<thead>
+<tr>
+<th>兼职岗位</th>
+<th>职责说明</th>
+<th>人员来源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>档案管理</strong></td>
+<td>部门档案资料管理、归档、借阅管理</td>
+<td>各组设计师兼任</td>
+</tr>
+<tr>
+<td><strong>安全管理</strong></td>
+<td>实验室安全、信息安全、生产安全</td>
+<td>各组设计师兼任</td>
+</tr>
+<tr>
+<td><strong>6S管理</strong></td>
+<td>整理、整顿、清扫、清洁、素养、安全</td>
+<td>各组设计师兼任</td>
+</tr>
+<tr>
+<td><strong>宣传管理</strong></td>
+<td>部门宣传、文化活动、信息发布</td>
+<td>各组设计师兼任</td>
+</tr>
+<tr>
+<td><strong>制度建设</strong></td>
+<td>部门制度编写、修订、宣贯</td>
+<td>各组设计师兼任</td>
+</tr>
+</tbody></table>
+<p><strong>主要职责：</strong></p>
+<ol>
+<li>跨组协调和资源调配</li>
+<li>重要事项决策支持</li>
+<li>部门日常运营管理（档案、安全、6S、宣传）</li>
+<li>部门制度体系建设与维护</li>
+<li>协助部门领导开展管理工作</li>
+</ol>
+<hr>
+<h2>工作流程</h2>
+<pre><code>产品管理组                    产品开发组                  技术开发组
+    │                           │                           │
+    │  ① 转化需求               │                           │
+    │ ──────────────────────→   │                           │
+    │  标准化硬件需求规格说明    │                           │
+    │                           │                           │
+    │                           │  ② 单机架构设计            │
+    │                           │  指标分解、接口定义         │
+    │                           │                           │
+    │                           │  ③ 选取通用模块 ←───────────│
+    │                           │                           │
+    │                           │  ④ 集成开发               │
+    │                           │  形成硬件产品              │
+    │                           │                           │
+    │  ⑤ 组织评估 ←─────────────│                           │
+    │  可靠性/可制造性/          │                           │
+    │  环境适应性/成本           │                           │
+    │                           │                           │
+    │  ⑥ 受控设计资料 ────────→ 生产部门（批产）            │
+    │                           │                           │
+    │  ⑦ 解决批产问题 ←─────────│                           │
+</code></pre>
+<h2>团队管理方式</h2>
+<h3>组长设置</h3>
+<ul>
+<li>各组设立一个组长</li>
+<li><strong>组长职责：</strong><ol>
+<li>组织好该组的相关工作</li>
+<li>协调组内资源</li>
+<li>协调跨组资源</li>
+</ol>
+</li>
+</ul>
+<h2>关键术语和概念</h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>定义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>组/团队</td>
+<td><strong>同义词</strong>，指产品管理组、产品开发组、技术开发组三个实体组织</td>
+</tr>
+<tr>
+<td>单机</td>
+<td>独立的硬件产品单元</td>
+</tr>
+<tr>
+<td>模块</td>
+<td>具有特定功能的独立组件</td>
+</tr>
+<tr>
+<td>组件</td>
+<td>比模块更小的功能单元</td>
+</tr>
+<tr>
+<td>标准化硬件需求规格说明</td>
+<td>产品管理组输出的标准化需求文档</td>
+</tr>
+<tr>
+<td>受控设计资料</td>
+<td>经过评审和批准的正式设计文档</td>
+</tr>
+<tr>
+<td>批产</td>
+<td>批量生产</td>
+</tr>
+</tbody></table>
+<h2>技术领域</h2>
+<ul>
+<li><strong>微波技术</strong>：核心专业领域</li>
+<li><strong>探测技术</strong>：产品应用领域1</li>
+<li><strong>通信技术</strong>：产品应用领域2</li>
+</ul>
+<h2>接口类型</h2>
+<ul>
+<li><strong>机械接口</strong>：物理连接接口</li>
+<li><strong>电气接口</strong>：电气信号接口</li>
+</ul>
+<h2>评估维度</h2>
+<p>产品管理组组织对完成的产品进行以下评估：</p>
+<ol>
+<li><strong>可靠性评估</strong> - 产品的可靠性和寿命</li>
+<li><strong>可制造性评估</strong> - 生产的可行性和良率</li>
+<li><strong>环境适应性评估</strong> - 适应各种环境条件的能力</li>
+<li><strong>成本评估</strong> - 生产成本和物料成本</li>
+</ol>
+<h2>备注</h2>
+<ul>
+<li>本档案用于指导后续文档编写</li>
+<li>编写模板和文档时需参考本档案中的组织架构和流程</li>
+<li>后续如有补充信息，继续更新本档案</li>
+</ul>
+
+        </div>
+        <div class="footer">
+            转换为网页版 | 生成时间: 2026/3/20 20:21:55
+        </div>
+    </div>
+</body>
+</html>
