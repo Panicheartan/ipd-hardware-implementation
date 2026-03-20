@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试计划模板 | 微波室IPD文档中心</title>
+    <link rel="stylesheet" href="../../../../../../../../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="../../../../../../../../index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室文档中心</span>
+            </a>
+        </div>
+        
+        <div class="navbar-center">
+            <div class="nav-links">
+                <a href="../../../../../../../../index.html" class="nav-link">首页</a>
+                <a href="../../../../../../../../guides/index.html" class="nav-link">实施指南</a>
+                <a href="../../../../../../../../ipd/index.html" class="nav-link">IPD流程</a>
+                <a href="../../../../../../../../templates/index.html" class="nav-link">模板</a>
+                <a href="../../../../../../../../hr/index.html" class="nav-link">HR管理</a>
+                <a href="../../../../../../../../handbook/index.html" class="nav-link">员工手册</a>
+            </div>
+        </div>
+        
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="nav-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="layout" style="margin-top: 64px;">
+        <!-- 侧边目录 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="切换侧边栏">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <span class="sidebar-title">文档目录</span>
+            </div>
+            <nav class="sidebar-nav" id="toc"></nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content" id="mainContent">
+            <div class="content-section">
+                <h1>测试计划模板</h1>
+                <h1>测试计划模板</h1>
+<h2>文档信息</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>项目名称</td>
+<td></td>
+</tr>
+<tr>
+<td>测试对象</td>
+<td></td>
+</tr>
+<tr>
+<td>文档版本</td>
+<td></td>
+</tr>
+<tr>
+<td>编制日期</td>
+<td></td>
+</tr>
+<tr>
+<td>编制人</td>
+<td></td>
+</tr>
+<tr>
+<td>审核人</td>
+<td></td>
+</tr>
+<tr>
+<td>批准人</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>1. 概述</h2>
+<h3>1.1 测试目的</h3>
+<p>说明本次测试的目的和期望达成的目标。</p>
+<h3>1.2 测试范围</h3>
+<table>
+<thead>
+<tr>
+<th>测试内容</th>
+<th align="center">包含</th>
+<th>不包含</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能测试</td>
+<td align="center">□</td>
+<td></td>
+</tr>
+<tr>
+<td>性能测试</td>
+<td align="center">□</td>
+<td></td>
+</tr>
+<tr>
+<td>可靠性测试</td>
+<td align="center">□</td>
+<td></td>
+</tr>
+<tr>
+<td>环境测试</td>
+<td align="center">□</td>
+<td></td>
+</tr>
+<tr>
+<td>EMC测试</td>
+<td align="center">□</td>
+<td></td>
+</tr>
+<tr>
+<td>安规测试</td>
+<td align="center">□</td>
+<td></td>
+</tr>
+<tr>
+<td>兼容性测试</td>
+<td align="center">□</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>1.3 参考文档</h3>
+<table>
+<thead>
+<tr>
+<th>文档名称</th>
+<th>版本</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>需求规格说明书</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>设计文档</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>测试标准</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>2. 测试策略</h2>
+<h3>2.1 测试级别</h3>
+<table>
+<thead>
+<tr>
+<th>测试级别</th>
+<th>执行方</th>
+<th>测试环境</th>
+<th>测试重点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元测试</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>集成测试</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>系统测试</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>验收测试</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>2.2 测试类型</h3>
+<table>
+<thead>
+<tr>
+<th>测试类型</th>
+<th>测试方法</th>
+<th>覆盖范围</th>
+<th>通过标准</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能测试</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>性能测试</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>压力测试</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>可靠性测试</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>2.3 测试准入/准出标准</h3>
+<p><strong>准入标准：</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> 开发工作已完成</li>
+<li><input disabled="" type="checkbox"> 代码审查通过</li>
+<li><input disabled="" type="checkbox"> 基本功能可运行</li>
+</ul>
+<p><strong>准出标准：</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> 测试用例执行率 ≥ 95%</li>
+<li><input disabled="" type="checkbox"> 致命缺陷 = 0</li>
+<li><input disabled="" type="checkbox"> 严重缺陷 = 0</li>
+<li><input disabled="" type="checkbox"> 测试报告已审批</li>
+</ul>
+<hr>
+<h2>3. 测试资源</h2>
+<h3>3.1 人力资源</h3>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th align="center">人数</th>
+<th>职责</th>
+<th>投入时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>测试负责人</td>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>测试工程师</td>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>硬件工程师</td>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>其他支持</td>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>3.2 测试设备</h3>
+<table>
+<thead>
+<tr>
+<th>设备名称</th>
+<th>型号/规格</th>
+<th align="center">数量</th>
+<th>到位时间</th>
+<th align="center">状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td align="center">□已到位 □采购中 □待申请</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td align="center">□已到位 □采购中 □待申请</td>
+</tr>
+</tbody></table>
+<h3>3.3 测试环境</h3>
+<table>
+<thead>
+<tr>
+<th>环境类型</th>
+<th>环境配置</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实验室环境</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>生产环境</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>用户现场</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>4. 测试用例</h2>
+<h3>4.1 功能测试用例</h3>
+<table>
+<thead>
+<tr>
+<th>用例ID</th>
+<th>用例名称</th>
+<th>测试目的</th>
+<th align="center">优先级</th>
+<th>前置条件</th>
+<th>测试步骤</th>
+<th>预期结果</th>
+<th>测试类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TC-F-001</td>
+<td></td>
+<td></td>
+<td align="center">□P1 □P2 □P3</td>
+<td></td>
+<td>1. 2. 3.</td>
+<td></td>
+<td>□正向 □反向</td>
+</tr>
+<tr>
+<td>TC-F-002</td>
+<td></td>
+<td></td>
+<td align="center">□P1 □P2 □P3</td>
+<td></td>
+<td>1. 2. 3.</td>
+<td></td>
+<td>□正向 □反向</td>
+</tr>
+</tbody></table>
+<h3>4.2 性能测试用例</h3>
+<table>
+<thead>
+<tr>
+<th>用例ID</th>
+<th>用例名称</th>
+<th>测试项</th>
+<th>规格要求</th>
+<th>测试方法</th>
+<th>预期结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TC-P-001</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-P-002</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>4.3 可靠性测试用例</h3>
+<table>
+<thead>
+<tr>
+<th>用例ID</th>
+<th>用例名称</th>
+<th>测试项目</th>
+<th>测试条件</th>
+<th>测试时间</th>
+<th align="center">样本数量</th>
+<th>通过标准</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TC-R-001</td>
+<td>高温工作</td>
+<td></td>
+<td>温度: ___℃</td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-R-002</td>
+<td>低温工作</td>
+<td></td>
+<td>温度: ___℃</td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-R-003</td>
+<td>湿热测试</td>
+<td></td>
+<td>温度: ___℃ 湿度: ___%</td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-R-004</td>
+<td>振动测试</td>
+<td></td>
+<td>频率: ___ 加速度: ___</td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-R-005</td>
+<td>冲击测试</td>
+<td></td>
+<td>加速度: ___ 脉宽: ___</td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-R-006</td>
+<td>盐雾测试</td>
+<td></td>
+<td>浓度: ___% 时间: ___h</td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-R-007</td>
+<td>寿命测试</td>
+<td></td>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>4.4 EMC测试用例</h3>
+<table>
+<thead>
+<tr>
+<th>用例ID</th>
+<th>用例名称</th>
+<th>测试标准</th>
+<th>测试等级</th>
+<th>通过标准</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TC-E-001</td>
+<td>ESD测试</td>
+<td>IEC 61000-4-2</td>
+<td>接触: ___kV 空气: ___kV</td>
+<td></td>
+</tr>
+<tr>
+<td>TC-E-002</td>
+<td>浪涌测试</td>
+<td>IEC 61000-4-5</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-E-003</td>
+<td>脉冲群测试</td>
+<td>IEC 61000-4-4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-E-004</td>
+<td>传导骚扰</td>
+<td>CISPR 32/EN 55032</td>
+<td>Class B</td>
+<td></td>
+</tr>
+<tr>
+<td>TC-E-005</td>
+<td>辐射骚扰</td>
+<td>CISPR 32/EN 55032</td>
+<td>Class B</td>
+<td></td>
+</tr>
+<tr>
+<td>TC-E-006</td>
+<td>传导抗扰度</td>
+<td>IEC 61000-4-6</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC-E-007</td>
+<td>辐射抗扰度</td>
+<td>IEC 61000-4-3</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>4.5 安规测试用例</h3>
+<table>
+<thead>
+<tr>
+<th>用例ID</th>
+<th>用例名称</th>
+<th>测试标准</th>
+<th>测试条件</th>
+<th>通过标准</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TC-S-001</td>
+<td>耐压测试</td>
+<td></td>
+<td>电压: ___V 时间: ___s</td>
+<td></td>
+</tr>
+<tr>
+<td>TC-S-002</td>
+<td>绝缘电阻</td>
+<td></td>
+<td>电压: ___V</td>
+<td>≥ ___MΩ</td>
+</tr>
+<tr>
+<td>TC-S-003</td>
+<td>接地电阻</td>
+<td></td>
+<td>电流: ___A</td>
+<td>≤ ___Ω</td>
+</tr>
+<tr>
+<td>TC-S-004</td>
+<td>漏电流</td>
+<td></td>
+<td></td>
+<td>≤ ___mA</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>5. 测试进度</h2>
+<h3>5.1 测试里程碑</h3>
+<table>
+<thead>
+<tr>
+<th>里程碑</th>
+<th>计划日期</th>
+<th>交付物</th>
+<th>负责人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>测试计划完成</td>
+<td></td>
+<td>本计划文档</td>
+<td></td>
+</tr>
+<tr>
+<td>测试用例完成</td>
+<td></td>
+<td>测试用例集</td>
+<td></td>
+</tr>
+<tr>
+<td>测试环境就绪</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>测试执行开始</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>测试执行完成</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>测试报告完成</td>
+<td></td>
+<td>测试报告</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>5.2 测试进度计划</h3>
+<table>
+<thead>
+<tr>
+<th>测试阶段</th>
+<th>计划开始</th>
+<th>计划完成</th>
+<th align="center">工期</th>
+<th>负责人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元测试</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td>集成测试</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td>系统测试</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td>验收测试</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>6. 缺陷管理</h2>
+<h3>6.1 缺陷严重级别定义</h3>
+<table>
+<thead>
+<tr>
+<th align="center">级别</th>
+<th>定义</th>
+<th>示例</th>
+<th align="center">处理时限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">致命</td>
+<td>导致系统崩溃或数据丢失</td>
+<td>死机、无法启动</td>
+<td align="center">立即</td>
+</tr>
+<tr>
+<td align="center">严重</td>
+<td>主要功能失效</td>
+<td>核心功能异常</td>
+<td align="center">1天</td>
+</tr>
+<tr>
+<td align="center">一般</td>
+<td>次要功能问题</td>
+<td>非核心功能异常</td>
+<td align="center">3天</td>
+</tr>
+<tr>
+<td align="center">轻微</td>
+<td>界面或体验问题</td>
+<td>显示问题</td>
+<td align="center">1周</td>
+</tr>
+</tbody></table>
+<h3>6.2 缺陷状态流转</h3>
+<pre><code>新建 → 确认 → 修复中 → 验证中 → 关闭
+       ↓      ↓         ↓
+     拒绝   延后      重开
+</code></pre>
+<hr>
+<h2>7. 风险管理</h2>
+<table>
+<thead>
+<tr>
+<th>风险ID</th>
+<th>风险描述</th>
+<th align="center">风险等级</th>
+<th>缓解措施</th>
+<th>责任人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td align="center">□高 □中 □低</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="center">□高 □中 □低</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>8. 测试交付物</h2>
+<table>
+<thead>
+<tr>
+<th>交付物名称</th>
+<th>计划完成日期</th>
+<th>责任人</th>
+<th align="center">状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>测试计划</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>测试用例</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>测试数据</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>测试报告</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>缺陷报告</td>
+<td></td>
+<td></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>9. 附录</h2>
+<h3>附录A：测试环境配置清单</h3>
+<h3>附录B：测试工具清单</h3>
+<h3>附录C：测试数据准备</h3>
+<h3>附录D：历史测试问题清单</h3>
+<hr>
+<h2>变更记录</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>变更内容</th>
+<th>变更人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>签字确认</strong></p>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>姓名</th>
+<th>签字</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>测试负责人</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>项目经理</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>质量代表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+            </div>
+            
+            <footer style="text-align: center; padding: 40px; color: var(--text-tertiary); border-top: 1px solid var(--border-color); margin-top: 60px;">
+                <p>© 2025 微波室 | IPD硬件研发实施项目</p>
+                <p style="font-size: 0.9em; margin-top: 8px;">最后更新：2025年3月20日</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+        // 代码高亮
+        hljs.highlightAll();
+        
+        // 生成目录
+        const content = document.querySelector('.content-section');
+        const toc = document.getElementById('toc');
+        const headings = content.querySelectorAll('h2, h3');
+        
+        if (headings.length > 0) {
+            headings.forEach(heading => {
+                const link = document.createElement('a');
+                link.href = '#' + heading.id;
+                link.textContent = heading.textContent;
+                link.className = heading.tagName === 'H2' ? 'nav-link' : 'nav-link sub';
+                toc.appendChild(link);
+            });
+        }
+        
+        // 侧边栏切换
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        sidebarToggle?.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+</html>

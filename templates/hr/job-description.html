@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岗位说明书通用模板 | 微波室IPD文档中心</title>
+    <link rel="stylesheet" href="../../../../../../../../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="../../../../../../../../index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室文档中心</span>
+            </a>
+        </div>
+        
+        <div class="navbar-center">
+            <div class="nav-links">
+                <a href="../../../../../../../../index.html" class="nav-link">首页</a>
+                <a href="../../../../../../../../guides/index.html" class="nav-link">实施指南</a>
+                <a href="../../../../../../../../ipd/index.html" class="nav-link">IPD流程</a>
+                <a href="../../../../../../../../templates/index.html" class="nav-link">模板</a>
+                <a href="../../../../../../../../hr/index.html" class="nav-link">HR管理</a>
+                <a href="../../../../../../../../handbook/index.html" class="nav-link">员工手册</a>
+            </div>
+        </div>
+        
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="nav-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="layout" style="margin-top: 64px;">
+        <!-- 侧边目录 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="切换侧边栏">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <span class="sidebar-title">文档目录</span>
+            </div>
+            <nav class="sidebar-nav" id="toc"></nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content" id="mainContent">
+            <div class="content-section">
+                <h1>岗位说明书通用模板</h1>
+                <h1>硬件研发岗位说明书</h1>
+<h2>文档信息</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文档名称</td>
+<td>硬件研发岗位说明书</td>
+</tr>
+<tr>
+<td>版本号</td>
+<td>V1.0</td>
+</tr>
+<tr>
+<td>生效日期</td>
+<td>YYYY年MM月DD日</td>
+</tr>
+<tr>
+<td>编制部门</td>
+<td>人力资源部 / 技术部门</td>
+</tr>
+<tr>
+<td>批准人</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>岗位体系总览</h2>
+<h3>组织架构</h3>
+<pre><code>部门经理
+├── 技术团队A（单机研发）
+│   ├── 技术专家
+│   ├── 高级工程师
+│   ├── 工程师
+│   └── 助理工程师
+├── 技术团队B（模块研发）
+│   ├── 技术专家
+│   ├── 高级工程师
+│   ├── 工程师
+│   └── 助理工程师
+└── 技术团队C（专项技术）
+    ├── 技术专家
+    ├── 高级工程师
+    ├── 工程师
+    └── 助理工程师
+</code></pre>
+<h3>岗位序列</h3>
+<table>
+<thead>
+<tr>
+<th>序列</th>
+<th align="center">层级</th>
+<th>岗位名称</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术专家序列</td>
+<td align="center">T5</td>
+<td>首席技术专家</td>
+<td>技术战略规划、重大技术攻关</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">T4</td>
+<td>高级技术专家</td>
+<td>技术领域带头人、架构设计</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">T3</td>
+<td>技术专家</td>
+<td>关键技术突破、技术指导</td>
+</tr>
+<tr>
+<td>工程师序列</td>
+<td align="center">E4</td>
+<td>主任工程师</td>
+<td>复杂系统设计、技术决策</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">E3</td>
+<td>高级工程师</td>
+<td>独立负责子系统设计</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">E2</td>
+<td>工程师</td>
+<td>独立完成模块设计</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">E1</td>
+<td>助理工程师</td>
+<td>在指导下完成设计任务</td>
+</tr>
+<tr>
+<td>管理序列</td>
+<td align="center">M4</td>
+<td>部门经理</td>
+<td>部门全面管理</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">M3</td>
+<td>项目经理</td>
+<td>项目整体管理</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">M2</td>
+<td>技术组长</td>
+<td>小组技术管理</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">M1</td>
+<td>技术骨干</td>
+<td>技术指导（兼）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>岗位一：助理工程师（E1）</h2>
+<h3>基本信息</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>岗位名称</td>
+<td>助理工程师</td>
+</tr>
+<tr>
+<td>岗位级别</td>
+<td>E1</td>
+</tr>
+<tr>
+<td>直接上级</td>
+<td>工程师/高级工程师</td>
+</tr>
+<tr>
+<td>直接下级</td>
+<td>无</td>
+</tr>
+</tbody></table>
+<h3>岗位职责</h3>
+<h4>主要职责</h4>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th>职责内容</th>
+<th align="center">权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>在指导下完成简单的电路设计、调试工作</td>
+<td align="center">30%</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>参与原理图绘制、PCB Layout辅助工作</td>
+<td align="center">25%</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>负责样品焊接、测试、记录工作</td>
+<td align="center">25%</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>编写技术文档（测试报告、BOM等）</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td>学习并掌握公司研发流程和规范</td>
+<td align="center">5%</td>
+</tr>
+</tbody></table>
+<h4>协作职责</h4>
+<ul>
+<li>配合工程师完成设计任务</li>
+<li>参与团队技术分享和学习</li>
+<li>协助完成实验室管理相关工作</li>
+</ul>
+<h3>任职要求</h3>
+<h4>学历与专业</h4>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学历</td>
+<td>本科及以上</td>
+</tr>
+<tr>
+<td>专业</td>
+<td>电子工程、通信工程、自动化等相关专业</td>
+</tr>
+<tr>
+<td>经验</td>
+<td>应届生或1年以下相关经验</td>
+</tr>
+</tbody></table>
+<h4>知识技能</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>专业知识</td>
+<td>掌握模拟/数字电路基础理论</td>
+</tr>
+<tr>
+<td>设计工具</td>
+<td>熟悉Altium Designer/Cadence等EDA工具基本操作</td>
+</tr>
+<tr>
+<td>测试仪器</td>
+<td>了解示波器、万用表、电源等基本仪器使用</td>
+</tr>
+<tr>
+<td>编程能力</td>
+<td>了解C语言，能进行简单的嵌入式程序调试</td>
+</tr>
+<tr>
+<td>文档能力</td>
+<td>能编写基本的技术文档和测试报告</td>
+</tr>
+</tbody></table>
+<h4>素质要求</h4>
+<table>
+<thead>
+<tr>
+<th>素质项</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学习能力</td>
+<td>快速学习新技术、新知识</td>
+</tr>
+<tr>
+<td>执行力</td>
+<td>按时保质完成交办任务</td>
+</tr>
+<tr>
+<td>责任心</td>
+<td>对工作认真负责，注重细节</td>
+</tr>
+<tr>
+<td>团队协作</td>
+<td>积极沟通，乐于配合</td>
+</tr>
+</tbody></table>
+<h3>绩效考核要点</h3>
+<table>
+<thead>
+<tr>
+<th>考核维度</th>
+<th align="center">权重</th>
+<th>关键指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>工作质量</td>
+<td align="center">30%</td>
+<td>设计正确率、文档规范性、测试准确性</td>
+</tr>
+<tr>
+<td>工作效率</td>
+<td align="center">25%</td>
+<td>任务完成及时率、工作量饱和度</td>
+</tr>
+<tr>
+<td>工作态度</td>
+<td align="center">25%</td>
+<td>学习积极性、主动性、责任心</td>
+</tr>
+<tr>
+<td>团队协作</td>
+<td align="center">20%</td>
+<td>沟通配合度、团队贡献度</td>
+</tr>
+</tbody></table>
+<h3>职业发展</h3>
+<h4>晋升路径</h4>
+<pre><code>助理工程师（E1）→ 工程师（E2）
+</code></pre>
+<h4>晋升条件</h4>
+<ul>
+<li>任职满1年</li>
+<li>能独立完成简单模块设计</li>
+<li>熟练掌握公司研发流程</li>
+<li>通过E2能力评估</li>
+</ul>
+<hr>
+<h2>岗位二：工程师（E2）</h2>
+<h3>基本信息</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>岗位名称</td>
+<td>工程师</td>
+</tr>
+<tr>
+<td>岗位级别</td>
+<td>E2</td>
+</tr>
+<tr>
+<td>直接上级</td>
+<td>高级工程师/技术组长</td>
+</tr>
+<tr>
+<td>直接下级</td>
+<td>可指导助理工程师</td>
+</tr>
+</tbody></table>
+<h3>岗位职责</h3>
+<h4>主要职责</h4>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th>职责内容</th>
+<th align="center">权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>独立完成模块级硬件设计（原理图、PCB）</td>
+<td align="center">30%</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>负责模块调试、测试、问题解决</td>
+<td align="center">25%</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>参与技术评审，提出设计优化建议</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>编写设计文档、测试用例、测试报告</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td>指导助理工程师工作</td>
+<td align="center">10%</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td>参与新技术预研和学习</td>
+<td align="center">5%</td>
+</tr>
+</tbody></table>
+<h4>协作职责</h4>
+<ul>
+<li>参与跨模块技术协调</li>
+<li>参与IPD阶段评审</li>
+<li>协助完成技术积累和知识分享</li>
+</ul>
+<h3>任职要求</h3>
+<h4>学历与经验</h4>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学历</td>
+<td>本科及以上</td>
+</tr>
+<tr>
+<td>经验</td>
+<td>2-4年硬件研发经验</td>
+</tr>
+</tbody></table>
+<h4>知识技能</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>专业知识</td>
+<td>深入理解模拟/数字电路、电源设计、信号完整性</td>
+</tr>
+<tr>
+<td>设计工具</td>
+<td>熟练使用EDA工具，能独立完成PCB设计</td>
+</tr>
+<tr>
+<td>测试能力</td>
+<td>能独立制定测试方案，解决常见硬件问题</td>
+</tr>
+<tr>
+<td>编程能力</td>
+<td>熟练使用C语言，能进行嵌入式软件开发</td>
+</tr>
+<tr>
+<td>文档能力</td>
+<td>能编写高质量的技术文档</td>
+</tr>
+</tbody></table>
+<h4>专业方向（可选）</h4>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>特殊要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>电源设计</td>
+<td>熟悉开关电源、LDO、电源管理系统设计</td>
+</tr>
+<tr>
+<td>高速数字</td>
+<td>熟悉高速信号完整性、PCB叠层设计</td>
+</tr>
+<tr>
+<td>模拟电路</td>
+<td>熟悉放大器、滤波器、ADC/DAC设计</td>
+</tr>
+<tr>
+<td>射频设计</td>
+<td>熟悉射频电路、天线设计、无线通信</td>
+</tr>
+</tbody></table>
+<h3>绩效考核要点</h3>
+<table>
+<thead>
+<tr>
+<th>考核维度</th>
+<th align="center">权重</th>
+<th>关键指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术能力</td>
+<td align="center">30%</td>
+<td>设计质量、问题解决能力、技术创新</td>
+</tr>
+<tr>
+<td>工作产出</td>
+<td align="center">30%</td>
+<td>任务完成率、交付质量、文档质量</td>
+</tr>
+<tr>
+<td>团队协作</td>
+<td align="center">20%</td>
+<td>跨模块配合、知识分享、评审贡献</td>
+</tr>
+<tr>
+<td>学习成长</td>
+<td align="center">20%</td>
+<td>技能提升、新技术学习、专利/论文</td>
+</tr>
+</tbody></table>
+<h3>职业发展</h3>
+<h4>晋升路径</h4>
+<pre><code>                    → 高级工程师（E3）
+工程师（E2）→
+                    → 技术组长（M2）
+</code></pre>
+<hr>
+<h2>岗位三：高级工程师（E3）</h2>
+<h3>基本信息</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>岗位名称</td>
+<td>高级工程师</td>
+</tr>
+<tr>
+<td>岗位级别</td>
+<td>E3</td>
+</tr>
+<tr>
+<td>直接上级</td>
+<td>技术专家/项目经理</td>
+</tr>
+<tr>
+<td>直接下级</td>
+<td>可指导工程师、助理工程师</td>
+</tr>
+</tbody></table>
+<h3>岗位职责</h3>
+<h4>主要职责</h4>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th>职责内容</th>
+<th align="center">权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>负责复杂模块或子系统的架构设计和详细设计</td>
+<td align="center">25%</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>主导技术难题攻关和关键问题解决</td>
+<td align="center">20%</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>负责技术方案评审和技术决策</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>指导团队工程师的技术工作</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td>参与技术规划和新技术预研</td>
+<td align="center">10%</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td>编写核心技术文档和标准规范</td>
+<td align="center">10%</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td>参与客户技术交流和需求分析</td>
+<td align="center">5%</td>
+</tr>
+</tbody></table>
+<h4>管理职责（可选）</h4>
+<ul>
+<li>可兼任技术组长，负责小组技术管理</li>
+<li>参与项目计划和资源协调</li>
+<li>参与团队成员绩效评估</li>
+</ul>
+<h3>任职要求</h3>
+<h4>学历与经验</h4>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学历</td>
+<td>本科及以上（硕士优先）</td>
+</tr>
+<tr>
+<td>经验</td>
+<td>5-8年硬件研发经验，有成功项目经验</td>
+</tr>
+</tbody></table>
+<h4>知识技能</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>系统能力</td>
+<td>能进行系统架构设计，权衡技术方案</td>
+</tr>
+<tr>
+<td>专业深度</td>
+<td>在某一领域有深入研究和丰富经验</td>
+</tr>
+<tr>
+<td>问题解决</td>
+<td>能快速定位并解决复杂技术问题</td>
+</tr>
+<tr>
+<td>创新能力</td>
+<td>能提出创新性解决方案，申请专利</td>
+</tr>
+<tr>
+<td>沟通能力</td>
+<td>能与客户、跨部门进行有效技术沟通</td>
+</tr>
+</tbody></table>
+<h4>成果要求</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>专利</td>
+<td>至少有1项授权专利（发明或实用新型）</td>
+</tr>
+<tr>
+<td>项目</td>
+<td>主导完成至少2个量产项目</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>有技术论文发表优先</td>
+</tr>
+</tbody></table>
+<h3>绩效考核要点</h3>
+<table>
+<thead>
+<tr>
+<th>考核维度</th>
+<th align="center">权重</th>
+<th>关键指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术领导力</td>
+<td align="center">30%</td>
+<td>方案质量、技术决策准确性、难题攻关</td>
+</tr>
+<tr>
+<td>项目贡献</td>
+<td align="center">25%</td>
+<td>项目成功度、关键交付物质量</td>
+</tr>
+<tr>
+<td>团队贡献</td>
+<td align="center">25%</td>
+<td>指导效果、知识分享、流程改进</td>
+</tr>
+<tr>
+<td>技术影响力</td>
+<td align="center">20%</td>
+<td>专利、论文、技术标准、培训</td>
+</tr>
+</tbody></table>
+<h3>职业发展</h3>
+<h4>晋升路径</h4>
+<pre><code>                          → 主任工程师（E4）
+高级工程师（E3）→
+                          → 技术专家（T3）
+                          → 项目经理（M3）
+</code></pre>
+<hr>
+<h2>岗位四：主任工程师/技术专家（E4/T3）</h2>
+<h3>基本信息</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>岗位名称</td>
+<td>主任工程师 / 技术专家</td>
+</tr>
+<tr>
+<td>岗位级别</td>
+<td>E4 / T3</td>
+</tr>
+<tr>
+<td>直接上级</td>
+<td>高级技术专家/部门经理</td>
+</tr>
+<tr>
+<td>直接下级</td>
+<td>可指导高级工程师及以下</td>
+</tr>
+</tbody></table>
+<h3>岗位职责</h3>
+<h4>主要职责</h4>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th>职责内容</th>
+<th align="center">权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>负责产品系统架构设计和技术路线规划</td>
+<td align="center">20%</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>主持重大技术攻关和技术风险评估</td>
+<td align="center">20%</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>制定技术标准和设计规范</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>负责技术团队培养和人才梯队建设</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td>参与产品规划和需求评审</td>
+<td align="center">10%</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td>代表公司参与行业技术交流</td>
+<td align="center">10%</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td>推动技术创新和知识产权布局</td>
+<td align="center">10%</td>
+</tr>
+</tbody></table>
+<h3>任职要求</h3>
+<h4>学历与经验</h4>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学历</td>
+<td>硕士及以上（优秀本科也可）</td>
+</tr>
+<tr>
+<td>经验</td>
+<td>8年以上硬件研发经验，有多个成功量产产品</td>
+</tr>
+</tbody></table>
+<h4>专业成就</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>专利</td>
+<td>至少3项授权发明专利</td>
+</tr>
+<tr>
+<td>项目</td>
+<td>主导完成至少3个复杂系统级产品</td>
+</tr>
+<tr>
+<td>论文</td>
+<td>有核心期刊论文发表</td>
+</tr>
+<tr>
+<td>影响力</td>
+<td>在行业内有技术影响力</td>
+</tr>
+</tbody></table>
+<h3>绩效考核要点</h3>
+<table>
+<thead>
+<tr>
+<th>考核维度</th>
+<th align="center">权重</th>
+<th>关键指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术战略</td>
+<td align="center">30%</td>
+<td>技术规划准确性、架构设计质量</td>
+</tr>
+<tr>
+<td>技术攻关</td>
+<td align="center">25%</td>
+<td>重大技术问题解决、创新突破</td>
+</tr>
+<tr>
+<td>团队建设</td>
+<td align="center">25%</td>
+<td>人才培养效果、技术氛围建设</td>
+</tr>
+<tr>
+<td>技术影响力</td>
+<td align="center">20%</td>
+<td>专利、论文、标准、行业影响力</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>岗位五：技术组长（M2）</h2>
+<h3>基本信息</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>岗位名称</td>
+<td>技术组长</td>
+</tr>
+<tr>
+<td>岗位级别</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>直接上级</td>
+<td>项目经理/部门经理</td>
+</tr>
+<tr>
+<td>直接下级</td>
+<td>3-8名工程师</td>
+</tr>
+</tbody></table>
+<h3>岗位职责</h3>
+<h4>管理职责</h4>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th>职责内容</th>
+<th align="center">权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>负责小组工作任务分配和进度跟踪</td>
+<td align="center">25%</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>负责小组技术把关和质量控制</td>
+<td align="center">20%</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>负责小组成员培养和绩效管理</td>
+<td align="center">20%</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>组织技术分享和团队建设活动</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td>协调小组内外资源，解决资源冲突</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td>参与项目计划制定和风险评估</td>
+<td align="center">5%</td>
+</tr>
+</tbody></table>
+<h4>技术职责</h4>
+<ul>
+<li>负责关键模块设计和技术攻关</li>
+<li>参与技术评审和技术决策</li>
+<li>推动技术积累和标准化</li>
+</ul>
+<h3>任职要求</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术能力</td>
+<td>达到高级工程师（E3）水平</td>
+</tr>
+<tr>
+<td>管理经验</td>
+<td>有团队管理经验优先</td>
+</tr>
+<tr>
+<td>沟通能力</td>
+<td>良好的跨部门沟通和协调能力</td>
+</tr>
+<tr>
+<td>领导能力</td>
+<td>具备激励团队、培养人才的能力</td>
+</tr>
+</tbody></table>
+<h3>绩效考核要点</h3>
+<table>
+<thead>
+<tr>
+<th>考核维度</th>
+<th align="center">权重</th>
+<th>关键指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>团队管理</td>
+<td align="center">35%</td>
+<td>团队绩效、人员流失率、团队满意度</td>
+</tr>
+<tr>
+<td>技术质量</td>
+<td align="center">25%</td>
+<td>交付质量、技术评审通过率</td>
+</tr>
+<tr>
+<td>项目支持</td>
+<td align="center">25%</td>
+<td>项目进度、资源协调效率</td>
+</tr>
+<tr>
+<td>团队建设</td>
+<td align="center">15%</td>
+<td>人才培养、技术分享、团队氛围</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>岗位六：项目经理（M3）</h2>
+<h3>基本信息</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>岗位名称</td>
+<td>项目经理（LPDT）</td>
+</tr>
+<tr>
+<td>岗位级别</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>直接上级</td>
+<td>部门经理</td>
+</tr>
+<tr>
+<td>直接下级</td>
+<td>项目团队成员</td>
+</tr>
+</tbody></table>
+<h3>岗位职责</h3>
+<h4>项目管理职责</h4>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th>职责内容</th>
+<th align="center">权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>负责项目全生命周期管理（启动到量产）</td>
+<td align="center">25%</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>制定项目计划，跟踪项目进度和风险</td>
+<td align="center">20%</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>组织IPD阶段评审和技术评审</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>协调跨部门资源，解决项目问题</td>
+<td align="center">15%</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td>负责项目成本控制和预算管理</td>
+<td align="center">10%</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td>组织项目复盘和经验总结</td>
+<td align="center">10%</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td>维护客户关系，管理客户期望</td>
+<td align="center">5%</td>
+</tr>
+</tbody></table>
+<h3>任职要求</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术背景</td>
+<td>5年以上硬件研发经验，熟悉IPD流程</td>
+</tr>
+<tr>
+<td>项目管理</td>
+<td>有项目管理经验，PMP认证优先</td>
+</tr>
+<tr>
+<td>沟通能力</td>
+<td>优秀的跨部门沟通和协调能力</td>
+</tr>
+<tr>
+<td>抗压能力</td>
+<td>能承受项目压力，处理多任务</td>
+</tr>
+</tbody></table>
+<h3>绩效考核要点</h3>
+<table>
+<thead>
+<tr>
+<th>考核维度</th>
+<th align="center">权重</th>
+<th>关键指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>项目成功度</td>
+<td align="center">40%</td>
+<td>按时交付率、质量达标率、成本偏差</td>
+</tr>
+<tr>
+<td>团队管理</td>
+<td align="center">25%</td>
+<td>团队满意度、跨部门协作评价</td>
+</tr>
+<tr>
+<td>风险控制</td>
+<td align="center">20%</td>
+<td>风险识别率、问题解决效率</td>
+</tr>
+<tr>
+<td>客户满意度</td>
+<td align="center">15%</td>
+<td>客户反馈、问题响应速度</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>通用要求</h2>
+<h3>工作时间与地点</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>工作时间</td>
+<td>标准工时制，弹性工作 ±1小时</td>
+</tr>
+<tr>
+<td>工作地点</td>
+<td>公司研发办公室、实验室</td>
+</tr>
+<tr>
+<td>出差要求</td>
+<td>根据项目需要，可能有短期出差（供应商、客户现场）</td>
+</tr>
+</tbody></table>
+<h3>薪酬结构</h3>
+<table>
+<thead>
+<tr>
+<th align="center">岗位级别</th>
+<th align="center">薪酬范围（年薪）</th>
+<th>薪酬结构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">E1</td>
+<td align="center">X-Y万</td>
+<td>基本工资(70%) + 绩效(20%) + 补贴(10%)</td>
+</tr>
+<tr>
+<td align="center">E2</td>
+<td align="center">X-Y万</td>
+<td>基本工资(65%) + 绩效(25%) + 补贴(10%)</td>
+</tr>
+<tr>
+<td align="center">E3</td>
+<td align="center">X-Y万</td>
+<td>基本工资(60%) + 绩效(30%) + 补贴(10%)</td>
+</tr>
+<tr>
+<td align="center">E4/T3</td>
+<td align="center">X-Y万</td>
+<td>基本工资(55%) + 绩效(35%) + 补贴(10%)</td>
+</tr>
+<tr>
+<td align="center">M2/M3</td>
+<td align="center">X-Y万</td>
+<td>基本工资(50%) + 绩效(40%) + 补贴(10%)</td>
+</tr>
+</tbody></table>
+<p><em>具体薪酬根据能力、经验、市场水平确定</em></p>
+<h3>岗位轮换与发展</h3>
+<p>鼓励员工在不同团队、不同项目间进行岗位轮换，拓宽技术视野，培养复合型人才。</p>
+<hr>
+<h2>附录</h2>
+<h3>附录A：岗位评估标准</h3>
+<table>
+<thead>
+<tr>
+<th>评估维度</th>
+<th align="center">E1</th>
+<th align="center">E2</th>
+<th align="center">E3</th>
+<th align="center">E4/T3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术深度</td>
+<td align="center">基础</td>
+<td align="center">熟练</td>
+<td align="center">精通</td>
+<td align="center">专家</td>
+</tr>
+<tr>
+<td>技术广度</td>
+<td align="center">单一模块</td>
+<td align="center">多个模块</td>
+<td align="center">子系统</td>
+<td align="center">系统级</td>
+</tr>
+<tr>
+<td>问题解决</td>
+<td align="center">简单问题</td>
+<td align="center">一般问题</td>
+<td align="center">复杂问题</td>
+<td align="center">疑难问题</td>
+</tr>
+<tr>
+<td>创新能力</td>
+<td align="center">执行</td>
+<td align="center">改进</td>
+<td align="center">创新</td>
+<td align="center">突破</td>
+</tr>
+<tr>
+<td>指导能力</td>
+<td align="center">无</td>
+<td align="center">初级</td>
+<td align="center">中级</td>
+<td align="center">高级</td>
+</tr>
+</tbody></table>
+<h3>附录B：技能矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>技能项</th>
+<th align="center">E1</th>
+<th align="center">E2</th>
+<th align="center">E3</th>
+<th align="center">E4/T3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>电路设计</td>
+<td align="center">★</td>
+<td align="center">★★</td>
+<td align="center">★★★</td>
+<td align="center">★★★</td>
+</tr>
+<tr>
+<td>PCB设计</td>
+<td align="center">★</td>
+<td align="center">★★</td>
+<td align="center">★★</td>
+<td align="center">★★★</td>
+</tr>
+<tr>
+<td>信号完整性</td>
+<td align="center">△</td>
+<td align="center">★</td>
+<td align="center">★★</td>
+<td align="center">★★★</td>
+</tr>
+<tr>
+<td>电源设计</td>
+<td align="center">△</td>
+<td align="center">★</td>
+<td align="center">★★</td>
+<td align="center">★★★</td>
+</tr>
+<tr>
+<td>EMC设计</td>
+<td align="center">△</td>
+<td align="center">★</td>
+<td align="center">★★</td>
+<td align="center">★★★</td>
+</tr>
+<tr>
+<td>可靠性设计</td>
+<td align="center">△</td>
+<td align="center">★</td>
+<td align="center">★★</td>
+<td align="center">★★★</td>
+</tr>
+<tr>
+<td>项目管理</td>
+<td align="center">-</td>
+<td align="center">△</td>
+<td align="center">★</td>
+<td align="center">★★</td>
+</tr>
+<tr>
+<td>团队管理</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">△</td>
+<td align="center">★</td>
+</tr>
+</tbody></table>
+<p><em>★★★精通 ★★熟练 ★掌握 △了解 -不要求</em></p>
+<h3>附录C：文档变更记录</h3>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>变更内容</th>
+<th>变更人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>V1.0</td>
+<td></td>
+<td>初始发布</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>说明：</strong> 本岗位说明书由人力资源部和技术部门共同制定，经批准后生效，将定期根据业务发展进行修订。</p>
+
+            </div>
+            
+            <footer style="text-align: center; padding: 40px; color: var(--text-tertiary); border-top: 1px solid var(--border-color); margin-top: 60px;">
+                <p>© 2025 微波室 | IPD硬件研发实施项目</p>
+                <p style="font-size: 0.9em; margin-top: 8px;">最后更新：2025年3月20日</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+        // 代码高亮
+        hljs.highlightAll();
+        
+        // 生成目录
+        const content = document.querySelector('.content-section');
+        const toc = document.getElementById('toc');
+        const headings = content.querySelectorAll('h2, h3');
+        
+        if (headings.length > 0) {
+            headings.forEach(heading => {
+                const link = document.createElement('a');
+                link.href = '#' + heading.id;
+                link.textContent = heading.textContent;
+                link.className = heading.tagName === 'H2' ? 'nav-link' : 'nav-link sub';
+                toc.appendChild(link);
+            });
+        }
+        
+        // 侧边栏切换
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        sidebarToggle?.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+</html>

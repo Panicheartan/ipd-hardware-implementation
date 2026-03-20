@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPD-PDT团队职责说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 40px;
+        }
+        .content h1 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .content h2 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin: 25px 0 12px 0;
+        }
+        .content h3 {
+            color: #555;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+        .content p {
+            margin: 12px 0;
+            text-align: justify;
+        }
+        .content ul, .content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .content li {
+            margin: 8px 0;
+        }
+        .content code {
+            background: #f4f4f4;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: "Consolas", "Monaco", monospace;
+            color: #e83e8c;
+        }
+        .content pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        .content pre code {
+            background: transparent;
+            color: inherit;
+            padding: 0;
+        }
+        .content blockquote {
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .content th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .content td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .content tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .content tr:hover {
+            background: #e8f4f8;
+        }
+        .content a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px dotted #667eea;
+        }
+        .content a:hover {
+            color: #764ba2;
+            border-bottom: 1px solid #764ba2;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #888;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .header {
+                padding: 25px;
+            }
+            .header h1 {
+                font-size: 1.6em;
+            }
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>IPD-PDT团队职责说明</h1>
+        </div>
+        <div class="content">
+            <h1>IPD-PDT团队职责说明（适配25人微波硬件部门）</h1>
+<h2>一、团队结构总览</h2>
+<h3>部门现状</h3>
+<ul>
+<li><strong>总人数</strong>：25人</li>
+<li><strong>领导</strong>：2人</li>
+<li><strong>产品管理组</strong>：8人（4可靠性管理 + 4研发管理）</li>
+<li><strong>产品开发组</strong>：4人（每人负责一类产品）</li>
+<li><strong>技术开发组</strong>：11人（天线、射频、数字、电源四个领域）</li>
+<li><strong>组织特点</strong>：每个团队有1个组长</li>
+</ul>
+<h3>IPD适配后的组织结构</h3>
+<pre><code>IPMT（7人）
+├── 主任（领导1）
+├── 副主任（领导2）
+├── 产品管理代表（产品管理组长）
+├── 可靠性代表（可靠性管理组长）
+├── 技术开发代表（技术开发组长）
+├── 天线领域代表（天线组长）
+└── 射频领域代表（射频组长）
+
+PDT（按产品类别组建，示例：微波滤波器PDT）
+├── PDT经理（产品开发组1人）
+├── 可靠性工程师（可靠性管理组1-2人）
+├── 产品经理（研发管理组1人）
+├── 天线工程师（天线组1人）
+├── 射频工程师（射频组2人）
+├── 数字工程师（数字组1人）
+├── 电源工程师（电源组1人）
+└── 测试支持（技术开发组1-2人）
+</code></pre>
+<h2>二、IPMT（集成组合管理团队）职责</h2>
+<h3>2.1 IPMT组成（7人）</h3>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>来源</th>
+<th>主要职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>主任</strong></td>
+<td>领导1</td>
+<td>最终决策、资源协调、战略方向</td>
+</tr>
+<tr>
+<td><strong>副主任</strong></td>
+<td>领导2</td>
+<td>决策支持、日常管理、风险管控</td>
+</tr>
+<tr>
+<td><strong>产品管理代表</strong></td>
+<td>产品管理组长</td>
+<td>市场需求、产品规划、商业成功</td>
+</tr>
+<tr>
+<td><strong>可靠性代表</strong></td>
+<td>可靠性管理组长</td>
+<td>质量保证、可靠性标准、风险控制</td>
+</tr>
+<tr>
+<td><strong>技术开发代表</strong></td>
+<td>技术开发组长</td>
+<td>技术决策、平台建设、技术预研</td>
+</tr>
+<tr>
+<td><strong>天线领域代表</strong></td>
+<td>天线组长</td>
+<td>天线技术决策、资源协调</td>
+</tr>
+<tr>
+<td><strong>射频领域代表</strong></td>
+<td>射频组长</td>
+<td>射频技术决策、资源协调</td>
+</tr>
+</tbody></table>
+<h3>2.2 IPMT主要职责</h3>
+<ol>
+<li><p><strong>战略决策</strong></p>
+<ul>
+<li>批准产品路标</li>
+<li>决策项目投资</li>
+<li>确定项目优先级</li>
+</ul>
+</li>
+<li><p><strong>资源管理</strong></p>
+<ul>
+<li>分配人力资源</li>
+<li>协调设备资源</li>
+<li>审批预算</li>
+</ul>
+</li>
+<li><p><strong>项目评审</strong></p>
+<ul>
+<li>概念决策评审（CDCP）</li>
+<li>计划决策评审（PDCP）</li>
+<li>发布决策评审（ADCP）</li>
+</ul>
+</li>
+<li><p><strong>风险管理</strong></p>
+<ul>
+<li>监控项目重大风险</li>
+<li>决策风险应对措施</li>
+<li>评估项目健康度</li>
+</ul>
+</li>
+</ol>
+<h2>三、PDT（产品开发团队）职责</h2>
+<h3>3.1 PDT经理（产品开发组成员）</h3>
+<p><strong>来源</strong>：产品开发组4人中的1人
+<strong>职责</strong>：</p>
+<ol>
+<li><p><strong>总体负责</strong></p>
+<ul>
+<li>对产品成功交付负责</li>
+<li>协调跨领域资源</li>
+<li>管理项目进度、质量、成本</li>
+</ul>
+</li>
+<li><p><strong>团队管理</strong></p>
+<ul>
+<li>组建PDT核心团队</li>
+<li>分配工作任务</li>
+<li>绩效评估与反馈</li>
+</ul>
+</li>
+<li><p><strong>沟通协调</strong></p>
+<ul>
+<li>定期向IPMT汇报</li>
+<li>协调解决跨领域问题</li>
+<li>管理相关方期望</li>
+</ul>
+</li>
+</ol>
+<h3>3.2 可靠性工程师（可靠性管理组）</h3>
+<p><strong>来源</strong>：可靠性管理组4人中的1-2人
+<strong>职责</strong>：</p>
+<ol>
+<li><p><strong>可靠性设计</strong></p>
+<ul>
+<li>制定可靠性设计规范</li>
+<li>进行可靠性预计分析</li>
+<li>指导降额设计、冗余设计</li>
+</ul>
+</li>
+<li><p><strong>测试验证</strong></p>
+<ul>
+<li>制定可靠性测试计划</li>
+<li>执行环境应力测试</li>
+<li>分析测试数据</li>
+</ul>
+</li>
+<li><p><strong>质量保证</strong></p>
+<ul>
+<li>监控生产过程质量</li>
+<li>进行故障根本原因分析</li>
+<li>推动质量改进</li>
+</ul>
+</li>
+</ol>
+<h3>3.3 产品经理（研发管理组）</h3>
+<p><strong>来源</strong>：研发管理组4人中的1人
+<strong>职责</strong>：</p>
+<ol>
+<li><p><strong>需求管理</strong></p>
+<ul>
+<li>收集和分析市场需求</li>
+<li>定义产品需求规格</li>
+<li>管理需求变更</li>
+</ul>
+</li>
+<li><p><strong>市场对接</strong></p>
+<ul>
+<li>与客户沟通需求</li>
+<li>收集市场反馈</li>
+<li>分析竞争对手</li>
+</ul>
+</li>
+<li><p><strong>商业成功</strong></p>
+<ul>
+<li>监控产品市场表现</li>
+<li>分析销售数据</li>
+<li>提出产品改进建议</li>
+</ul>
+</li>
+</ol>
+<h3>3.4 天线工程师（天线组）</h3>
+<p><strong>来源</strong>：天线技术组2-3人中的1人
+<strong>职责</strong>：</p>
+<ol>
+<li><p><strong>天线设计</strong></p>
+<ul>
+<li>天线方案设计与仿真</li>
+<li>天线性能优化</li>
+<li>天线结构设计</li>
+</ul>
+</li>
+<li><p><strong>测试验证</strong></p>
+<ul>
+<li>天线性能测试</li>
+<li>环境适应性测试</li>
+<li>生产一致性测试</li>
+</ul>
+</li>
+<li><p><strong>技术支持</strong></p>
+<ul>
+<li>解决天线相关问题</li>
+<li>支持生产问题分析</li>
+<li>提供客户技术支持</li>
+</ul>
+</li>
+</ol>
+<h3>3.5 射频工程师（射频组）</h3>
+<p><strong>来源</strong>：射频技术组2-3人中的2人（主+辅）
+<strong>职责</strong>：
+<strong>主射频工程师：</strong></p>
+<ol>
+<li>系统架构设计</li>
+<li>关键电路设计（LNA、PA、Mixer等）</li>
+<li>系统级仿真与优化</li>
+</ol>
+<p><strong>辅射频工程师：</strong></p>
+<ol>
+<li>辅助电路设计（滤波器、放大器等）</li>
+<li>PCB布局指导</li>
+<li>测试方案制定</li>
+</ol>
+<h3>3.6 数字工程师（数字组）</h3>
+<p><strong>来源</strong>：数字技术组2-3人中的1人
+<strong>职责</strong>：</p>
+<ol>
+<li><p><strong>数字电路设计</strong></p>
+<ul>
+<li>FPGA/CPLD设计</li>
+<li>DSP算法实现</li>
+<li>嵌入式软件开发</li>
+</ul>
+</li>
+<li><p><strong>接口设计</strong></p>
+<ul>
+<li>数字接口设计（SPI、I2C、UART等）</li>
+<li>通信协议实现</li>
+<li>控制逻辑设计</li>
+</ul>
+</li>
+<li><p><strong>测试验证</strong></p>
+<ul>
+<li>数字电路测试</li>
+<li>软件功能测试</li>
+<li>系统联调</li>
+</ul>
+</li>
+</ol>
+<h3>3.7 电源工程师（电源组）</h3>
+<p><strong>来源</strong>：电源技术组2-3人中的1人
+<strong>职责</strong>：</p>
+<ol>
+<li><p><strong>电源设计</strong></p>
+<ul>
+<li>电源架构设计</li>
+<li>电源电路设计</li>
+<li>电源管理设计</li>
+</ul>
+</li>
+<li><p><strong>EMC设计</strong></p>
+<ul>
+<li>电源EMI滤波设计</li>
+<li>接地设计</li>
+<li>屏蔽设计</li>
+</ul>
+</li>
+<li><p><strong>热设计</strong></p>
+<ul>
+<li>热仿真分析</li>
+<li>散热方案设计</li>
+<li>温度监控设计</li>
+</ul>
+</li>
+</ol>
+<h3>3.8 测试支持（技术开发组）</h3>
+<p><strong>来源</strong>：技术开发组中的1-2人
+<strong>职责</strong>：</p>
+<ol>
+<li><p><strong>测试计划</strong></p>
+<ul>
+<li>制定测试方案</li>
+<li>设计测试用例</li>
+<li>准备测试环境</li>
+</ul>
+</li>
+<li><p><strong>测试执行</strong></p>
+<ul>
+<li>执行各项测试</li>
+<li>记录测试数据</li>
+<li>分析测试结果</li>
+</ul>
+</li>
+<li><p><strong>问题跟踪</strong></p>
+<ul>
+<li>记录测试问题</li>
+<li>跟踪问题解决</li>
+<li>验证问题关闭</li>
+</ul>
+</li>
+</ol>
+<h2>四、工作流程</h2>
+<h3>4.1 概念阶段</h3>
+<pre><code>需求收集 → 可行性分析 → 概念设计 → CDCP评审
+</code></pre>
+<p><strong>关键活动：</strong></p>
+<ul>
+<li>市场需求分析（产品经理）</li>
+<li>技术可行性评估（各领域工程师）</li>
+<li>商业可行性分析（PDT经理）</li>
+<li>概念文档编写（PDT团队）</li>
+</ul>
+<h3>4.2 计划阶段</h3>
+<pre><code>详细设计 → 计划制定 → 资源协调 → PDCP评审
+</code></pre>
+<p><strong>关键活动：</strong></p>
+<ul>
+<li>详细技术方案（各领域工程师）</li>
+<li>项目计划制定（PDT经理）</li>
+<li>资源需求确认（各领域代表）</li>
+<li>风险识别与应对（可靠性工程师）</li>
+</ul>
+<h3>4.3 开发阶段</h3>
+<pre><code>设计实现 → 样机制作 → 单元测试 → 集成测试
+</code></pre>
+<p><strong>关键活动：</strong></p>
+<ul>
+<li>电路设计与仿真（各领域工程师）</li>
+<li>PCB设计与制作（射频/数字工程师）</li>
+<li>样机装配与调试（PDT团队）</li>
+<li>单元测试与验证（测试支持）</li>
+</ul>
+<h3>4.4 验证阶段</h3>
+<pre><code>系统测试 → 环境试验 → 可靠性测试 → 技术评审
+</code></pre>
+<p><strong>关键活动：</strong></p>
+<ul>
+<li>系统性能测试（测试支持）</li>
+<li>环境适应性测试（可靠性工程师）</li>
+<li>EMC测试（各领域工程师）</li>
+<li>问题分析与改进（PDT团队）</li>
+</ul>
+<h3>4.5 发布阶段</h3>
+<pre><code>量产准备 → 文档发布 → 培训交付 → ADCP评审
+</code></pre>
+<p><strong>关键活动：</strong></p>
+<ul>
+<li>生产工艺文件（各领域工程师）</li>
+<li>测试工装准备（测试支持）</li>
+<li>用户文档编写（产品经理）</li>
+<li>生产培训（PDT团队）</li>
+</ul>
+<h2>五、沟通机制</h2>
+<h3>5.1 定期会议</h3>
+<table>
+<thead>
+<tr>
+<th>会议</th>
+<th>频率</th>
+<th>时长</th>
+<th>参与人员</th>
+<th>主要内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>IPMT月会</strong></td>
+<td>每月</td>
+<td>2小时</td>
+<td>IPMT全体</td>
+<td>战略决策、项目评审</td>
+</tr>
+<tr>
+<td><strong>PDT周会</strong></td>
+<td>每周</td>
+<td>1小时</td>
+<td>PDT核心团队</td>
+<td>进度跟踪、问题解决</td>
+</tr>
+<tr>
+<td><strong>技术例会</strong></td>
+<td>每周</td>
+<td>1.5小时</td>
+<td>相关工程师</td>
+<td>技术讨论、方案评审</td>
+</tr>
+<tr>
+<td><strong>风险评审会</strong></td>
+<td>双周</td>
+<td>1小时</td>
+<td>PDT经理+相关成员</td>
+<td>风险识别、应对跟踪</td>
+</tr>
+</tbody></table>
+<h3>5.2 报告机制</h3>
+<table>
+<thead>
+<tr>
+<th>报告</th>
+<th>频率</th>
+<th>提交对象</th>
+<th>主要内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>项目周报</strong></td>
+<td>每周</td>
+<td>IPMT、相关组</td>
+<td>进度、问题、风险、计划</td>
+</tr>
+<tr>
+<td><strong>技术报告</strong></td>
+<td>按阶段</td>
+<td>技术开发组</td>
+<td>设计文档、测试报告</td>
+</tr>
+<tr>
+<td><strong>质量报告</strong></td>
+<td>每月</td>
+<td>IPMT、质量部</td>
+<td>质量数据、改进措施</td>
+</tr>
+<tr>
+<td><strong>风险报告</strong></td>
+<td>双周</td>
+<td>IPMT</td>
+<td>风险状态、应对效果</td>
+</tr>
+</tbody></table>
+<h2>六、成功关键因素</h2>
+<h3>6.1 人员配置关键</h3>
+<ol>
+<li><strong>PDT经理</strong>：需要同时懂技术和管理</li>
+<li><strong>领域专家</strong>：每个技术领域必须有资深工程师</li>
+<li><strong>资源平衡</strong>：避免同一工程师同时参与多个PDT</li>
+<li><strong>备份机制</strong>：关键岗位要有备份人员</li>
+</ol>
+<h3>6.2 流程执行关键</h3>
+<ol>
+<li><strong>严格评审</strong>：每个决策点必须认真评审</li>
+<li><strong>文档规范</strong>：所有输出必须有规范文档</li>
+<li><strong>问题闭环</strong>：所有问题必须跟踪到关闭</li>
+<li><strong>经验积累</strong>：建立经验教训库</li>
+</ol>
+<h3>6.3 技术支持关键</h3>
+<ol>
+<li><strong>平台建设</strong>：建立技术平台和模块库</li>
+<li><strong>工具统一</strong>：统一设计工具和测试工具</li>
+<li><strong>知识共享</strong>：定期技术分享和经验交流</li>
+<li><strong>培训提升</strong>：持续的技术和流程培训</li>
+</ol>
+<h2>七、实施建议</h2>
+<h3>7.1 第一阶段（1-2个月）：试点运行</h3>
+<ol>
+<li><strong>选择试点项目</strong>：中等复杂度微波产品</li>
+<li><strong>组建试点PDT</strong>：抽调精干人员</li>
+<li><strong>简化流程</strong>：先执行核心流程</li>
+<li><strong>收集反馈</strong>：及时调整优化</li>
+</ol>
+<h3>7.2 第二阶段（3-4个月）：全面推广</h3>
+<ol>
+<li><strong>所有新产品</strong>：强制按IPD流程执行</li>
+<li><strong>老产品优化</strong>：逐步导入IPD方法</li>
+<li><strong>流程完善</strong>：根据反馈优化流程</li>
+<li><strong>工具建设</strong>：完善模板和工具</li>
+</ol>
+<h3>7.3 第三阶段（5-6个月）：持续改进</h3>
+<ol>
+<li><strong>绩效评估</strong>：建立IPD绩效指标</li>
+<li><strong>知识管理</strong>：建立最佳实践库</li>
+<li><strong>文化培育</strong>：形成IPD文化</li>
+<li><strong>优化创新</strong>：持续改进流程</li>
+</ol>
+<hr>
+<p><em>本文档专为25人微波硬件部门IPD实施设计</em>
+<em>版本：V1.0 | 创建日期：2026-03-15 | 创建人：小华</em></p>
+
+        </div>
+        <div class="footer">
+            转换为网页版 | 生成时间: 2026/3/20 20:21:55
+        </div>
+    </div>
+</body>
+</html>
