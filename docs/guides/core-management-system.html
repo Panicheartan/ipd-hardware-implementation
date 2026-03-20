@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理体系建设核心方案 | 微波室IPD文档中心</title>
+    <link rel="stylesheet" href="../../../../../../../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="../../../../../../../index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室文档中心</span>
+            </a>
+        </div>
+        
+        <div class="navbar-center">
+            <div class="nav-links">
+                <a href="../../../../../../../index.html" class="nav-link">首页</a>
+                <a href="../../../../../../../guides/index.html" class="nav-link">实施指南</a>
+                <a href="../../../../../../../ipd/index.html" class="nav-link">IPD流程</a>
+                <a href="../../../../../../../templates/index.html" class="nav-link">模板</a>
+                <a href="../../../../../../../hr/index.html" class="nav-link">HR管理</a>
+                <a href="../../../../../../../handbook/index.html" class="nav-link">员工手册</a>
+            </div>
+        </div>
+        
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="nav-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="layout" style="margin-top: 64px;">
+        <!-- 侧边目录 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="切换侧边栏">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <span class="sidebar-title">文档目录</span>
+            </div>
+            <nav class="sidebar-nav" id="toc"></nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content" id="mainContent">
+            <div class="content-section">
+                <h1>管理体系建设核心方案</h1>
+                <h1>微波室管理体系建设核心方案</h1>
+<h2>基于&quot;职责分工+工作流程+绩效考核&quot;三要素</h2>
+<p><strong>版本</strong>：V1.0<br><strong>核心原则</strong>：先明确&quot;谁负责&quot;，再明确&quot;怎么配合&quot;，最后明确&quot;如何评价&quot;<br><strong>实施周期</strong>：90天（第1-3个月）</p>
+<hr>
+<h2>第一章 核心逻辑</h2>
+<h3>1.1 管理体系三要素</h3>
+<pre><code>┌─────────────────────────────────────┐
+│         第一要素：职责分工           │
+│         （Who - 谁负责什么）         │
+│                                     │
+│    回答：每个岗位的职责是什么？      │
+│          与其他岗位的协作关系？      │
+└───────────────┬─────────────────────┘
+                ↓
+┌─────────────────────────────────────┐
+│         第二要素：工作流程           │
+│         （How - 工作怎么流转）       │
+│                                     │
+│    回答：工作从哪里开始？到哪里结束？│
+│          中间经过哪些环节？谁审批？  │
+└───────────────┬─────────────────────┘
+                ↓
+┌─────────────────────────────────────┐
+│         第三要素：绩效考核           │
+│         （Result - 如何评价结果）    │
+│                                     │
+│    回答：做到什么程度算好？算不好？  │
+│          做好了怎么奖？做不好怎么罚？│
+└─────────────────────────────────────┘
+</code></pre>
+<h3>1.2 为什么这三要素是关键基础？</h3>
+<table>
+<thead>
+<tr>
+<th align="left">要素</th>
+<th align="left">如果没有会怎样？</th>
+<th align="left">建设目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>职责分工</strong></td>
+<td align="left">推诿扯皮，出问题找不到责任人</td>
+<td align="left">人人清楚&quot;我是谁、我该做什么&quot;</td>
+</tr>
+<tr>
+<td align="left"><strong>工作流程</strong></td>
+<td align="left">协作混乱，工作卡壳，效率低下</td>
+<td align="left">工作顺畅流转，减少内耗</td>
+</tr>
+<tr>
+<td align="left"><strong>绩效考核</strong></td>
+<td align="left">干多干少一个样，优秀员工流失</td>
+<td align="left">奖优罚劣，激发团队动力</td>
+</tr>
+</tbody></table>
+<h3>1.3 三要素之间的关系</h3>
+<p><strong>逻辑顺序</strong>：职责分工 → 工作流程 → 绩效考核</p>
+<ol>
+<li><strong>先定职责</strong>：明确每个岗位&quot;该做什么&quot;</li>
+<li><strong>再定流程</strong>：明确工作&quot;怎么配合完成&quot;</li>
+<li><strong>最后定考核</strong>：明确&quot;做到什么程度&quot;如何评价</li>
+</ol>
+<p><strong>相互支撑</strong>：</p>
+<ul>
+<li>职责清晰了，流程才能设计</li>
+<li>流程顺畅了，考核才有依据</li>
+<li>考核到位了，职责和流程才能落地执行</li>
+</ul>
+<hr>
+<h2>第二章 第一要素：职责分工</h2>
+<h3>2.1 微波室组织架构</h3>
+<pre><code>微波室（25人 + 主任/副主任）
+├── 产品管理组（8人）
+│   ├── 组长（1人）- 组内统筹、项目管理
+│   ├── 研发管理（3人）- 需求分析、项目进度、客户对接
+│   └── 可靠性管理（4人）- 可靠性/EMC/元器件/环境评估
+│
+├── 产品开发组（4人）
+│   ├── 组长（1人）- 组内统筹、架构把关
+│   └── 产品工程师（3人）- 探测①/探测②/通信产品开发
+│
+└── 技术开发组（11人）
+    ├── 组长（1人）- 组内统筹、技术规划、对外对接
+│   ├── 天线专业（3人）- 通信类/探测无源/探测有源天线
+│   ├── 射频专业（3人）- 接收机/发射机/频率源
+│   ├── 数字专业（2人）- FPGA/RFSOC
+│   └── 电源专业（2人）- 二次电源（为各专业供电）
+</code></pre>
+<h3>2.2 各组核心职责</h3>
+<h4>产品管理组（8人）</h4>
+<table>
+<thead>
+<tr>
+<th>岗位</th>
+<th align="center">人数</th>
+<th align="left">核心职责</th>
+<th align="left">关键产出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>组长</strong></td>
+<td align="center">1</td>
+<td align="left">组内工作统筹、项目管理协调、跨组沟通</td>
+<td align="left">项目计划、协调会议纪要</td>
+</tr>
+<tr>
+<td><strong>研发管理</strong></td>
+<td align="center">3</td>
+<td align="left">对外需求沟通、需求分析转化、项目进度管控、客户对接</td>
+<td align="left">需求规格说明书、项目状态报告</td>
+</tr>
+<tr>
+<td><strong>可靠性管理</strong></td>
+<td align="center">1</td>
+<td align="left">可靠性设计审查、可靠性评估、寿命分析</td>
+<td align="left">可靠性评估报告</td>
+</tr>
+<tr>
+<td><strong>EMC管理</strong></td>
+<td align="center">1</td>
+<td align="left">EMC设计审查、EMC测试、电磁兼容评估</td>
+<td align="left">EMC评估报告</td>
+</tr>
+<tr>
+<td><strong>元器件管理</strong></td>
+<td align="center">1</td>
+<td align="left">元器件选型审查、优选库管理、质量管控</td>
+<td align="left">元器件清单、优选库</td>
+</tr>
+<tr>
+<td><strong>环境适应性管理</strong></td>
+<td align="center">1</td>
+<td align="left">环境适应性设计审查、环境试验、防护设计</td>
+<td align="left">环境适应性评估报告</td>
+</tr>
+</tbody></table>
+<h4>产品开发组（4人）</h4>
+<table>
+<thead>
+<tr>
+<th>岗位</th>
+<th align="center">人数</th>
+<th align="left">核心职责</th>
+<th align="left">关键产出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>组长</strong></td>
+<td align="center">1</td>
+<td align="left">组内工作统筹、架构设计把关、跨组技术协调</td>
+<td align="left">架构设计方案、技术协调纪要</td>
+</tr>
+<tr>
+<td><strong>探测类产品①工程师</strong></td>
+<td align="center">1</td>
+<td align="left">探测类产品①单机架构设计、模块集成、技术对接</td>
+<td align="left">产品设计方案、集成测试报告</td>
+</tr>
+<tr>
+<td><strong>探测类产品②工程师</strong></td>
+<td align="center">1</td>
+<td align="left">探测类产品②单机架构设计、模块集成、技术对接</td>
+<td align="left">产品设计方案、集成测试报告</td>
+</tr>
+<tr>
+<td><strong>通信类产品工程师</strong></td>
+<td align="center">1</td>
+<td align="left">通信类产品单机架构设计、模块集成、技术对接</td>
+<td align="left">产品设计方案、集成测试报告</td>
+</tr>
+</tbody></table>
+<h4>技术开发组（11人）</h4>
+<table>
+<thead>
+<tr>
+<th>岗位</th>
+<th align="center">人数</th>
+<th align="left">核心职责</th>
+<th align="left">关键产出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>组长</strong></td>
+<td align="center">1</td>
+<td align="left">组内工作统筹、技术规划、对外（产品开发组）需求对接与协调</td>
+<td align="left">技术Roadmap、需求响应、资源协调</td>
+</tr>
+<tr>
+<td><strong>通信类天线工程师</strong></td>
+<td align="center">1</td>
+<td align="left">通信类天线模块设计、仿真、测试、优化</td>
+<td align="left">天线模块、设计文档</td>
+</tr>
+<tr>
+<td><strong>探测类无源天线工程师</strong></td>
+<td align="center">1</td>
+<td align="left">探测类无源天线模块设计、仿真、测试、优化</td>
+<td align="left">天线模块、设计文档</td>
+</tr>
+<tr>
+<td><strong>探测类有源天线工程师</strong></td>
+<td align="center">1</td>
+<td align="left">探测类有源天线模块设计、仿真、测试、优化</td>
+<td align="left">天线模块、设计文档</td>
+</tr>
+<tr>
+<td><strong>接收机工程师</strong></td>
+<td align="center">1</td>
+<td align="left">接收机射频链路设计、调试、测试</td>
+<td align="left">射频模块、设计文档</td>
+</tr>
+<tr>
+<td><strong>发射机工程师</strong></td>
+<td align="center">1</td>
+<td align="left">发射机射频链路设计、调试、测试</td>
+<td align="left">射频模块、设计文档</td>
+</tr>
+<tr>
+<td><strong>频率源工程师</strong></td>
+<td align="center">1</td>
+<td align="left">频率源设计、时钟电路设计、测试</td>
+<td align="left">射频模块、设计文档</td>
+</tr>
+<tr>
+<td><strong>FPGA工程师</strong></td>
+<td align="center">1</td>
+<td align="left">FPGA逻辑开发、信号处理、接口设计</td>
+<td align="left">数字模块、代码、设计文档</td>
+</tr>
+<tr>
+<td><strong>RFSOC工程师</strong></td>
+<td align="center">1</td>
+<td align="left">RFSOC电路开发、高速接口设计</td>
+<td align="left">数字模块、代码、设计文档</td>
+</tr>
+<tr>
+<td><strong>二次电源工程师</strong></td>
+<td align="center">2</td>
+<td align="left">二次电源设计、电源完整性分析、为各专业供电</td>
+<td align="left">电源模块、设计文档</td>
+</tr>
+</tbody></table>
+<h3>2.3 组间协作职责边界</h3>
+<h4>产品开发组 ↔ 技术开发组</h4>
+<table>
+<thead>
+<tr>
+<th align="left">协作内容</th>
+<th align="left">产品开发组职责</th>
+<th align="left">技术开发组职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>需求提出</strong></td>
+<td align="left">提出模块需求，明确性能指标</td>
+<td align="left">接收需求，评估可行性</td>
+</tr>
+<tr>
+<td align="left"><strong>方案制定</strong></td>
+<td align="left">参与方案评审，确认满足产品需求</td>
+<td align="left">制定技术方案，组织评审</td>
+</tr>
+<tr>
+<td align="left"><strong>进度协调</strong></td>
+<td align="left">跟踪进度，反馈变更</td>
+<td align="left">按计划开发，及时反馈风险</td>
+</tr>
+<tr>
+<td align="left"><strong>验收确认</strong></td>
+<td align="left">验收模块，确认满足需求</td>
+<td align="left">交付模块，提供技术支持</td>
+</tr>
+<tr>
+<td align="left"><strong>问题处理</strong></td>
+<td align="left">反馈使用问题</td>
+<td align="left">解决问题，优化模块</td>
+</tr>
+</tbody></table>
+<p><strong>协作接口</strong>：产品开发组 → 技术开发组组长 → 各专业工程师</p>
+<h4>产品管理组 ↔ 产品开发组</h4>
+<table>
+<thead>
+<tr>
+<th align="left">协作内容</th>
+<th align="left">产品管理组职责</th>
+<th align="left">产品开发组职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>需求输入</strong></td>
+<td align="left">转化客户需求为标准化规格</td>
+<td align="left">接收规格，提出疑问</td>
+</tr>
+<tr>
+<td align="left"><strong>进度管理</strong></td>
+<td align="left">跟踪项目进度，协调资源</td>
+<td align="left">按计划执行，反馈偏差</td>
+</tr>
+<tr>
+<td align="left"><strong>DFX评估</strong></td>
+<td align="left">组织可靠性/EMC/环境评估</td>
+<td align="left">配合评估，整改问题</td>
+</tr>
+<tr>
+<td align="left"><strong>交付验收</strong></td>
+<td align="left">组织交付评审，移交生产</td>
+<td align="left">交付设计资料，支持批产</td>
+</tr>
+</tbody></table>
+<h3>2.4 岗位说明书文件</h3>
+<p>详细岗位职责见：<a href="./templates/hr/02-job-description-microwave.md"><code>templates/hr/02-job-description-microwave.md</code></a></p>
+<hr>
+<h2>第三章 第二要素：工作流程</h2>
+<h3>3.1 核心工作流程清单</h3>
+<table>
+<thead>
+<tr>
+<th align="left">流程名称</th>
+<th align="left">目的</th>
+<th align="left">主要环节</th>
+<th align="left">参与方</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>组间协作流程</strong></td>
+<td align="left">产品开发组与技术开发组高效协作</td>
+<td align="left">需求提出→评估反馈→方案制定→开发交付→验收确认</td>
+<td align="left">产品开发组、技术开发组</td>
+</tr>
+<tr>
+<td align="left"><strong>需求管理流程</strong></td>
+<td align="left">需求清晰可追溯，减少返工</td>
+<td align="left">需求收集→分析确认→变更控制→实现验收</td>
+<td align="left">产品管理组、产品开发组</td>
+</tr>
+<tr>
+<td align="left"><strong>IPD阶段评审流程</strong></td>
+<td align="left">确保质量，避免后期返工</td>
+<td align="left">CDCP→PDCP→开发评审→TR评审→ADCP</td>
+<td align="left">全组参与</td>
+</tr>
+<tr>
+<td align="left"><strong>周协调会机制</strong></td>
+<td align="left">定期对齐，及时解决问题</td>
+<td align="left">需求更新→进度汇报→问题协调→计划确认</td>
+<td align="left">产品开发组长、技术开发组长</td>
+</tr>
+<tr>
+<td align="left"><strong>技术分享机制</strong></td>
+<td align="left">知识传承，团队能力提升</td>
+<td align="left">分享准备→现场分享→讨论交流→文档入库</td>
+<td align="left">全员</td>
+</tr>
+</tbody></table>
+<h3>3.2 组间协作流程（产品开发组 ↔ 技术开发组）</h3>
+<pre><code>产品开发组                        技术开发组
+    │                                  │
+    │ ① 提出模块需求                   │
+    │ （性能指标、交付时间）            │
+    │─────────────────────────────────→│
+    │                                  │
+    │                                  │ ② 需求评估
+    │                                  │ （可行性、工作量、风险）
+    │←─────────────────────────────────│
+    │ ③ 评估反馈                       │
+    │ （是否可行、预计交付时间）        │
+    │                                  │
+    │ ④ 参与方案评审                   │
+    │─────────────────────────────────→│
+    │                                  │ ⑤ 制定技术方案
+    │←─────────────────────────────────│
+    │ ⑥ 方案确认                       │
+    │                                  │
+    │ ⑦ 跟踪进度、反馈变更              │←→│ ⑧ 按计划开发、及时反馈风险
+    │                                  │
+    │ ⑨ 验收模块                       │
+    │─────────────────────────────────→│
+    │←─────────────────────────────────│
+    │ ⑩ 交付模块、提供技术支持          │
+</code></pre>
+<p><strong>协作接口人</strong>：</p>
+<ul>
+<li>产品开发组 → 产品开发组组长 → 具体产品工程师</li>
+<li>技术开发组 → 技术开发组组长 → 各专业工程师</li>
+</ul>
+<p><strong>时效要求</strong>：</p>
+<ul>
+<li>需求评估反馈：2个工作日内</li>
+<li>技术方案制定：5个工作日内</li>
+<li>进度风险反馈：发现后立即反馈</li>
+</ul>
+<h3>3.3 周协调会机制</h3>
+<table>
+<thead>
+<tr>
+<th align="left">要素</th>
+<th align="left">内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>时间</strong></td>
+<td align="left">每周三下午 14:00-15:00</td>
+</tr>
+<tr>
+<td align="left"><strong>参与人</strong></td>
+<td align="left">产品开发组长、技术开发组长</td>
+</tr>
+<tr>
+<td align="left"><strong>议程</strong></td>
+<td align="left">需求更新（5分钟）→ 进度汇报（10分钟）→ 问题协调（10分钟）→ 计划确认（5分钟）</td>
+</tr>
+<tr>
+<td align="left"><strong>产出</strong></td>
+<td align="left">会议纪要 + 行动项（责任人+完成时间）</td>
+</tr>
+<tr>
+<td align="left"><strong>主任参与</strong></td>
+<td align="left">每月参加1次</td>
+</tr>
+</tbody></table>
+<h3>3.4 需求管理流程</h3>
+<table>
+<thead>
+<tr>
+<th align="left">阶段</th>
+<th align="left">动作</th>
+<th align="left">责任人</th>
+<th align="left">交付物</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>需求收集</strong></td>
+<td align="left">收集客户需求、内部需求</td>
+<td align="left">产品管理组</td>
+<td align="left">需求清单</td>
+</tr>
+<tr>
+<td align="left"><strong>需求分析</strong></td>
+<td align="left">分析可行性、工作量、风险</td>
+<td align="left">产品管理组+产品开发组</td>
+<td align="left">需求分析报告</td>
+</tr>
+<tr>
+<td align="left"><strong>需求确认</strong></td>
+<td align="left">与客户确认需求规格</td>
+<td align="left">产品管理组</td>
+<td align="left">需求规格说明书（SRS）</td>
+</tr>
+<tr>
+<td align="left"><strong>需求变更</strong></td>
+<td align="left">评估变更影响，审批变更</td>
+<td align="left">变更提出人+项目经理</td>
+<td align="left">变更请求表（CR）</td>
+</tr>
+<tr>
+<td align="left"><strong>需求实现</strong></td>
+<td align="left">按计划开发实现</td>
+<td align="left">产品开发组+技术开发组</td>
+<td align="left">设计文档、代码</td>
+</tr>
+<tr>
+<td align="left"><strong>需求验收</strong></td>
+<td align="left">验证满足需求</td>
+<td align="left">产品管理组</td>
+<td align="left">验收报告</td>
+</tr>
+</tbody></table>
+<p><strong>需求台账管理</strong>：每个需求必须录入台账，跟踪状态</p>
+<h3>3.5 技术分享机制</h3>
+<table>
+<thead>
+<tr>
+<th align="left">要素</th>
+<th align="left">内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>时间</strong></td>
+<td align="left">每周五下午 16:00-17:00</td>
+</tr>
+<tr>
+<td align="left"><strong>参与人</strong></td>
+<td align="left">全员（25人）</td>
+</tr>
+<tr>
+<td align="left"><strong>形式</strong></td>
+<td align="left">轮流分享，30分钟分享 + 30分钟讨论</td>
+</tr>
+<tr>
+<td align="left"><strong>排班</strong></td>
+<td align="left">各组轮流，每月排班表</td>
+</tr>
+<tr>
+<td align="left"><strong>要求</strong></td>
+<td align="left">分享前3天提交PPT审核，分享后1天文档入库</td>
+</tr>
+<tr>
+<td align="left"><strong>激励</strong></td>
+<td align="left">分享积分纳入绩效考核，季度评选最佳分享奖</td>
+</tr>
+</tbody></table>
+<h3>3.6 IPD阶段评审流程</h3>
+<table>
+<thead>
+<tr>
+<th align="left">评审点</th>
+<th align="left">目的</th>
+<th align="left">参与人</th>
+<th align="left">交付物</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>CDCP</strong>（概念决策）</td>
+<td align="left">确认需求和技术可行性</td>
+<td align="left">主任主持，全员参与</td>
+<td align="left">评审报告、决策结论</td>
+</tr>
+<tr>
+<td align="left"><strong>PDCP</strong>（计划决策）</td>
+<td align="left">确认方案和资源配置</td>
+<td align="left">主任主持，全员参与</td>
+<td align="left">评审报告、项目计划</td>
+</tr>
+<tr>
+<td align="left"><strong>TR</strong>（技术评审）</td>
+<td align="left">开发过程中技术把关</td>
+<td align="left">组长主持，相关专家</td>
+<td align="left">评审报告、问题清单</td>
+</tr>
+<tr>
+<td align="left"><strong>ADCP</strong>（发布决策）</td>
+<td align="left">确认质量和交付readiness</td>
+<td align="left">主任主持，全员参与</td>
+<td align="left">评审报告、交付物</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第四章 第三要素：绩效考核</h2>
+<h3>4.1 考核原则</h3>
+<table>
+<thead>
+<tr>
+<th align="left">原则</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>差异化</strong></td>
+<td align="left">三组（技术开发/产品开发/产品管理）考核维度不同</td>
+</tr>
+<tr>
+<td align="left"><strong>量化为主</strong></td>
+<td align="left">尽量用数据说话，减少主观评价</td>
+</tr>
+<tr>
+<td align="left"><strong>及时反馈</strong></td>
+<td align="left">月度跟踪，季度面谈，及时发现问题</td>
+</tr>
+<tr>
+<td align="left"><strong>激励导向</strong></td>
+<td align="left">奖励优秀，帮助改进，不是惩罚工具</td>
+</tr>
+</tbody></table>
+<h3>4.2 三组差异化考核</h3>
+<h4>技术开发组（11人）</h4>
+<table>
+<thead>
+<tr>
+<th align="left">考核维度</th>
+<th align="center">权重</th>
+<th align="left">关键指标</th>
+<th align="center">目标值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>技术成果</strong></td>
+<td align="center">40%</td>
+<td align="left">模块按时交付率</td>
+<td align="center">≥95%</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="left">模块性能达标率</td>
+<td align="center">≥95%</td>
+</tr>
+<tr>
+<td align="left"><strong>项目支持</strong></td>
+<td align="center">30%</td>
+<td align="left">需求响应及时率</td>
+<td align="center">≥95%</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="left">技术支持满意度</td>
+<td align="center">≥4.0/5.0</td>
+</tr>
+<tr>
+<td align="left"><strong>技术积累</strong></td>
+<td align="center">20%</td>
+<td align="left">知识文档贡献</td>
+<td align="center">≥2篇/季度/人</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="left">技术分享次数</td>
+<td align="center">≥1次/季度/人</td>
+</tr>
+<tr>
+<td align="left"><strong>协作配合</strong></td>
+<td align="center">10%</td>
+<td align="left">协作满意度</td>
+<td align="center">≥4.0/5.0</td>
+</tr>
+</tbody></table>
+<h4>产品开发组（4人）</h4>
+<table>
+<thead>
+<tr>
+<th align="left">考核维度</th>
+<th align="center">权重</th>
+<th align="left">关键指标</th>
+<th align="center">目标值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>产品成果</strong></td>
+<td align="center">50%</td>
+<td align="left">产品按时交付率</td>
+<td align="center">≥90%</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="left">产品一次通过率</td>
+<td align="center">≥85%</td>
+</tr>
+<tr>
+<td align="left"><strong>架构设计</strong></td>
+<td align="center">25%</td>
+<td align="left">架构评审通过率</td>
+<td align="center">≥90%</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="left">接口定义准确率</td>
+<td align="center">≥95%</td>
+</tr>
+<tr>
+<td align="left"><strong>跨组协作</strong></td>
+<td align="center">25%</td>
+<td align="left">协作满意度</td>
+<td align="center">≥4.0/5.0</td>
+</tr>
+</tbody></table>
+<h4>产品管理组（8人）</h4>
+<table>
+<thead>
+<tr>
+<th align="left">考核维度</th>
+<th align="center">权重</th>
+<th align="left">关键指标</th>
+<th align="center">目标值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>项目成功</strong></td>
+<td align="center">40%</td>
+<td align="left">项目按时交付率</td>
+<td align="center">≥90%</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="left">客户满意度</td>
+<td align="center">≥4.2/5.0</td>
+</tr>
+<tr>
+<td align="left"><strong>DFX质量</strong></td>
+<td align="center">35%</td>
+<td align="left">评估准确率</td>
+<td align="center">≥90%</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="left">问题发现率</td>
+<td align="center">≥90%</td>
+</tr>
+<tr>
+<td align="left"><strong>协调能力</strong></td>
+<td align="center">25%</td>
+<td align="left">问题响应时间</td>
+<td align="center">≤4小时</td>
+</tr>
+</tbody></table>
+<h3>4.3 绩效管理周期</h3>
+<table>
+<thead>
+<tr>
+<th align="left">周期</th>
+<th align="left">动作</th>
+<th align="left">参与人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>季度初</strong></td>
+<td align="left">签订绩效目标</td>
+<td align="left">上级+员工</td>
+</tr>
+<tr>
+<td align="left"><strong>每月</strong></td>
+<td align="left">绩效跟踪反馈</td>
+<td align="left">上级+员工</td>
+</tr>
+<tr>
+<td align="left"><strong>季度末</strong></td>
+<td align="left">绩效考核评估</td>
+<td align="left">上级+员工</td>
+</tr>
+<tr>
+<td align="left"><strong>季度末</strong></td>
+<td align="left">绩效面谈</td>
+<td align="left">上级+员工</td>
+</tr>
+</tbody></table>
+<h3>4.4 绩效结果应用</h3>
+<table>
+<thead>
+<tr>
+<th align="left">等级</th>
+<th align="center">比例</th>
+<th align="left">结果应用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>S</strong>（卓越）</td>
+<td align="center">≤10%</td>
+<td align="left">晋升优先、大幅调薪、表彰</td>
+</tr>
+<tr>
+<td align="left"><strong>A</strong>（优秀）</td>
+<td align="center">≤20%</td>
+<td align="left">优先调薪、发展机会</td>
+</tr>
+<tr>
+<td align="left"><strong>B+</strong>（良好）</td>
+<td align="center">~35%</td>
+<td align="left">正常调薪</td>
+</tr>
+<tr>
+<td align="left"><strong>B</strong>（合格）</td>
+<td align="center">~25%</td>
+<td align="left">维持现状，帮助改进</td>
+</tr>
+<tr>
+<td align="left"><strong>C</strong>（待改进）</td>
+<td align="center">~10%</td>
+<td align="left">绩效改进计划（PIP）</td>
+</tr>
+</tbody></table>
+<h3>4.5 绩效管理办法文件</h3>
+<p>详细绩效考核见：<a href="./templates/hr/03-performance-management.md"><code>templates/hr/03-performance-management.md</code></a></p>
+<hr>
+<h2>第五章 90天实施计划</h2>
+<h3>5.1 总体时间安排</h3>
+<pre><code>Week:  1   2   3   4   5   6   7   8   9   10  11  12
+       |---|---|---|---|---|---|---|---|---|---|---|
+
+第一步: 职责分工（第1-2周）
+       [=======]
+       岗位说明书发布、职责边界明确
+
+第二步: 工作流程（第2-4周）
+           [===========]
+           周协调会、需求管理、技术分享、IPD流程
+
+第三步: 绩效考核（第4-6周）
+                   [===========]
+                   考核方案、目标签订、月度跟踪
+
+持续运行:（第6-12周）
+                           [===================]
+                           所有机制常态化运转
+</code></pre>
+<h3>5.2 详细实施步骤</h3>
+<h4>第一步：职责分工（第1-2周）</h4>
+<table>
+<thead>
+<tr>
+<th align="center">时间</th>
+<th align="left">任务</th>
+<th align="left">交付物</th>
+<th align="left">负责人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">第1天</td>
+<td align="left">发布岗位说明书</td>
+<td align="left">各岗位职责文档</td>
+<td align="left">主任</td>
+</tr>
+<tr>
+<td align="center">第3天</td>
+<td align="left">组织职责宣贯会</td>
+<td align="left">会议纪要</td>
+<td align="left">主任</td>
+</tr>
+<tr>
+<td align="center">第5天</td>
+<td align="left">明确组间协作接口</td>
+<td align="left">协作流程图</td>
+<td align="left">主任+组长</td>
+</tr>
+<tr>
+<td align="center">第10天</td>
+<td align="left">收集疑问并解答</td>
+<td align="left">Q&amp;A文档</td>
+<td align="left">综合管理</td>
+</tr>
+</tbody></table>
+<p><strong>里程碑</strong>：人人清楚&quot;我是谁、我该做什么&quot;</p>
+<h4>第二步：工作流程（第2-4周）</h4>
+<table>
+<thead>
+<tr>
+<th align="center">时间</th>
+<th align="left">任务</th>
+<th align="left">交付物</th>
+<th align="left">负责人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">第8天</td>
+<td align="left">建立周协调会机制</td>
+<td align="left">会议通知</td>
+<td align="left">主任</td>
+</tr>
+<tr>
+<td align="center">第10天</td>
+<td align="left">第一次周协调会</td>
+<td align="left">会议纪要</td>
+<td align="left">产品开发组长</td>
+</tr>
+<tr>
+<td align="center">第12天</td>
+<td align="left">建立需求管理台账</td>
+<td align="left">Excel模板</td>
+<td align="left">产品管理组长</td>
+</tr>
+<tr>
+<td align="center">第14天</td>
+<td align="left">启动周技术分享</td>
+<td align="left">分享PPT+视频</td>
+<td align="left">主任（首次）</td>
+</tr>
+<tr>
+<td align="center">第15天</td>
+<td align="left">制定分享排班表</td>
+<td align="left">排班表</td>
+<td align="left">综合管理</td>
+</tr>
+<tr>
+<td align="center">第20天</td>
+<td align="left">选定IPD试点项目</td>
+<td align="left">试点项目确定</td>
+<td align="left">主任</td>
+</tr>
+<tr>
+<td align="center">第22天</td>
+<td align="left">试点项目启动会</td>
+<td align="left">会议纪要</td>
+<td align="left">项目经理</td>
+</tr>
+</tbody></table>
+<p><strong>里程碑</strong>：协作机制运转起来</p>
+<h4>第三步：绩效考核（第4-6周）</h4>
+<table>
+<thead>
+<tr>
+<th align="center">时间</th>
+<th align="left">任务</th>
+<th align="left">交付物</th>
+<th align="left">负责人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">第22天</td>
+<td align="left">发布绩效考核方案</td>
+<td align="left">考核方案文档</td>
+<td align="left">主任</td>
+</tr>
+<tr>
+<td align="center">第24天</td>
+<td align="left">培训绩效管理办法</td>
+<td align="left">培训记录</td>
+<td align="left">主任</td>
+</tr>
+<tr>
+<td align="center">第26天</td>
+<td align="left">各组长与成员签订Q1绩效目标</td>
+<td align="left">绩效目标表</td>
+<td align="left">各组长</td>
+</tr>
+<tr>
+<td align="center">第30天</td>
+<td align="left">第一次月度绩效跟踪</td>
+<td align="left">反馈记录</td>
+<td align="left">各组长</td>
+</tr>
+<tr>
+<td align="center">第45天</td>
+<td align="left">第二次月度绩效跟踪</td>
+<td align="left">反馈记录</td>
+<td align="left">各组长</td>
+</tr>
+<tr>
+<td align="center">第60天</td>
+<td align="left">Q1绩效考核评估</td>
+<td align="left">考核结果</td>
+<td align="left">各组长+主任</td>
+</tr>
+<tr>
+<td align="center">第65天</td>
+<td align="left">Q1绩效面谈</td>
+<td align="left">面谈记录</td>
+<td align="left">各组长</td>
+</tr>
+</tbody></table>
+<p><strong>里程碑</strong>：考核激励到位</p>
+<h3>5.3 每周检查清单</h3>
+<h4>第1周</h4>
+<ul>
+<li><input disabled="" type="checkbox"> 岗位说明书发布</li>
+<li><input disabled="" type="checkbox"> 职责宣贯会召开</li>
+<li><input disabled="" type="checkbox"> 组间协作接口明确</li>
+</ul>
+<h4>第2周</h4>
+<ul>
+<li><input disabled="" type="checkbox"> 周协调会机制建立</li>
+<li><input disabled="" type="checkbox"> 第一次周协调会召开</li>
+<li><input disabled="" type="checkbox"> 需求管理台账建立</li>
+</ul>
+<h4>第3周</h4>
+<ul>
+<li><input disabled="" type="checkbox"> 周协调会持续开展</li>
+<li><input disabled="" type="checkbox"> 周技术分享启动（你首次分享）</li>
+<li><input disabled="" type="checkbox"> 分享排班表制定</li>
+</ul>
+<h4>第4周</h4>
+<ul>
+<li><input disabled="" type="checkbox"> 周协调会+技术分享常态化</li>
+<li><input disabled="" type="checkbox"> IPD试点项目启动</li>
+<li><input disabled="" type="checkbox"> 绩效考核方案发布</li>
+</ul>
+<h4>第5-12周</h4>
+<ul>
+<li><input disabled="" type="checkbox"> 周协调会每周召开</li>
+<li><input disabled="" type="checkbox"> 技术分享每周开展</li>
+<li><input disabled="" type="checkbox"> 试点项目按计划推进</li>
+<li><input disabled="" type="checkbox"> 月度绩效跟踪反馈</li>
+</ul>
+<h3>5.4 关键成功因素</h3>
+<table>
+<thead>
+<tr>
+<th align="left">因素</th>
+<th align="left">具体做法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>领导带头</strong></td>
+<td align="left">你亲自参加关键会议、首次技术分享、主持关键评审</td>
+</tr>
+<tr>
+<td align="left"><strong>时间保障</strong></td>
+<td align="left">每周三下午（协调会）、每周五下午（分享）雷打不动</td>
+</tr>
+<tr>
+<td align="left"><strong>强制执行</strong></td>
+<td align="left">前4周即使有人抱怨也要坚持，形成习惯后就好了</td>
+</tr>
+<tr>
+<td align="left"><strong>及时反馈</strong></td>
+<td align="left">每周你自己过一遍检查清单，确保工作落地</td>
+</tr>
+<tr>
+<td align="left"><strong>持续优化</strong></td>
+<td align="left">每月复盘，发现问题及时调整</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第六章 资源需求</h2>
+<h3>6.1 时间投入</h3>
+<table>
+<thead>
+<tr>
+<th align="left">工作</th>
+<th align="center">频率</th>
+<th align="center">时长</th>
+<th>投入人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">周协调会</td>
+<td align="center">每周</td>
+<td align="center">1小时</td>
+<td>产品开发组长、技术开发组长</td>
+</tr>
+<tr>
+<td align="left">技术分享</td>
+<td align="center">每周</td>
+<td align="center">1小时</td>
+<td>全员</td>
+</tr>
+<tr>
+<td align="left">绩效跟踪</td>
+<td align="center">每月</td>
+<td align="center">30分钟×人数</td>
+<td>各组长</td>
+</tr>
+<tr>
+<td align="left">绩效面谈</td>
+<td align="center">每季度</td>
+<td align="center">30-60分钟×人数</td>
+<td>各组长</td>
+</tr>
+<tr>
+<td align="left">主任参与协调会</td>
+<td align="center">每月</td>
+<td align="center">1小时</td>
+<td>你</td>
+</tr>
+</tbody></table>
+<h3>6.2 培训投入</h3>
+<table>
+<thead>
+<tr>
+<th align="left">培训内容</th>
+<th align="left">对象</th>
+<th align="left">时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">岗位职责宣贯</td>
+<td align="left">全员</td>
+<td align="left">第1周</td>
+</tr>
+<tr>
+<td align="left">绩效管理培训</td>
+<td align="left">全员</td>
+<td align="left">第4周</td>
+</tr>
+<tr>
+<td align="left">IPD流程培训</td>
+<td align="left">试点项目组</td>
+<td align="left">第4周</td>
+</tr>
+</tbody></table>
+<h3>6.3 工具支持</h3>
+<table>
+<thead>
+<tr>
+<th align="left">工具</th>
+<th align="left">用途</th>
+<th align="left">状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">需求管理台账</td>
+<td align="left">需求跟踪</td>
+<td align="left">Excel即可</td>
+</tr>
+<tr>
+<td align="left">知识库平台</td>
+<td align="left">文档存储</td>
+<td align="left">可用公司现有平台或网盘</td>
+</tr>
+<tr>
+<td align="left">会议纪要模板</td>
+<td align="left">会议记录</td>
+<td align="left">已提供模板</td>
+</tr>
+<tr>
+<td align="left">绩效目标表</td>
+<td align="left">考核管理</td>
+<td align="left">Excel即可</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第七章 风险与应对</h2>
+<table>
+<thead>
+<tr>
+<th align="left">风险</th>
+<th align="center">可能性</th>
+<th align="left">应对措施</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">周协调会流于形式</td>
+<td align="center">中</td>
+<td align="left">严格控制时间，必须有行动项，你每月参加监督</td>
+</tr>
+<tr>
+<td align="left">技术分享无人参加</td>
+<td align="center">中</td>
+<td align="left">强制要求、你带头先讲、与绩效挂钩</td>
+</tr>
+<tr>
+<td align="left">绩效考核执行不到位</td>
+<td align="center">中</td>
+<td align="left">你亲自跟踪，定期检查执行情况</td>
+</tr>
+<tr>
+<td align="left">职责分工引起争议</td>
+<td align="center">低</td>
+<td align="left">提前沟通，说明调整原因，给予适应期</td>
+</tr>
+<tr>
+<td align="left">试点项目严重延期</td>
+<td align="center">中</td>
+<td align="left">每周跟踪进度，及时调配资源</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第八章 文档索引</h2>
+<table>
+<thead>
+<tr>
+<th>文档名称</th>
+<th>位置</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>岗位说明书</td>
+<td><code>templates/hr/02-job-description-microwave.md</code></td>
+<td>职责分工详细定义</td>
+</tr>
+<tr>
+<td>绩效管理办法</td>
+<td><code>templates/hr/03-performance-management.md</code></td>
+<td>绩效考核详细办法</td>
+</tr>
+<tr>
+<td>员工手册</td>
+<td><code>templates/hr/01-employee-handbook.md</code></td>
+<td>全员行为规范</td>
+</tr>
+<tr>
+<td>管理者行动指南</td>
+<td><code>templates/hr/05-manager-action-guide.md</code></td>
+<td>管理者工作指引</td>
+</tr>
+<tr>
+<td>IPD流程模板</td>
+<td><code>templates/03-10</code></td>
+<td>项目执行模板</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第九章 立即行动</h2>
+<h3>今天就做：</h3>
+<ol>
+<li><strong>阅读本文档</strong>，理解三要素逻辑</li>
+<li><strong>检查现有文档</strong>，确认岗位说明书是否需要调整</li>
+<li><strong>准备下周启动</strong>（周协调会+技术分享）</li>
+</ol>
+<h3>本周完成：</h3>
+<ul>
+<li><input disabled="" type="checkbox"> 发布或调整岗位说明书</li>
+<li><input disabled="" type="checkbox"> 组织职责宣贯会</li>
+<li><input disabled="" type="checkbox"> 起草周协调会通知邮件</li>
+<li><input disabled="" type="checkbox"> 准备你的首次技术分享PPT</li>
+</ul>
+<h3>下一步：</h3>
+<p>按照90天计划，逐项推进，每周检查，每月复盘。</p>
+<hr>
+<h2>文档变更记录</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>变更内容</th>
+<th>变更人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>V1.0</td>
+<td>2026-03-17</td>
+<td>初始发布</td>
+<td>微波室主任</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>本方案经微波室主任批准后实施</strong></p>
+
+            </div>
+            
+            <footer style="text-align: center; padding: 40px; color: var(--text-tertiary); border-top: 1px solid var(--border-color); margin-top: 60px;">
+                <p>© 2025 微波室 | IPD硬件研发实施项目</p>
+                <p style="font-size: 0.9em; margin-top: 8px;">最后更新：2025年3月20日</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+        // 代码高亮
+        hljs.highlightAll();
+        
+        // 生成目录
+        const content = document.querySelector('.content-section');
+        const toc = document.getElementById('toc');
+        const headings = content.querySelectorAll('h2, h3');
+        
+        if (headings.length > 0) {
+            headings.forEach(heading => {
+                const link = document.createElement('a');
+                link.href = '#' + heading.id;
+                link.textContent = heading.textContent;
+                link.className = heading.tagName === 'H2' ? 'nav-link' : 'nav-link sub';
+                toc.appendChild(link);
+            });
+        }
+        
+        // 侧边栏切换
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        sidebarToggle?.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+</html>

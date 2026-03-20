@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>员工手册通用模板 | 微波室IPD文档中心</title>
+    <link rel="stylesheet" href="../../../../../../../../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="../../../../../../../../index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室文档中心</span>
+            </a>
+        </div>
+        
+        <div class="navbar-center">
+            <div class="nav-links">
+                <a href="../../../../../../../../index.html" class="nav-link">首页</a>
+                <a href="../../../../../../../../guides/index.html" class="nav-link">实施指南</a>
+                <a href="../../../../../../../../ipd/index.html" class="nav-link">IPD流程</a>
+                <a href="../../../../../../../../templates/index.html" class="nav-link">模板</a>
+                <a href="../../../../../../../../hr/index.html" class="nav-link">HR管理</a>
+                <a href="../../../../../../../../handbook/index.html" class="nav-link">员工手册</a>
+            </div>
+        </div>
+        
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="nav-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="layout" style="margin-top: 64px;">
+        <!-- 侧边目录 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="切换侧边栏">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <span class="sidebar-title">文档目录</span>
+            </div>
+            <nav class="sidebar-nav" id="toc"></nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content" id="mainContent">
+            <div class="content-section">
+                <h1>员工手册通用模板</h1>
+                <h1>硬件研发团队员工手册</h1>
+<h2>文档信息</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文档名称</td>
+<td>硬件研发团队员工手册</td>
+</tr>
+<tr>
+<td>版本号</td>
+<td>V1.0</td>
+</tr>
+<tr>
+<td>生效日期</td>
+<td>YYYY年MM月DD日</td>
+</tr>
+<tr>
+<td>编制部门</td>
+<td>人力资源部 / 技术部门</td>
+</tr>
+<tr>
+<td>批准人</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第一章 欢迎致辞</h2>
+<h3>1.1 欢迎加入</h3>
+<p>欢迎你加入微波室！我们是公司专注于微波探测与通信产品研发的核心部门，现有成员25人。我们致力于通过IPD（集成产品开发）体系和学习型组织建设，打造高性能、高可靠性的微波产品。</p>
+<p>微波室分为三个实体组和一个虚拟综合管理团队：</p>
+<ul>
+<li><strong>产品管理组</strong>（8人）：负责需求转化、项目管理、DFX监督与评估</li>
+<li><strong>产品开发组</strong>（4人）：负责探测类（2条线）和通信类产品开发</li>
+<li><strong>技术开发组</strong>（11人）：负责天线、射频、数字、电源四大类模块开发</li>
+<li><strong>虚拟综合管理团队</strong>（兼职）：负责档案、安全、6S、宣传、制度建设</li>
+</ul>
+<h3>1.2 团队愿景</h3>
+<p>成为微波探测与通信领域的技术引领者，打造模块化、平台化的技术体系，实现产品快速开发与持续创新。</p>
+<h3>1.3 团队使命</h3>
+<ul>
+<li><strong>技术领先</strong>：在天线、射频、数字、电源四大领域持续创新</li>
+<li><strong>产品卓越</strong>：打造性能稳定、质量可靠的探测与通信产品</li>
+<li><strong>协同高效</strong>：建立产品开发与技术开发的高效协同机制</li>
+<li><strong>知识传承</strong>：构建学习型组织，实现知识积累与人才成长</li>
+</ul>
+<hr>
+<h2>第二章 团队组织架构</h2>
+<h3>2.1 组织架构图</h3>
+<pre><code>                    ┌───────────┐
+                    │  主  任   │
+                    └─────┬─────┘
+                          │
+                    ┌───────────┐
+                    │  副主任   │
+                    └─────┬─────┘
+                          │
+        ┌─────────────────┼─────────────────┐
+        │                 │                 │
+   ┌────┴────┐      ┌────┴────┐      ┌────┴────┐
+   │产品管理组│      │产品开发组│      │技术开发组│
+   │  (8人)  │      │  (4人)  │      │ (11人)  │
+   │  ·组长  │      │  ·组长  │      │  ·组长  │
+   │  ·研发  │      │  ·探测① │      │  ·天线3 │
+   │   管理3 │      │  ·探测② │      │   通信  │
+   │  ·可靠  │      │  ·通信  │      │   无源  │
+   │   性4人 │      └─────────┘      │   有源  │
+   └─────────┘                        │  ·射频3 │
+        │                             │   接收  │
+        │                             │   发射  │
+        │                             │   频源  │
+        │                             │  ·数字2 │
+        │                             │   FPGA  │
+        │                             │  ·电源2 │
+        │                             │   二次  │
+        │                             └─────────┘
+        │                                   ↑
+        └───────────┬───────────────────────┘
+                    │  供电关系：电源为天线/射频/数字供电
+        ┌───────────┴───────────┐
+        │   虚拟综合管理团队     │
+        │ （兼职设计师+领导组成）│
+        └───────────────────────┘
+</code></pre>
+<h3>2.2 各组职责</h3>
+<table>
+<thead>
+<tr>
+<th>组/团队</th>
+<th align="center">人数</th>
+<th>主要职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>产品管理组</strong></td>
+<td align="center">8人</td>
+<td>需求转化、项目管理、DFX监督；组织可靠性/EMC/环境/成本评估；受控资料移交生产</td>
+</tr>
+<tr>
+<td><strong>产品开发组</strong></td>
+<td align="center">4人</td>
+<td>单机架构设计、模块集成；负责探测类（2条产品线）和通信类产品开发</td>
+</tr>
+<tr>
+<td><strong>技术开发组</strong></td>
+<td align="center">11人</td>
+<td>四大类模块开发：天线（通信/探测无源/探测有源）、射频（接收/发射/频源）、数字（FPGA/RFSOC）、电源（二次电源）</td>
+</tr>
+<tr>
+<td><strong>虚拟综合管理</strong></td>
+<td align="center">兼职</td>
+<td>档案管理、安全管理、6S管理、宣传管理、制度建设</td>
+</tr>
+</tbody></table>
+<h3>2.3 组内分工</h3>
+<h4>产品管理组（8人）</h4>
+<table>
+<thead>
+<tr>
+<th>岗位</th>
+<th align="center">人数</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>组长</td>
+<td align="center">1人</td>
+<td>组织协调组内工作</td>
+</tr>
+<tr>
+<td>研发管理</td>
+<td align="center">3人</td>
+<td>需求分析、项目进度把控、客户沟通、项目交付</td>
+</tr>
+<tr>
+<td>可靠性管理</td>
+<td align="center">1人</td>
+<td>可靠性设计、可靠性评估、寿命分析</td>
+</tr>
+<tr>
+<td>EMC管理</td>
+<td align="center">1人</td>
+<td>EMC设计、EMC测试、电磁兼容评估</td>
+</tr>
+<tr>
+<td>元器件管理</td>
+<td align="center">1人</td>
+<td>元器件选型、优选库管理、元器件质量</td>
+</tr>
+<tr>
+<td>环境适应性管理</td>
+<td align="center">1人</td>
+<td>环境试验、环境适应性设计、防护设计</td>
+</tr>
+</tbody></table>
+<h4>产品开发组（4人）</h4>
+<table>
+<thead>
+<tr>
+<th>岗位</th>
+<th align="center">人数</th>
+<th>负责产品</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>组长</td>
+<td align="center">1人</td>
+<td>组织协调</td>
+</tr>
+<tr>
+<td>产品工程师</td>
+<td align="center">3人</td>
+<td>探测类产品①、探测类产品②、通信类产品</td>
+</tr>
+</tbody></table>
+<h4>技术开发组（11人）</h4>
+<table>
+<thead>
+<tr>
+<th>专业</th>
+<th align="center">人数</th>
+<th>细分方向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>天线</td>
+<td align="center">3人</td>
+<td>通信类天线、探测类无源天线、探测类有源天线</td>
+</tr>
+<tr>
+<td>射频</td>
+<td align="center">3人</td>
+<td>接收机、发射机、频率源</td>
+</tr>
+<tr>
+<td>数字</td>
+<td align="center">2人</td>
+<td>FPGA电路、RFSOC电路</td>
+</tr>
+<tr>
+<td>电源</td>
+<td align="center">2人</td>
+<td>低压二次电源（为天线、射频、数字供电）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第三章 行为准则</h2>
+<h3>3.1 核心价值观</h3>
+<table>
+<thead>
+<tr>
+<th>价值观</th>
+<th>内涵</th>
+<th>行为要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>客户导向</strong></td>
+<td>以客户需求为中心</td>
+<td>深入理解客户需求，快速响应客户反馈</td>
+</tr>
+<tr>
+<td><strong>质量第一</strong></td>
+<td>质量是产品的生命线</td>
+<td>严守质量标准，不妥协、不侥幸</td>
+</tr>
+<tr>
+<td><strong>协同合作</strong></td>
+<td>团队成功大于个人成功</td>
+<td>主动沟通，乐于分享，互相支持</td>
+</tr>
+<tr>
+<td><strong>持续改进</strong></td>
+<td>追求卓越的永动力</td>
+<td>不断学习，勇于创新，持续优化</td>
+</tr>
+<tr>
+<td><strong>诚信正直</strong></td>
+<td>做人做事的底线</td>
+<td>实事求是，勇于担责，信守承诺</td>
+</tr>
+</tbody></table>
+<h3>3.2 日常工作规范</h3>
+<h4>3.2.1 考勤管理</h4>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>规定</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>工作时间</td>
+<td>周一至周五 9:00-18:00（弹性时间 ±1小时）</td>
+</tr>
+<tr>
+<td>午休时间</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>迟到/早退</td>
+<td>每月累计不超过3次，每次不超过30分钟</td>
+</tr>
+<tr>
+<td>请假流程</td>
+<td>提前1天在OA系统提交申请，紧急情况下电话告知直属上级</td>
+</tr>
+<tr>
+<td>加班管理</td>
+<td>需提前申请，优先安排调休</td>
+</tr>
+</tbody></table>
+<h4>3.2.2 工作纪律</h4>
+<ol>
+<li><p><strong>信息保密</strong></p>
+<ul>
+<li>严守公司商业秘密和技术机密</li>
+<li>未经批准不得对外泄露项目信息</li>
+<li>离职后仍需遵守保密义务</li>
+</ul>
+</li>
+<li><p><strong>知识产权</strong></p>
+<ul>
+<li>职务发明归公司所有</li>
+<li>及时提交技术专利申请</li>
+<li>尊重他人知识产权</li>
+</ul>
+</li>
+<li><p><strong>信息安全</strong></p>
+<ul>
+<li>妥善保管账号密码</li>
+<li>不得擅自安装非授权软件</li>
+<li>敏感数据不得存储在个人设备</li>
+</ul>
+</li>
+<li><p><strong>工作场所</strong></p>
+<ul>
+<li>保持工位整洁有序</li>
+<li>实验室遵守安全操作规程</li>
+<li>公共区域保持安静</li>
+</ul>
+</li>
+</ol>
+<h3>3.3 沟通协作规范</h3>
+<h4>3.3.1 会议规范</h4>
+<table>
+<thead>
+<tr>
+<th>会议类型</th>
+<th align="center">频率</th>
+<th align="center">时长</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>团队例会</td>
+<td align="center">每周</td>
+<td align="center">≤1小时</td>
+<td>提前准备，准时参加，有结论有行动项</td>
+</tr>
+<tr>
+<td>项目周会</td>
+<td align="center">每周</td>
+<td align="center">≤1.5小时</td>
+<td>进展汇报、问题讨论、风险识别</td>
+</tr>
+<tr>
+<td>技术评审会</td>
+<td align="center">按需</td>
+<td align="center">视情况</td>
+<td>提前发送材料，有检查表、有问题记录</td>
+</tr>
+<tr>
+<td>临时协调会</td>
+<td align="center">按需</td>
+<td align="center">≤30分钟</td>
+<td>明确议题，快速决策</td>
+</tr>
+</tbody></table>
+<h4>3.3.2 邮件规范</h4>
+<ol>
+<li><strong>邮件标题</strong>：简明扼要，包含关键词</li>
+<li><strong>收件人</strong>：明确主送、抄送对象</li>
+<li><strong>正文结构</strong>：背景 → 问题/需求 → 期望行动</li>
+<li><strong>附件命名</strong>：项目名称_文档类型_版本_日期</li>
+<li><strong>响应时效</strong>：工作日24小时内回复</li>
+</ol>
+<h4>3.3.3 即时通讯规范</h4>
+<ol>
+<li>工作时间内保持在线状态</li>
+<li>紧急事项优先使用电话</li>
+<li>复杂问题转为会议讨论</li>
+<li>群组发言注意专业和礼貌</li>
+</ol>
+<hr>
+<h2>第四章 IPD研发流程规范</h2>
+<h3>4.1 研发阶段定义</h3>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>目标</th>
+<th>关键交付件</th>
+<th>评审点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>概念阶段</strong></td>
+<td>验证产品机会</td>
+<td>市场需求文档、概念方案</td>
+<td>CDCP</td>
+</tr>
+<tr>
+<td><strong>计划阶段</strong></td>
+<td>制定详细计划</td>
+<td>需求规格书、项目计划</td>
+<td>PDCP</td>
+</tr>
+<tr>
+<td><strong>开发阶段</strong></td>
+<td>完成产品设计</td>
+<td>详细设计文档、原理图、PCB</td>
+<td>设计评审</td>
+</tr>
+<tr>
+<td><strong>验证阶段</strong></td>
+<td>验证产品功能</td>
+<td>测试报告、试产报告</td>
+<td>TR评审</td>
+</tr>
+<tr>
+<td><strong>发布阶段</strong></td>
+<td>产品上市</td>
+<td>量产准备、发布材料</td>
+<td>ADCP</td>
+</tr>
+<tr>
+<td><strong>生命周期</strong></td>
+<td>持续运营</td>
+<td>维护记录、改进方案</td>
+<td>季度评审</td>
+</tr>
+</tbody></table>
+<h3>4.2 关键角色职责</h3>
+<h4>4.2.1 IPD项目角色</h4>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>来源</th>
+<th>主要职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>项目经理(LPDT)</strong></td>
+<td>产品管理组</td>
+<td>项目整体管理、跨组协调、风险控制、客户对接</td>
+</tr>
+<tr>
+<td><strong>系统工程师(SE)</strong></td>
+<td>产品开发组</td>
+<td>单机架构设计、指标分解、技术方案制定</td>
+</tr>
+<tr>
+<td><strong>天线工程师</strong></td>
+<td>技术开发组</td>
+<td>天线模块设计与优化、技术支持</td>
+</tr>
+<tr>
+<td><strong>射频工程师</strong></td>
+<td>技术开发组</td>
+<td>射频模块（接收/发射/频源）设计与优化</td>
+</tr>
+<tr>
+<td><strong>数字工程师</strong></td>
+<td>技术开发组</td>
+<td>数字电路（FPGA/RFSOC）开发</td>
+</tr>
+<tr>
+<td><strong>电源工程师</strong></td>
+<td>技术开发组</td>
+<td>二次电源设计与供电方案</td>
+</tr>
+<tr>
+<td><strong>可靠性工程师</strong></td>
+<td>产品管理组</td>
+<td>可靠性设计审查、可靠性评估</td>
+</tr>
+<tr>
+<td><strong>EMC工程师</strong></td>
+<td>产品管理组</td>
+<td>EMC设计审查、EMC测试与评估</td>
+</tr>
+<tr>
+<td><strong>质量工程师(PQA)</strong></td>
+<td>产品管理组</td>
+<td>流程合规、质量审计、问题跟踪</td>
+</tr>
+</tbody></table>
+<h4>4.2.2 技术评审职责</h4>
+<table>
+<thead>
+<tr>
+<th>评审角色</th>
+<th>来源</th>
+<th>评审重点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>系统工程师</td>
+<td>产品开发组</td>
+<td>系统架构、指标分解、接口一致性</td>
+</tr>
+<tr>
+<td>天线专家</td>
+<td>技术开发组</td>
+<td>天线性能、辐射特性、兼容性</td>
+</tr>
+<tr>
+<td>射频专家</td>
+<td>技术开发组</td>
+<td>射频指标、噪声系数、线性度、频率稳定性</td>
+</tr>
+<tr>
+<td>数字专家</td>
+<td>技术开发组</td>
+<td>信号处理、接口协议、时序</td>
+</tr>
+<tr>
+<td>电源专家</td>
+<td>技术开发组</td>
+<td>供电方案、电源完整性、效率</td>
+</tr>
+<tr>
+<td>可靠性代表</td>
+<td>产品管理组</td>
+<td>可靠性设计、环境适应性</td>
+</tr>
+<tr>
+<td>EMC代表</td>
+<td>产品管理组</td>
+<td>电磁兼容设计、屏蔽滤波</td>
+</tr>
+</tbody></table>
+<h3>4.3 文档管理规范</h3>
+<h4>4.3.1 文档命名规范</h4>
+<pre><code>[项目编号]_[文档类型]_[文档名称]_[版本]_[日期]
+示例：PRJ001_SRS_电源模块需求规格书_V1.0_20240315
+</code></pre>
+<h4>4.3.2 文档版本管理</h4>
+<table>
+<thead>
+<tr>
+<th>版本状态</th>
+<th>版本号规则</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>草稿</td>
+<td>V0.x</td>
+<td>编制过程中</td>
+</tr>
+<tr>
+<td>评审中</td>
+<td>V1.0_RCx</td>
+<td>Release Candidate</td>
+</tr>
+<tr>
+<td>已发布</td>
+<td>V1.0、V2.0</td>
+<td>正式版本</td>
+</tr>
+<tr>
+<td>已作废</td>
+<td>V1.0_OBS</td>
+<td>被新版本替代</td>
+</tr>
+</tbody></table>
+<h4>4.3.3 文档存储规范</h4>
+<table>
+<thead>
+<tr>
+<th>文档类型</th>
+<th>存储位置</th>
+<th>权限要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>项目文档</td>
+<td>PLM系统/项目文件夹</td>
+<td>项目组成员</td>
+</tr>
+<tr>
+<td>技术规范</td>
+<td>技术文档库</td>
+<td>全体研发</td>
+</tr>
+<tr>
+<td>共享模板</td>
+<td>模板库</td>
+<td>全体可读</td>
+</tr>
+<tr>
+<td>机密文档</td>
+<td>加密存储</td>
+<td>授权人员</td>
+</tr>
+</tbody></table>
+<h3>4.4 变更管理规范</h3>
+<h4>4.4.1 变更分类</h4>
+<table>
+<thead>
+<tr>
+<th>变更级别</th>
+<th>定义</th>
+<th>审批权限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>一级变更</td>
+<td>影响项目目标、成本、进度</td>
+<td>CCB/部门经理</td>
+</tr>
+<tr>
+<td>二级变更</td>
+<td>影响功能、性能、接口</td>
+<td>项目经理</td>
+</tr>
+<tr>
+<td>三级变更</td>
+<td>文档更新、优化改进</td>
+<td>技术负责人</td>
+</tr>
+</tbody></table>
+<h4>4.4.2 变更流程</h4>
+<ol>
+<li><strong>变更申请</strong>：填写变更请求表(CR)</li>
+<li><strong>影响分析</strong>：评估对需求、设计、进度、成本的影响</li>
+<li><strong>变更审批</strong>：按级别提交相应审批人</li>
+<li><strong>变更实施</strong>：执行变更，更新相关文档</li>
+<li><strong>变更验证</strong>：验证变更效果</li>
+<li><strong>变更关闭</strong>：归档变更记录</li>
+</ol>
+<hr>
+<h2>第五章 培训与发展</h2>
+<h3>5.1 培训体系</h3>
+<table>
+<thead>
+<tr>
+<th>培训类型</th>
+<th>内容</th>
+<th align="center">频率</th>
+<th>对象</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>新员工培训</strong></td>
+<td>微波室概况、IPD流程、各组职责、工具使用</td>
+<td align="center">入职1周内</td>
+<td>新员工</td>
+</tr>
+<tr>
+<td><strong>IPD流程培训</strong></td>
+<td>IPD体系、阶段评审、角色职责、协作机制</td>
+<td align="center">季度</td>
+<td>全员</td>
+</tr>
+<tr>
+<td><strong>专业技术培训</strong></td>
+<td>天线设计、射频电路、数字信号处理、电源设计</td>
+<td align="center">月度</td>
+<td>技术开发组</td>
+</tr>
+<tr>
+<td><strong>产品技术培训</strong></td>
+<td>单机架构设计、模块集成、DFX（可靠性/EMC/环境）</td>
+<td align="center">月度</td>
+<td>产品开发组</td>
+</tr>
+<tr>
+<td><strong>项目管理培训</strong></td>
+<td>需求管理、进度管控、风险管理、客户沟通</td>
+<td align="center">季度</td>
+<td>产品管理组</td>
+</tr>
+<tr>
+<td><strong>外部培训</strong></td>
+<td>微波技术会议、专业认证、行业交流</td>
+<td align="center">按需</td>
+<td>骨干员工</td>
+</tr>
+</tbody></table>
+<h3>5.2 组内学习机制</h3>
+<h4>技术开发组学习</h4>
+<ul>
+<li><strong>天线组</strong>：每月1次天线技术专题分享</li>
+<li><strong>射频组</strong>：每月1次射频技术专题分享</li>
+<li><strong>数字组</strong>：每月1次数字技术专题分享</li>
+<li><strong>电源组</strong>：每月1次电源技术专题分享</li>
+</ul>
+<h4>产品开发组学习</h4>
+<ul>
+<li><strong>架构设计分享</strong>：每季度1次单机架构设计案例分享</li>
+<li><strong>跨组技术交流</strong>：与技术开发组定期技术对接会</li>
+</ul>
+<h4>产品管理组学习</h4>
+<ul>
+<li><strong>DFX专题培训</strong>：可靠性、EMC、环境适应性、元器件管理</li>
+<li><strong>项目管理案例</strong>：项目复盘与经验分享</li>
+</ul>
+<h3>5.3 职业发展通道</h3>
+<h4>5.3.1 技术开发组技术通道</h4>
+<table>
+<thead>
+<tr>
+<th align="center">层级</th>
+<th>天线方向</th>
+<th>射频方向</th>
+<th>数字方向</th>
+<th>电源方向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">专家</td>
+<td>天线技术专家</td>
+<td>射频技术专家</td>
+<td>数字技术专家</td>
+<td>电源技术专家</td>
+</tr>
+<tr>
+<td align="center">高级</td>
+<td>高级天线工程师</td>
+<td>高级射频工程师</td>
+<td>高级数字工程师</td>
+<td>高级电源工程师</td>
+</tr>
+<tr>
+<td align="center">中级</td>
+<td>天线工程师</td>
+<td>射频工程师</td>
+<td>数字工程师</td>
+<td>电源工程师</td>
+</tr>
+<tr>
+<td align="center">初级</td>
+<td>助理天线工程师</td>
+<td>助理射频工程师</td>
+<td>助理数字工程师</td>
+<td>助理电源工程师</td>
+</tr>
+</tbody></table>
+<h4>5.3.2 产品开发组技术通道</h4>
+<pre><code>助理工程师 → 工程师 → 高级工程师 → 主任工程师 → 技术专家
+</code></pre>
+<h4>5.3.3 产品管理组通道</h4>
+<p><strong>技术通道</strong>：</p>
+<pre><code>助理工程师 → 工程师 → 高级工程师 → 技术专家（可靠性/EMC/环境/元器件）
+</code></pre>
+<p><strong>管理通道</strong>：</p>
+<pre><code>工程师 → 项目经理 → 部门经理
+</code></pre>
+<h4>5.3.4 管理通道</h4>
+<table>
+<thead>
+<tr>
+<th align="center">层级</th>
+<th>管理岗位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">部门级</td>
+<td>主任、副主任</td>
+</tr>
+<tr>
+<td align="center">组级</td>
+<td>各组组长</td>
+</tr>
+<tr>
+<td align="center">项目级</td>
+<td>项目经理（产品管理组兼任）</td>
+</tr>
+<tr>
+<td align="center">模块级</td>
+<td>模块产品经理（技术开发组兼任）</td>
+</tr>
+</tbody></table>
+<h3>5.4 技能认证</h3>
+<table>
+<thead>
+<tr>
+<th>认证方向</th>
+<th>认证等级</th>
+<th>适用组</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>天线设计</td>
+<td>初级/中级/高级/专家</td>
+<td>技术开发组</td>
+<td>理论考试+设计评审+项目经验</td>
+</tr>
+<tr>
+<td>射频设计</td>
+<td>初级/中级/高级/专家</td>
+<td>技术开发组</td>
+<td>理论考试+设计评审+项目经验</td>
+</tr>
+<tr>
+<td>数字设计</td>
+<td>初级/中级/高级/专家</td>
+<td>技术开发组</td>
+<td>理论考试+设计评审+项目经验</td>
+</tr>
+<tr>
+<td>电源设计</td>
+<td>初级/中级/高级/专家</td>
+<td>技术开发组</td>
+<td>理论考试+设计评审+项目经验</td>
+</tr>
+<tr>
+<td>系统设计</td>
+<td>初级/中级/高级/专家</td>
+<td>产品开发组</td>
+<td>架构评审+项目经验+技术创新</td>
+</tr>
+<tr>
+<td>DFX管理</td>
+<td>初级/中级/高级</td>
+<td>产品管理组</td>
+<td>培训+评估实践+案例分析</td>
+</tr>
+<tr>
+<td>IPD流程</td>
+<td>基础/进阶/专家</td>
+<td>全员</td>
+<td>培训+评审实践+流程改进</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第六章 奖惩制度</h2>
+<h3>6.1 奖励机制</h3>
+<h4>6.1.1 个人奖励</h4>
+<table>
+<thead>
+<tr>
+<th>奖项</th>
+<th>评选标准</th>
+<th>奖励形式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术创新奖</td>
+<td>重大技术突破、专利授权</td>
+<td>奖金+证书</td>
+</tr>
+<tr>
+<td>质量之星</td>
+<td>零缺陷交付、质量改进</td>
+<td>奖金+证书</td>
+</tr>
+<tr>
+<td>优秀员工</td>
+<td>季度综合表现突出</td>
+<td>奖金+证书</td>
+</tr>
+<tr>
+<td>最佳新人</td>
+<td>入职半年内表现优秀</td>
+<td>奖金+证书</td>
+</tr>
+<tr>
+<td>特别贡献奖</td>
+<td>重大贡献、重大项目成功</td>
+<td>奖金+晋升</td>
+</tr>
+</tbody></table>
+<h4>6.1.2 团队奖励</h4>
+<table>
+<thead>
+<tr>
+<th>奖项</th>
+<th>评选标准</th>
+<th>奖励形式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>项目成功奖</td>
+<td>项目按时按质完成</td>
+<td>团队奖金+活动经费</td>
+</tr>
+<tr>
+<td>最佳协作奖</td>
+<td>跨团队协作表现优秀</td>
+<td>团队奖金+表彰</td>
+</tr>
+</tbody></table>
+<h3>6.2 惩戒机制</h3>
+<h4>6.2.1 惩戒分类</h4>
+<table>
+<thead>
+<tr>
+<th align="center">级别</th>
+<th>行为</th>
+<th>惩戒措施</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>提醒</strong></td>
+<td>轻微违规、初次犯错</td>
+<td>口头提醒、记录在案</td>
+</tr>
+<tr>
+<td align="center"><strong>警告</strong></td>
+<td>一般违规、重复犯错</td>
+<td>书面警告、影响绩效</td>
+</tr>
+<tr>
+<td align="center"><strong>严重警告</strong></td>
+<td>较重违规</td>
+<td>严重警告、降薪/降职</td>
+</tr>
+<tr>
+<td align="center"><strong>解除劳动合同</strong></td>
+<td>严重违规、触犯法律</td>
+<td>解除合同、追究责任</td>
+</tr>
+</tbody></table>
+<h4>6.2.2 常见违规行为</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>具体行为</th>
+<th align="center">惩戒级别</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>考勤</strong></td>
+<td>无故迟到早退、旷工</td>
+<td align="center">提醒 → 警告</td>
+</tr>
+<tr>
+<td><strong>保密</strong></td>
+<td>泄露公司机密</td>
+<td align="center">警告 → 解除合同</td>
+</tr>
+<tr>
+<td><strong>质量</strong></td>
+<td>故意隐瞒缺陷、数据造假</td>
+<td align="center">严重警告 → 解除合同</td>
+</tr>
+<tr>
+<td><strong>协作</strong></td>
+<td>恶意不配合、破坏团队氛围</td>
+<td align="center">警告 → 严重警告</td>
+</tr>
+<tr>
+<td><strong>诚信</strong></td>
+<td>虚报工时、冒领物资</td>
+<td align="center">严重警告 → 解除合同</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>第七章 福利与关怀</h2>
+<h3>7.1 基本福利</h3>
+<table>
+<thead>
+<tr>
+<th>福利项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>五险一金</td>
+<td>按国家标准缴纳</td>
+</tr>
+<tr>
+<td>带薪年假</td>
+<td>按工龄计算，5-15天</td>
+</tr>
+<tr>
+<td>节日福利</td>
+<td>春节、中秋等节日礼品/购物卡</td>
+</tr>
+<tr>
+<td>生日福利</td>
+<td>生日礼金/蛋糕卡</td>
+</tr>
+<tr>
+<td>健康体检</td>
+<td>每年一次免费体检</td>
+</tr>
+</tbody></table>
+<h3>7.2 专项福利</h3>
+<table>
+<thead>
+<tr>
+<th>福利项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术书籍</td>
+<td>年度技术书籍采购额度</td>
+</tr>
+<tr>
+<td>培训补贴</td>
+<td>外部培训/认证费用报销</td>
+</tr>
+<tr>
+<td>专利奖励</td>
+<td>专利申请/授权奖励</td>
+</tr>
+<tr>
+<td>论文发表</td>
+<td>技术论文发表奖励</td>
+</tr>
+<tr>
+<td>团建经费</td>
+<td>季度团队活动经费</td>
+</tr>
+</tbody></table>
+<h3>7.3 员工关怀</h3>
+<ul>
+<li><strong>新员工关怀</strong>：入职导师一对一辅导</li>
+<li><strong>困难帮扶</strong>：员工困难救助基金</li>
+<li><strong>心理咨询</strong>：EAP员工心理援助计划</li>
+<li><strong>家属开放日</strong>：年度家属参观活动</li>
+</ul>
+<hr>
+<h2>第八章 沟通与反馈</h2>
+<h3>8.1 沟通渠道</h3>
+<table>
+<thead>
+<tr>
+<th>渠道</th>
+<th>用途</th>
+<th>联系方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>直属上级</td>
+<td>日常工作、绩效、发展</td>
+<td>面对面/OA/邮件</td>
+</tr>
+<tr>
+<td>部门经理</td>
+<td>重大事项、建议反馈</td>
+<td>OA/邮件/面谈</td>
+</tr>
+<tr>
+<td>人力资源</td>
+<td>薪酬福利、劳动关系</td>
+<td>HR热线/邮箱</td>
+</tr>
+<tr>
+<td>工会/员工代表</td>
+<td>权益保障、集体诉求</td>
+<td>代表姓名/邮箱</td>
+</tr>
+</tbody></table>
+<h3>8.2 反馈机制</h3>
+<ol>
+<li><p><strong>定期面谈</strong></p>
+<ul>
+<li>试用期面谈：入职1个月、3个月</li>
+<li>绩效面谈：每季度一次</li>
+<li>发展面谈：每年一次</li>
+</ul>
+</li>
+<li><p><strong>满意度调查</strong></p>
+<ul>
+<li>季度团队满意度调查</li>
+<li>年度员工满意度调查</li>
+</ul>
+</li>
+<li><p><strong>意见箱/热线</strong></p>
+<ul>
+<li>匿名意见箱</li>
+<li>员工热线</li>
+</ul>
+</li>
+</ol>
+<h3>8.3 申诉机制</h3>
+<p>如对处理结果有异议，可向上级或人力资源部门申诉，将在5个工作日内给予答复。</p>
+<hr>
+<h2>第九章 附录</h2>
+<h3>9.1 常用联系方式</h3>
+<table>
+<thead>
+<tr>
+<th>部门/人员</th>
+<th>职责</th>
+<th>联系方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>行政前台</td>
+<td>接待、快递、办公用品</td>
+<td>内线：XXXX</td>
+</tr>
+<tr>
+<td>IT支持</td>
+<td>电脑、网络、系统问题</td>
+<td>内线：XXXX</td>
+</tr>
+<tr>
+<td>人力资源</td>
+<td>薪酬、考勤、员工关系</td>
+<td>内线：XXXX</td>
+</tr>
+<tr>
+<td>财务部门</td>
+<td>报销、借款、工资查询</td>
+<td>内线：XXXX</td>
+</tr>
+</tbody></table>
+<h3>9.2 常用系统地址</h3>
+<table>
+<thead>
+<tr>
+<th>系统名称</th>
+<th>用途</th>
+<th>访问地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OA系统</td>
+<td>审批、考勤、公告</td>
+<td></td>
+</tr>
+<tr>
+<td>PLM系统</td>
+<td>产品数据管理</td>
+<td></td>
+</tr>
+<tr>
+<td>项目管理</td>
+<td>项目计划、任务跟踪</td>
+<td></td>
+</tr>
+<tr>
+<td>文档管理</td>
+<td>技术文档存储</td>
+<td></td>
+</tr>
+<tr>
+<td>代码仓库</td>
+<td>源代码管理</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>9.3 文档变更记录</h3>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>变更内容</th>
+<th>变更人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>V1.0</td>
+<td></td>
+<td>初始发布</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>确认签字</h2>
+<p>本人已阅读并理解《硬件研发团队员工手册》的全部内容，承诺遵守手册中的各项规定。</p>
+<table>
+<thead>
+<tr>
+<th>员工姓名</th>
+<th>部门</th>
+<th>签字</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>说明：</strong> 本手册最终解释权归公司人力资源部所有。公司将根据实际情况适时修订，修订后及时通知全体员工。</p>
+
+            </div>
+            
+            <footer style="text-align: center; padding: 40px; color: var(--text-tertiary); border-top: 1px solid var(--border-color); margin-top: 60px;">
+                <p>© 2025 微波室 | IPD硬件研发实施项目</p>
+                <p style="font-size: 0.9em; margin-top: 8px;">最后更新：2025年3月20日</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+        // 代码高亮
+        hljs.highlightAll();
+        
+        // 生成目录
+        const content = document.querySelector('.content-section');
+        const toc = document.getElementById('toc');
+        const headings = content.querySelectorAll('h2, h3');
+        
+        if (headings.length > 0) {
+            headings.forEach(heading => {
+                const link = document.createElement('a');
+                link.href = '#' + heading.id;
+                link.textContent = heading.textContent;
+                link.className = heading.tagName === 'H2' ? 'nav-link' : 'nav-link sub';
+                toc.appendChild(link);
+            });
+        }
+        
+        // 侧边栏切换
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        sidebarToggle?.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+</html>

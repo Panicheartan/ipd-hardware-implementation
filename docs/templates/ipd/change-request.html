@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变更请求表 | 微波室IPD文档中心</title>
+    <link rel="stylesheet" href="../../../../../../../../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="../../../../../../../../index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室文档中心</span>
+            </a>
+        </div>
+        
+        <div class="navbar-center">
+            <div class="nav-links">
+                <a href="../../../../../../../../index.html" class="nav-link">首页</a>
+                <a href="../../../../../../../../guides/index.html" class="nav-link">实施指南</a>
+                <a href="../../../../../../../../ipd/index.html" class="nav-link">IPD流程</a>
+                <a href="../../../../../../../../templates/index.html" class="nav-link">模板</a>
+                <a href="../../../../../../../../hr/index.html" class="nav-link">HR管理</a>
+                <a href="../../../../../../../../handbook/index.html" class="nav-link">员工手册</a>
+            </div>
+        </div>
+        
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="nav-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="layout" style="margin-top: 64px;">
+        <!-- 侧边目录 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="切换侧边栏">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <span class="sidebar-title">文档目录</span>
+            </div>
+            <nav class="sidebar-nav" id="toc"></nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content" id="mainContent">
+            <div class="content-section">
+                <h1>变更请求表</h1>
+                <h1>变更请求表 (CR)</h1>
+<h2>基本信息</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>变更请求编号</td>
+<td>CR-YYYY-NNN</td>
+</tr>
+<tr>
+<td>项目名称</td>
+<td></td>
+</tr>
+<tr>
+<td>变更提出人</td>
+<td></td>
+</tr>
+<tr>
+<td>提出日期</td>
+<td></td>
+</tr>
+<tr>
+<td>变更类型</td>
+<td>□需求变更 □设计变更 □计划变更 □资源变更 □其他</td>
+</tr>
+<tr>
+<td>变更优先级</td>
+<td>□紧急 □高 □中 □低</td>
+</tr>
+<tr>
+<td>影响阶段</td>
+<td>□概念 □计划 □开发 □验证 □发布 □生命周期</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>1. 变更描述</h2>
+<h3>1.1 变更背景</h3>
+<p>描述提出变更的背景和原因。</p>
+<h3>1.2 变更内容</h3>
+<p>详细描述变更的具体内容。</p>
+<h3>1.3 变更原因</h3>
+<table>
+<thead>
+<tr>
+<th>原因类别</th>
+<th>具体说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>□市场需求变化</td>
+<td></td>
+</tr>
+<tr>
+<td>□技术方案优化</td>
+<td></td>
+</tr>
+<tr>
+<td>□质量问题</td>
+<td></td>
+</tr>
+<tr>
+<td>□成本优化</td>
+<td></td>
+</tr>
+<tr>
+<td>□法规要求</td>
+<td></td>
+</tr>
+<tr>
+<td>□供应商问题</td>
+<td></td>
+</tr>
+<tr>
+<td>□其他</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>1.4 不变更的影响</h3>
+<p>如果不实施此变更，会产生什么后果？</p>
+<hr>
+<h2>2. 变更影响分析</h2>
+<h3>2.1 对需求的影响</h3>
+<table>
+<thead>
+<tr>
+<th>影响项</th>
+<th>影响描述</th>
+<th align="center">影响程度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能需求</td>
+<td></td>
+<td align="center">□高 □中 □低 □无</td>
+</tr>
+<tr>
+<td>性能需求</td>
+<td></td>
+<td align="center">□高 □中 □低 □无</td>
+</tr>
+<tr>
+<td>接口需求</td>
+<td></td>
+<td align="center">□高 □中 □低 □无</td>
+</tr>
+<tr>
+<td>需求追溯</td>
+<td></td>
+<td align="center">□高 □中 □低 □无</td>
+</tr>
+</tbody></table>
+<h3>2.2 对设计的影响</h3>
+<table>
+<thead>
+<tr>
+<th>影响项</th>
+<th>影响描述</th>
+<th align="center">影响程度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>系统架构</td>
+<td></td>
+<td align="center">□高 □中 □低 □无</td>
+</tr>
+<tr>
+<td>硬件设计</td>
+<td></td>
+<td align="center">□高 □中 □低 □无</td>
+</tr>
+<tr>
+<td>结构设计</td>
+<td></td>
+<td align="center">□高 □中 □低 □无</td>
+</tr>
+<tr>
+<td>软件设计</td>
+<td></td>
+<td align="center">□高 □中 □低 □无</td>
+</tr>
+</tbody></table>
+<h3>2.3 对进度的影响</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>原计划</th>
+<th>变更后</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>阶段完成日期</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>项目完成日期</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>关键里程碑</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>总工期变化</td>
+<td></td>
+<td></td>
+<td>增加/减少 XX 天</td>
+</tr>
+</tbody></table>
+<h3>2.4 对成本的影响</h3>
+<table>
+<thead>
+<tr>
+<th>成本类别</th>
+<th>原计划</th>
+<th>变更后</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>研发成本</td>
+<td></td>
+<td></td>
+<td>+/-/=</td>
+</tr>
+<tr>
+<td>物料成本</td>
+<td></td>
+<td></td>
+<td>+/-/=</td>
+</tr>
+<tr>
+<td>测试成本</td>
+<td></td>
+<td></td>
+<td>+/-/=</td>
+</tr>
+<tr>
+<td>其他成本</td>
+<td></td>
+<td></td>
+<td>+/-/=</td>
+</tr>
+<tr>
+<td><strong>总成本</strong></td>
+<td></td>
+<td></td>
+<td>增加/减少 XX %</td>
+</tr>
+</tbody></table>
+<h3>2.5 对质量的影响</h3>
+<table>
+<thead>
+<tr>
+<th>影响项</th>
+<th>影响描述</th>
+<th align="center">风险等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能质量</td>
+<td></td>
+<td align="center">□高 □中 □低</td>
+</tr>
+<tr>
+<td>可靠性</td>
+<td></td>
+<td align="center">□高 □中 □低</td>
+</tr>
+<tr>
+<td>可维护性</td>
+<td></td>
+<td align="center">□高 □中 □低</td>
+</tr>
+<tr>
+<td>合规性</td>
+<td></td>
+<td align="center">□高 □中 □低</td>
+</tr>
+</tbody></table>
+<h3>2.6 对供应链的影响</h3>
+<table>
+<thead>
+<tr>
+<th>影响项</th>
+<th>影响描述</th>
+<th>应对措施</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>供应商</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>物料</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>交期</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>库存</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>2.7 对测试验证的影响</h3>
+<table>
+<thead>
+<tr>
+<th>影响项</th>
+<th>影响描述</th>
+<th align="center">工作量变化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>测试用例</td>
+<td></td>
+<td align="center">增加/减少 XX %</td>
+</tr>
+<tr>
+<td>测试环境</td>
+<td></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>测试周期</td>
+<td></td>
+<td align="center">增加/减少 XX 天</td>
+</tr>
+<tr>
+<td>认证测试</td>
+<td></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>3. 变更方案</h2>
+<h3>3.1 推荐方案</h3>
+<p>详细描述推荐的变更实施方案。</p>
+<h3>3.2 备选方案</h3>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>描述</th>
+<th>优缺点</th>
+<th>评估结论</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>方案A</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>方案B</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>方案C</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>3.3 实施计划</h3>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>任务</th>
+<th>责任人</th>
+<th>计划开始</th>
+<th>计划完成</th>
+<th>交付件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>4. 资源需求</h2>
+<h3>4.1 人力资源</h3>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>技能要求</th>
+<th align="center">人数</th>
+<th>工作量</th>
+<th>到位时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>4.2 设备/工具资源</h3>
+<table>
+<thead>
+<tr>
+<th>资源名称</th>
+<th>用途</th>
+<th align="center">数量</th>
+<th>到位时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>4.3 其他资源</h3>
+<table>
+<thead>
+<tr>
+<th>资源类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>5. 风险评估</h2>
+<table>
+<thead>
+<tr>
+<th>风险ID</th>
+<th>风险描述</th>
+<th align="center">风险等级</th>
+<th>缓解措施</th>
+<th>责任人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td align="center">□高 □中 □低</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="center">□高 □中 □低</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="center">□高 □中 □低</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>6. 评审意见</h2>
+<h3>6.1 技术评审意见</h3>
+<p>评审结论：□ 同意 □ 不同意 □ 有条件同意</p>
+<p>评审意见：</p>
+<p>评审人签字：____________ 日期：____________</p>
+<h3>6.2 项目经理意见</h3>
+<p>评审结论：□ 同意 □ 不同意 □ 有条件同意</p>
+<p>评审意见：</p>
+<p>项目经理签字：____________ 日期：____________</p>
+<h3>6.3 质量代表意见</h3>
+<p>评审结论：□ 同意 □ 不同意 □ 有条件同意</p>
+<p>评审意见：</p>
+<p>质量代表签字：____________ 日期：____________</p>
+<h3>6.4 部门经理意见</h3>
+<p>评审结论：□ 同意 □ 不同意 □ 有条件同意</p>
+<p>评审意见：</p>
+<p>部门经理签字：____________ 日期：____________</p>
+<hr>
+<h2>7. 变更审批</h2>
+<h3>7.1 变更控制委员会(CCB)审批</h3>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>姓名</th>
+<th align="center">审批结论</th>
+<th>签字</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CCB主席</td>
+<td></td>
+<td align="center">□批准 □拒绝 □延后</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>技术代表</td>
+<td></td>
+<td align="center">□批准 □拒绝 □延后</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>质量代表</td>
+<td></td>
+<td align="center">□批准 □拒绝 □延后</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>财务代表</td>
+<td></td>
+<td align="center">□批准 □拒绝 □延后</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>7.2 审批结论</h3>
+<p>□ <strong>批准</strong> - 同意实施变更</p>
+<p>□ <strong>拒绝</strong> - 不同意实施变更，原因：</p>
+<p>□ <strong>延后</strong> - 推迟到下一阶段处理，原因：</p>
+<h2>□ <strong>有条件批准</strong> - 在满足以下条件后实施：</h2>
+<p>- </p>
+<hr>
+<h2>8. 变更实施跟踪</h2>
+<h3>8.1 实施状态</h3>
+<table>
+<thead>
+<tr>
+<th>实施阶段</th>
+<th>计划日期</th>
+<th>实际日期</th>
+<th align="center">状态</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>变更启动</td>
+<td></td>
+<td></td>
+<td align="center">□待开始 □进行中 □已完成</td>
+<td></td>
+</tr>
+<tr>
+<td>方案设计</td>
+<td></td>
+<td></td>
+<td align="center">□待开始 □进行中 □已完成</td>
+<td></td>
+</tr>
+<tr>
+<td>开发实现</td>
+<td></td>
+<td></td>
+<td align="center">□待开始 □进行中 □已完成</td>
+<td></td>
+</tr>
+<tr>
+<td>验证测试</td>
+<td></td>
+<td></td>
+<td align="center">□待开始 □进行中 □已完成</td>
+<td></td>
+</tr>
+<tr>
+<td>变更关闭</td>
+<td></td>
+<td></td>
+<td align="center">□待开始 □进行中 □已完成</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3>8.2 实施记录</h3>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th align="center">状态</th>
+<th>记录人</th>
+<th>实施内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td>变更申请提交</td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td>变更实施完成</td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td>变更验证通过</td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td>变更关闭</td>
+</tr>
+</tbody></table>
+<h3>8.3 变更验证</h3>
+<table>
+<thead>
+<tr>
+<th>验证项</th>
+<th>验证方法</th>
+<th align="center">验证结果</th>
+<th>验证人</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能验证</td>
+<td></td>
+<td align="center">□通过 □未通过</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>性能验证</td>
+<td></td>
+<td align="center">□通过 □未通过</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>兼容性验证</td>
+<td></td>
+<td align="center">□通过 □未通过</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>回归测试</td>
+<td></td>
+<td align="center">□通过 □未通过</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>9. 变更关闭</h2>
+<h3>9.1 关闭确认</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="center">确认</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>变更内容已完整实施</td>
+<td align="center">□是 □否</td>
+</tr>
+<tr>
+<td>验证测试已通过</td>
+<td align="center">□是 □否</td>
+</tr>
+<tr>
+<td>相关文档已更新</td>
+<td align="center">□是 □否</td>
+</tr>
+<tr>
+<td>相关方已通知</td>
+<td align="center">□是 □否</td>
+</tr>
+</tbody></table>
+<h3>9.2 变更效果评估</h3>
+<table>
+<thead>
+<tr>
+<th>评估项</th>
+<th>预期效果</th>
+<th>实际效果</th>
+<th align="center">评价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td align="center">□达成 □未达成</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td align="center">□达成 □未达成</td>
+</tr>
+</tbody></table>
+<h3>9.3 关闭签字</h3>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>姓名</th>
+<th>签字</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>变更执行人</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>验证人</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>项目经理</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CCB秘书</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>10. 关联信息</h2>
+<h3>10.1 关联需求</h3>
+<table>
+<thead>
+<tr>
+<th>需求ID</th>
+<th>需求描述</th>
+<th>变更关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td>□新增 □修改 □删除</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>□新增 □修改 □删除</td>
+</tr>
+</tbody></table>
+<h3>10.2 关联问题</h3>
+<table>
+<thead>
+<tr>
+<th>问题ID</th>
+<th>问题描述</th>
+<th>关联关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td>□解决 □相关</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>□解决 □相关</td>
+</tr>
+</tbody></table>
+<h3>10.3 关联文档</h3>
+<table>
+<thead>
+<tr>
+<th>文档名称</th>
+<th>版本</th>
+<th>变更说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>变更记录</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>变更内容</th>
+<th>变更人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>使用说明</h2>
+<h3>变更类型</h3>
+<ul>
+<li><strong>需求变更</strong>：功能、性能、接口等需求的变化</li>
+<li><strong>设计变更</strong>：架构、电路、结构、软件等设计的变化</li>
+<li><strong>计划变更</strong>：进度、里程碑、资源计划的变化</li>
+<li><strong>资源变更</strong>：人员、设备、预算等资源的调整</li>
+</ul>
+<h3>变更优先级</h3>
+<ul>
+<li><strong>紧急</strong>：阻塞关键路径，必须立即处理</li>
+<li><strong>高</strong>：对项目目标有重大影响，需要优先处理</li>
+<li><strong>中</strong>：有一定影响，按正常流程处理</li>
+<li><strong>低</strong>：影响较小，可批量处理</li>
+</ul>
+<h3>审批权限</h3>
+<ul>
+<li><strong>小型变更</strong>：项目经理审批</li>
+<li><strong>中型变更</strong>：部门经理审批</li>
+<li><strong>大型变更</strong>：CCB（变更控制委员会）审批</li>
+</ul>
+<h3>变更流程</h3>
+<pre><code>┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
+│  提出   │───→│  评估   │───→│  审批   │───→│  实施   │───→│  关闭   │
+└─────────┘    └─────────┘    └─────────┘    └─────────┘    └─────────┘
+</code></pre>
+
+            </div>
+            
+            <footer style="text-align: center; padding: 40px; color: var(--text-tertiary); border-top: 1px solid var(--border-color); margin-top: 60px;">
+                <p>© 2025 微波室 | IPD硬件研发实施项目</p>
+                <p style="font-size: 0.9em; margin-top: 8px;">最后更新：2025年3月20日</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+        // 代码高亮
+        hljs.highlightAll();
+        
+        // 生成目录
+        const content = document.querySelector('.content-section');
+        const toc = document.getElementById('toc');
+        const headings = content.querySelectorAll('h2, h3');
+        
+        if (headings.length > 0) {
+            headings.forEach(heading => {
+                const link = document.createElement('a');
+                link.href = '#' + heading.id;
+                link.textContent = heading.textContent;
+                link.className = heading.tagName === 'H2' ? 'nav-link' : 'nav-link sub';
+                toc.appendChild(link);
+            });
+        }
+        
+        // 侧边栏切换
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        sidebarToggle?.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+</html>

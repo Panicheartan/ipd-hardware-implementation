@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPD核心理念和框架 | 微波室IPD文档中心</title>
+    <link rel="stylesheet" href="../../../../../../../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="../../../../../../../index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#FF5A36"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">微波室文档中心</span>
+            </a>
+        </div>
+        
+        <div class="navbar-center">
+            <div class="nav-links">
+                <a href="../../../../../../../index.html" class="nav-link">首页</a>
+                <a href="../../../../../../../guides/index.html" class="nav-link">实施指南</a>
+                <a href="../../../../../../../ipd/index.html" class="nav-link">IPD流程</a>
+                <a href="../../../../../../../templates/index.html" class="nav-link">模板</a>
+                <a href="../../../../../../../hr/index.html" class="nav-link">HR管理</a>
+                <a href="../../../../../../../handbook/index.html" class="nav-link">员工手册</a>
+            </div>
+        </div>
+        
+        <div class="navbar-right">
+            <a href="https://github.com/Panicheartan/ipd-hardware-implementation" class="nav-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="layout" style="margin-top: 64px;">
+        <!-- 侧边目录 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="切换侧边栏">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <span class="sidebar-title">文档目录</span>
+            </div>
+            <nav class="sidebar-nav" id="toc"></nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content" id="mainContent">
+            <div class="content-section">
+                <h1>IPD核心理念和框架</h1>
+                <h1>IPD概述 - 集成产品开发</h1>
+<h2>1. 什么是IPD？</h2>
+<p>IPD（Integrated Product Development，集成产品开发）是一套系统化的产品开发管理体系，起源于PRTM公司的PACE（Product And Cycle-time Excellence）理论，后被华为引入并成功实践。</p>
+<h3>1.1 核心理念</h3>
+<ul>
+<li><strong>基于市场的创新</strong> - 以客户需求为导向</li>
+<li><strong>跨部门团队协作</strong> - 打破部门墙</li>
+<li><strong>结构化流程</strong> - 明确的阶段和评审点</li>
+<li><strong>投资决策管理</strong> - 将产品开发作为投资管理</li>
+<li><strong>异步开发模式</strong> - 平台与产品开发分离</li>
+</ul>
+<h3>1.2 IPD的三大核心流程</h3>
+<ol>
+<li><strong>市场管理流程（MM）</strong> - 确保做正确的事</li>
+<li><strong>需求管理流程（OR）</strong> - 确保需求被正确理解和实现</li>
+<li><strong>集成产品开发流程（IPD）</strong> - 确保正确地做事</li>
+</ol>
+<h2>2. IPD的六大阶段</h2>
+<h3>2.1 概念阶段（Concept）</h3>
+<p><strong>目标</strong>：验证产品机会，明确需求</p>
+<ul>
+<li>市场机会分析</li>
+<li>初步技术方案</li>
+<li>业务计划制定</li>
+<li>概念决策评审（CDCP）</li>
+</ul>
+<h3>2.2 计划阶段（Plan）</h3>
+<p><strong>目标</strong>：制定详细开发计划</p>
+<ul>
+<li>需求分解分配</li>
+<li>详细设计方案</li>
+<li>资源计划制定</li>
+<li>计划决策评审（PDCP）</li>
+</ul>
+<h3>2.3 开发阶段（Develop）</h3>
+<p><strong>目标</strong>：完成产品设计和实现</p>
+<ul>
+<li>详细设计和实现</li>
+<li>模块开发和测试</li>
+<li>系统集成</li>
+<li>技术评审（TR4-TR5）</li>
+</ul>
+<h3>2.4 验证阶段（Verification）</h3>
+<p><strong>目标</strong>：验证产品功能和性能</p>
+<ul>
+<li>系统测试验证</li>
+<li>小批量试产</li>
+<li>客户Beta测试</li>
+<li>可获得性决策评审（ADCP）</li>
+</ul>
+<h3>2.5 发布阶段（Launch）</h3>
+<p><strong>目标</strong>：产品发布和市场推广</p>
+<ul>
+<li>量产准备</li>
+<li>市场发布</li>
+<li>早期客户支持</li>
+<li>生命周期决策评审（LDCP）</li>
+</ul>
+<h3>2.6 生命周期阶段（Lifecycle）</h3>
+<p><strong>目标</strong>：产品运营和维护</p>
+<ul>
+<li>产品维护和改进</li>
+<li>成本优化</li>
+<li>生命周期结束管理</li>
+</ul>
+<h2>3. IPD的关键要素</h2>
+<h3>3.1 跨部门团队（PDT）</h3>
+<ul>
+<li><strong>PDT经理</strong> - 项目总负责人</li>
+<li><strong>市场代表</strong> - 市场需求和竞争分析</li>
+<li><strong>研发代表</strong> - 技术实现</li>
+<li><strong>供应链代表</strong> - 采购和制造</li>
+<li><strong>质量代表</strong> - 质量保证</li>
+<li><strong>财务代表</strong> - 成本控制和投资回报</li>
+</ul>
+<h3>3.2 决策评审点（DCP）</h3>
+<ul>
+<li><strong>CDCP</strong> - 概念决策评审</li>
+<li><strong>PDCP</strong> - 计划决策评审</li>
+<li><strong>ADCP</strong> - 可获得性决策评审</li>
+<li><strong>LDCP</strong> - 生命周期决策评审</li>
+</ul>
+<h3>3.3 技术评审点（TR）</h3>
+<ul>
+<li><strong>TR1</strong> - 需求评审</li>
+<li><strong>TR2</strong> - 方案评审</li>
+<li><strong>TR3</strong> - 概要设计评审</li>
+<li><strong>TR4</strong> - 详细设计评审</li>
+<li><strong>TR5</strong> - 样机评审</li>
+<li><strong>TR6</strong> - 量产评审</li>
+</ul>
+<h2>4. IPD在硬件研发中的价值</h2>
+<h3>4.1 对硬件研发的特别意义</h3>
+<ol>
+<li><strong>复杂系统集成</strong> - 硬件、软件、结构、工艺的协同</li>
+<li><strong>供应链管理</strong> - 元器件选型、供应商管理</li>
+<li><strong>制造工艺</strong> - DFM/DFT/DFA考虑</li>
+<li><strong>质量保证</strong> - 可靠性设计和测试</li>
+<li><strong>成本控制</strong> - BOM成本优化</li>
+</ol>
+<h3>4.2 硬件研发的关键成功因素</h3>
+<ol>
+<li><strong>早期参与</strong> - 硬件团队从概念阶段介入</li>
+<li><strong>模块化设计</strong> - 提高CBB（共用基础模块）重用率</li>
+<li><strong>并行工程</strong> - 硬件、软件、结构并行开发</li>
+<li><strong>供应商协同</strong> - 建立战略合作伙伴关系</li>
+<li><strong>测试驱动</strong> - 测试方案与设计同步</li>
+</ol>
+<h2>5. IPD实施效果（华为经验）</h2>
+<h3>5.1 量化效益</h3>
+<ul>
+<li>产品开发周期缩短40%</li>
+<li>产品开发浪费减少50-80%</li>
+<li>产品开发质量显著提升</li>
+<li>平台和模块共享达到50%</li>
+</ul>
+<h3>5.2 组织能力提升</h3>
+<ul>
+<li>建立跨部门协作文化</li>
+<li>形成基于数据的决策机制</li>
+<li>提升团队项目管理能力</li>
+<li>建立持续改进机制</li>
+</ul>
+<h2>6. 硬件研发团队实施建议</h2>
+<h3>6.1 启动阶段</h3>
+<ol>
+<li><strong>高层支持</strong> - 获得管理层承诺</li>
+<li><strong>试点项目</strong> - 选择合适项目试点</li>
+<li><strong>团队培训</strong> - IPD理念和方法培训</li>
+<li><strong>流程设计</strong> - 定制硬件研发流程</li>
+</ol>
+<h3>6.2 实施阶段</h3>
+<ol>
+<li><strong>建立PDT团队</strong> - 明确角色和职责</li>
+<li><strong>制定流程文档</strong> - 标准化操作指南</li>
+<li><strong>工具支持</strong> - 引入项目管理工具</li>
+<li><strong>建立度量体系</strong> - 设定关键绩效指标</li>
+</ol>
+<h3>6.3 推广阶段</h3>
+<ol>
+<li><strong>经验总结</strong> - 试点项目复盘</li>
+<li><strong>流程优化</strong> - 根据反馈改进</li>
+<li><strong>全面推广</strong> - 扩展到所有项目</li>
+<li><strong>持续改进</strong> - 建立改进机制</li>
+</ol>
+<h2>7. 常见挑战和应对</h2>
+<h3>7.1 文化转变挑战</h3>
+<ul>
+<li><strong>挑战</strong>：从技术导向到市场导向</li>
+<li><strong>应对</strong>：加强培训和沟通，建立激励机制</li>
+</ul>
+<h3>7.2 流程执行挑战</h3>
+<ul>
+<li><strong>挑战</strong>：流程僵化，影响效率</li>
+<li><strong>应对</strong>：保持流程灵活性，定期优化</li>
+</ul>
+<h3>7.3 团队协作挑战</h3>
+<ul>
+<li><strong>挑战</strong>：部门墙难以打破</li>
+<li><strong>应对</strong>：建立共同目标，强化团队建设</li>
+</ul>
+<h3>7.4 资源分配挑战</h3>
+<ul>
+<li><strong>挑战</strong>：资源冲突，优先级不清</li>
+<li><strong>应对</strong>：建立项目组合管理，明确优先级</li>
+</ul>
+<h2>8. 下一步行动</h2>
+<ol>
+<li><strong>学习IPD基础知识</strong> - 理解核心理念</li>
+<li><strong>分析现状</strong> - 识别当前研发流程痛点</li>
+<li><strong>制定实施计划</strong> - 分阶段推进</li>
+<li><strong>选择试点项目</strong> - 积累经验</li>
+<li><strong>建立支持体系</strong> - 培训、工具、度量</li>
+</ol>
+<hr>
+<p><em>本文档将随着项目进展不断更新和完善。欢迎提交改进建议！</em></p>
+
+            </div>
+            
+            <footer style="text-align: center; padding: 40px; color: var(--text-tertiary); border-top: 1px solid var(--border-color); margin-top: 60px;">
+                <p>© 2025 微波室 | IPD硬件研发实施项目</p>
+                <p style="font-size: 0.9em; margin-top: 8px;">最后更新：2025年3月20日</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+        // 代码高亮
+        hljs.highlightAll();
+        
+        // 生成目录
+        const content = document.querySelector('.content-section');
+        const toc = document.getElementById('toc');
+        const headings = content.querySelectorAll('h2, h3');
+        
+        if (headings.length > 0) {
+            headings.forEach(heading => {
+                const link = document.createElement('a');
+                link.href = '#' + heading.id;
+                link.textContent = heading.textContent;
+                link.className = heading.tagName === 'H2' ? 'nav-link' : 'nav-link sub';
+                toc.appendChild(link);
+            });
+        }
+        
+        // 侧边栏切换
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        sidebarToggle?.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+</html>
